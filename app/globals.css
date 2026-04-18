@@ -1,1 +1,293 @@
+:root {
+  --background: #f6f3ee;
+  --surface: #fffdf9;
+  --text: #1d1b19;
+  --muted: #6f6a63;
+  --border: #d9d1c6;
+  --accent: #8f7a5a;
+  --max-width: 1180px;
+  --font-serif: "Cormorant Garamond", "Times New Roman", serif;
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+main {
+  min-height: calc(100vh - 140px);
+}
+
+.container {
+  width: min(100% - 2rem, var(--max-width));
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(246, 243, 238, 0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner,
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.site-brand,
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.site-brand {
+  font-size: 1.5rem;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.25rem;
+  color: var(--muted);
+}
+
+.site-nav a:hover,
+.text-link:hover,
+.contact-block a:hover {
+  color: var(--accent);
+}
+
+.hero-section {
+  padding: 5rem 0 3rem;
+}
+
+.eyebrow,
+.object-category {
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+.hero-inner h1,
+.object-header h1 {
+  font-size: clamp(2.6rem, 5vw, 4.8rem);
+  line-height: 0.95;
+  margin: 0.25rem 0 1rem;
+}
+
+.hero-tagline,
+.object-subtitle {
+  font-size: 1.2rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.hero-intro {
+  max-width: 52rem;
+  font-size: 1.05rem;
+}
+
+.gallery-section {
+  padding-bottom: 4rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.object-card,
+.facts-card,
+.contact-block {
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.object-card {
+  overflow: hidden;
+}
+
+.object-card-image-wrap {
+  overflow: hidden;
+}
+
+.object-card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.object-card:hover .object-card-image {
+  transform: scale(1.03);
+}
+
+.object-card-content {
+  padding: 1.5rem;
+}
+
+.object-card-content h2 {
+  font-size: 2rem;
+  margin: 0.25rem 0;
+}
+
+.object-teaser {
+  color: var(--muted);
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent);
+}
+
+.object-page-inner {
+  padding: 3rem 0 4rem;
+}
+
+.object-hero {
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.object-hero-image {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: cover;
+}
+
+.object-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.object-main {
+  min-width: 0;
+}
+
+.object-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.content-section {
+  margin-bottom: 2rem;
+}
+
+.content-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.facts-card,
+.contact-block {
+  padding: 1.5rem;
+}
+
+.facts-card dl {
+  margin: 0;
+}
+
+.facts-card dl div {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.facts-card dl div:last-child {
+  border-bottom: none;
+}
+
+.facts-card dt {
+  color: var(--muted);
+}
+
+.facts-card dd {
+  margin: 0;
+}
+
+.extras-list {
+  padding-left: 1.2rem;
+}
+
+.detail-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.detail-gallery-item {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.detail-gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.not-found-page {
+  padding: 5rem 0;
+}
+
+.site-footer {
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 900px) {
+  .gallery-grid,
+  .object-layout,
+  .detail-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .header-inner,
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .site-nav {
+    flex-wrap: wrap;
+  }
+}
