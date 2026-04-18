@@ -8,6 +8,7 @@ export function Header()
         <Link href="/" className="site-brand"> 
           {siteContent.siteTitle} 
         </Link> 
+        
         <nav className="site-nav"> 
           <Link href="/">Galerie</Link>
           <a href={`mailto:${siteContent.contactEmail}`}>Kontakt</a> 
