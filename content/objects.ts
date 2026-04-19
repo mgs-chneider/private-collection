@@ -17,7 +17,7 @@ export const objects: ObjectEntry[] = [
     location: "Frankfurt am Main",
     pickup: "Besichtigung nach Absprache",
     status: "verfuegbar",
-    images: ["/images/bmw/hero.jpg", "/images/bmw/side.jpg"],
+    images: ["/images/bmw/hero.jpeg", "/images/bmw/side.jpg"],
     videoUrl: "https://www.youtube.com/shorts/DEINSHORTLINK",
   },
   {
