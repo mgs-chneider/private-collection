@@ -1,19 +1,16 @@
-import Link from "next/link"; 
-import { siteContent } from "@/content/site"; 
+import Ornament from './Ornament';
 
-export function Header() 
-  { return ( 
-    <header className="site-header"> 
-      <div className="container header-inner"> 
-        <Link href="/" className="site-brand"> 
-          {siteContent.siteTitle} 
-        </Link> 
-        
-        <nav className="site-nav"> 
-          <Link href="/">Galerie</Link>
-          <a href={`mailto:${siteContent.contactEmail}`}>Kontakt</a> 
-        </nav> 
-      </div> 
-    </header> 
-  ); 
-  }
+export default function Header() {
+  return (
+    <header className="site-header">
+      <div className="eyebrow">Private Sammlung · Kuratierte Einzelstücke</div>
+      <h1>
+        Aus einem <em>gelebten</em> Zuhause
+      </h1>
+      <div className="tagline">
+        Stücke mit Geschichte — zum Weiterleben in neuen Händen
+      </div>
+      <Ornament />
+    </header>
+  );
+}
