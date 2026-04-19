@@ -72,7 +72,7 @@ export const objects: ObjectEntry[] = [
     location: "Bad Homburg",
     pickup: "Nur Abholung",
     status: "verfuegbar",
-    images: ["/images/kueche/hero.jpg"],
+    images: ["/images/kueche/hero.jpeg"],
     extras: [
       "Gaggenau Backofen",
       "Miele Geschirrspüler (Edelstahl, unterbaufähig)",
