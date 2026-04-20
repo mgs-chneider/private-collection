@@ -1,6 +1,6 @@
 'use client';
 
-import { Fragment, useEffect } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import type { Piece } from '@/lib/pieces';
 import { CONTACT_EMAIL } from '@/lib/pieces';
 import { toRoman } from '@/lib/roman';
@@ -34,6 +34,9 @@ Mit freundlichen Grüßen
 }
 
 export default function PieceModal({ piece, onClose }: Props) {
+  const hasPhotos = !!(piece.images && piece.images.length > 0);
+  const [activeIdx, setActiveIdx] = useState(0);
+
   useEffect(() => {
     const prev = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
@@ -69,12 +72,38 @@ export default function PieceModal({ piece, onClose }: Props) {
           ×
         </button>
 
-        <div className="modal-image">
-          <div className="frame-inner">
-            <Motif motif={piece.motif} />
-            <div className="roman">{romanId}</div>
-            <div className="placeholder-label">Abbildung auf Anfrage</div>
-          </div>
+        <div className={`modal-image${hasPhotos ? ' has-photo' : ''}`}>
+          {hasPhotos ? (
+            <>
+              <img
+                className="modal-photo"
+                src={piece.images![activeIdx]}
+                alt={piece.title}
+              />
+              {piece.images!.length > 1 && (
+                <div className="modal-thumbs" role="tablist" aria-label="Weitere Bilder">
+                  {piece.images!.map((src, i) => (
+                    <button
+                      key={src}
+                      type="button"
+                      role="tab"
+                      aria-selected={i === activeIdx}
+                      className={`modal-thumb${i === activeIdx ? ' is-active' : ''}`}
+                      onClick={() => setActiveIdx(i)}
+                    >
+                      <img src={src} alt="" />
+                    </button>
+                  ))}
+                </div>
+              )}
+            </>
+          ) : (
+            <div className="frame-inner">
+              <Motif motif={piece.motif} />
+              <div className="roman">{romanId}</div>
+              <div className="placeholder-label">Abbildung auf Anfrage</div>
+            </div>
+          )}
         </div>
 
         <div className="modal-body">
@@ -82,6 +111,7 @@ export default function PieceModal({ piece, onClose }: Props) {
             {piece.categoryLabel} · Nr. {romanId}
           </div>
           <h2 id="modal-title">{piece.title}</h2>
+          {piece.artist && <div className="artist">{piece.artist}</div>}
           <div className="origin">{piece.origin}</div>
           <div className="description">{piece.description}</div>
 
