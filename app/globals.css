@@ -539,3 +539,64 @@ body.modal-open { overflow: hidden; }
   text-transform: uppercase;
   color: var(--muted);
 }
+
+/* ---------- Footer: Rechtliche Navigation ---------- */
+.site-footer .legal-nav {
+  margin-top: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+.site-footer .legal-nav button {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: transparent;
+  border: none;
+  padding: 0.25rem 0.1rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.site-footer .legal-nav button:hover,
+.site-footer .legal-nav button:focus-visible {
+  color: var(--gold-dark);
+  outline: none;
+}
+.site-footer .legal-nav .legal-sep {
+  color: var(--rule);
+  font-size: 0.7rem;
+}
+
+/* ---------- Rechtliches Textmodal ---------- */
+.modal.modal-text-only {
+  grid-template-columns: 1fr;
+  max-width: 720px;
+}
+@media (min-width: 800px) {
+  .modal.modal-text-only {
+    grid-template-columns: 1fr;
+  }
+}
+.modal-body.legal-body {
+  padding: 3.5rem 2.8rem 3rem;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+.modal-body.legal-body h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.9rem;
+  margin: 0 0 1.6rem;
+  line-height: 1.2;
+}
+.modal-body.legal-body .legal-content {
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  white-space: pre-line;
+}
