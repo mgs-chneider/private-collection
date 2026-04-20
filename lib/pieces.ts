@@ -200,6 +200,10 @@ export const pieces: Piece[] = [
     artist: 'Michele de Lucchi & Giancarlo Fassina, 1987',
     origin: 'Italien, Aluminium poliert — Paar, auf Wandmontage umgerüstet',
     motif: 'lamp',
+     images: [
+      '/images/tolomeo-rechts.jpg',
+      '/images/tolomeo-links.jpg',
+    ],
     price: 'Preis auf Anfrage',
     description:
       'Zwei Exemplare der Tolomeo von Artemide — einer der meistzitierten italienischen Leuchtenentwürfe des späten 20. Jahrhunderts, 1987 von Michele de Lucchi und Giancarlo Fassina entworfen und seither in den Sammlungen namhafter Designmuseen vertreten. Mit ihrer federgelagerten Doppelgelenk-Konstruktion und dem charakteristischen, poliert eloxierten Aluminium-Schirm gehören sie zur Grundausstattung jeder ambitionierten Werkstatt, Küche oder Leseecke. Die beiden Exemplare wurden von einem Spezialisten fachgerecht auf Wandmontage umgerüstet und haben über Jahre die Bulthaup-Küchenwerkstatt erhellt (siehe Foto der Katalog-Nr. VI). Sie können zusammen mit der Küche oder als eigenständiges Paar erworben werden.',
