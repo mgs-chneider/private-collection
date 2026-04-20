@@ -73,6 +73,29 @@ export const pieces: Piece[] = [
       Besonderheit: 'Arm separat angefügt',
     },
   },
+  {
+    id: 2,
+    category: 'moebel',
+    categoryLabel: 'Möbel & Einrichtung',
+    title: 'Antiker Seidenteppich, China',
+    origin: 'Seide, China, um 1900',
+    motif: 'carpet',
+    images: [
+      '/images/china-teppich-1.jpg',
+      '/images/china-teppich-2.jpg',
+    ],
+    price: 'Preis auf Anfrage',
+    description:
+      'Ein großformatiger chinesischer Seidenteppich, über hundert Jahre alt, in einem ungewöhnlich zurückhaltenden, hellen Beigeton gehalten. Das florale Muster ist bewusst dezent gewebt — nicht üppig und bunt, wie es bei chinesischen Seidenteppichen häufig vorkommt, sondern still und feingliedrig. Gerade diese Ruhe macht ihn zum idealen Begleiter einer modernen Einrichtung, wo ein klassisches Orient-Motiv schnell zu laut wirkt; er bringt in jeden Raum die handgemachte Wärme eines antiken Teppichs, ohne sich in den Vordergrund zu drängen. Wir haben den Teppich Ende der 1990er Jahre bei Rolf Jaspers, Antike Teppiche in Frankfurt am Main erworben — einem der damals führenden deutschen Händler für antike orientalische Teppiche.',
+    specs: {
+      Material: 'Seide',
+      Herkunft: 'China',
+      Datierung: 'Über 100 Jahre alt, um 1900',
+      Maße: 'ca. 3 × 4 m',
+      Muster: 'Dezentes florales Muster, heller Beigeton',
+      Provenienz: 'Rolf Jaspers, Antike Teppiche, Frankfurt am Main (Ende 1990er Jahre)',
+    },
+  },
 ];
 
 export const CATEGORIES: { key: 'all' | Category; label: string }[] = [
