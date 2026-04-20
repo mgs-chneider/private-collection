@@ -36,15 +36,21 @@ export interface Piece {
 }
 
 /**
- * Die Sammlung.
+ * Die Sammlung — kuratorische Reihenfolge.
  *
- * Jedes Stück bekommt eine eindeutige `id`, die auch als römische
- * Katalognummer angezeigt wird. Passen Sie Titel, Herkunft, Beschreibung
- * und Spezifikationen nach Ihren eigenen Stücken an.
+ * Die `id` bestimmt zugleich die römische Katalognummer auf der Seite.
+ * Die hier gewählte Anordnung folgt einer bewussten Dramaturgie:
+ *   I.   Winter & Hörbelt — das künstlerische Solitär als Eröffnung
+ *   II.  Bulthaup Küchenwerkstatt — das große, geschichtenreiche Ensemble
+ *   III. Antiker Seidenteppich, China — klassisches Sammlerstück mit Provenienz
+ *   IV.  Essgruppe Kaminsky — Mid-Century mit Zeitgeschichte
+ *   V.   Bang & Olufsen — Designklassiker, dänisches Understatement
+ *   VI.  de Sede Schlafsofa — sachliche Qualität
+ *   VII. Tolomeo Paar — kleines Schlussstück, Querverweis zur Küche
  *
- * Wenn Sie ein Stück entfernen möchten, löschen Sie einfach den Eintrag
- * aus dieser Liste. Um ein neues hinzuzufügen, kopieren Sie einen
- * bestehenden Eintrag und ändern die Felder.
+ * Beim Hinzufügen oder Entfernen von Einträgen bitte sicherstellen, dass
+ * - die `id` weiterhin lückenlos durchnummeriert ist (1, 2, 3 …) und
+ * - eventuelle Querverweise im Beschreibungstext (etwa „Nr. II") angepasst werden.
  */
 export const pieces: Piece[] = [
   {
@@ -77,93 +83,6 @@ export const pieces: Piece[] = [
     id: 2,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
-    title: 'Antiker Seidenteppich, China',
-    origin: 'Seide, China, um 1900',
-    motif: 'carpet',
-    images: [
-      '/images/china-teppich-1.jpeg',
-      '/images/china-teppich-2.jpeg',
-    ],
-    price: 'Preis auf Anfrage',
-    description:
-      'Ein großformatiger chinesischer Seidenteppich, über hundert Jahre alt, in einem ungewöhnlich zurückhaltenden, hellen Beigeton gehalten. Das florale Muster ist bewusst dezent gewebt — nicht üppig und bunt, wie es bei chinesischen Seidenteppichen häufig vorkommt, sondern still und feingliedrig. Gerade diese Ruhe macht ihn zum idealen Begleiter einer modernen Einrichtung, wo ein klassisches Orient-Motiv schnell zu laut wirkt; er bringt in jeden Raum die handgemachte Wärme eines antiken Teppichs, ohne sich in den Vordergrund zu drängen. Wir haben den Teppich Ende der 1990er Jahre bei Rolf Jaspers, Antike Teppiche in Frankfurt am Main erworben — einem der damals führenden deutschen Händler für antike orientalische Teppiche.',
-    specs: {
-      Material: 'Seide',
-      Herkunft: 'China',
-      Datierung: 'Über 100 Jahre alt, um 1900',
-      Maße: 'ca. 3 × 4 m',
-      Muster: 'Dezentes florales Muster, heller Beigeton',
-      Provenienz: 'Rolf Jaspers, Antike Teppiche, Frankfurt am Main (Ende 1990er Jahre)',
-    },
-  },
-  {
-    id: 3,
-    category: 'moebel',
-    categoryLabel: 'Möbel & Einrichtung',
-    title: 'Bang & Olufsen Surround-Anlage',
-    origin: 'Dänisches Design, komplettes System',
-    motif: 'cabinet',
-    images: [
-      '/images/bang-olufsen.jpg',
-    ],
-    price: 'Preis auf Anfrage',
-    description:
-      'Eine komplette Surround-Anlage aus dem Hause Bang & Olufsen — das dänische Understatement in Reinform, mit dem unverwechselbar eleganten Aluminium-Design und dem für B&O charakteristischen warmen, kultivierten Klang. Das Set besteht aus der BeoSound Ouverture als Zentraleinheit mit integriertem CD-Player, Tuner und Verstärker samt passendem Rack, dem massiven Subwoofer BeoLab 2 sowie vier aktiven Säulenlautsprechern (zwei BeoLab 8000 und zwei BeoLab 6000) und zwei Fernbedienungen. Erworben bei HiFi-Profis in Frankfurt am Main, damals einem der renommiertesten HiFi-Fachgeschäfte Deutschlands. Die Originale stehen aktuell bei einer Spedition in Frankfurt am Main fachgerecht verpackt und abholbereit.',
-    specs: {
-      Hersteller: 'Bang & Olufsen',
-      Zentraleinheit: 'BeoSound Ouverture mit passendem Rack',
-      Subwoofer: 'BeoLab 2',
-      Lautsprecher: '2× BeoLab 8000 und 2× BeoLab 6000',
-      Fernbedienungen: '2 Stück',
-      Provenienz: 'HiFi-Profis, Frankfurt am Main',
-      Zustand: 'Verpackt und abholbereit, Spedition in Frankfurt am Main',
-      Hinweis: 'Das abgebildete Foto ist eine KI-generierte Darstellung — Originalfotos stellen wir gerne auf Anfrage zur Verfügung',
-    },
-  },
-  {
-    id: 4,
-    category: 'moebel',
-    categoryLabel: 'Möbel & Einrichtung',
-    title: 'Schlafsofa, de Sede',
-    origin: 'Schweiz, Leder schokobraun',
-    motif: 'chair',
-    images: [
-      '/images/deSede-sofa.jpeg',
-    ],
-    price: 'Preis auf Anfrage',
-    description:
-      'Ein Schlafsofa des Schweizer Traditionshauses de Sede in tiefem, warmem Schokobraun. de Sede steht seit Jahrzehnten für in Handarbeit verarbeitete Lederpolstermöbel — die Adresse, wenn es um dauerhaft gutes Leder und langlebige Konstruktion geht. Als Schlafsofa vereint dieses Stück die wohnliche Eleganz einer hochwertigen Ledercouch mit der praktischen Funktion einer vollwertigen Liegefläche für den Gästebesuch.',
-    specs: {
-      Hersteller: 'de Sede, Schweiz',
-      Material: 'Leder, schokobraun',
-      Funktion: 'Schlafsofa mit ausklappbarer Liegefläche',
-    },
-  },
-  {
-    id: 5,
-    category: 'moebel',
-    categoryLabel: 'Möbel & Einrichtung',
-    title: 'Essgruppe, skandinavischer Stil',
-    origin: 'Mid-Century, 1950er Jahre — Tisch und zehn Stühle',
-    motif: 'chair',
-    price: 'Preis auf Anfrage',
-    description:
-      'Eine außergewöhnliche Essgruppe im zeitlosen skandinavischen Stil, die klares Mid-Century-Design mit einer besonderen Biographie verbindet. Sie wurde in den 1950er Jahren exklusiv für den Bankier Walter Kaminsky — Gründer der Kundenkreditbank, heute Targobank — angefertigt und stand bis zu seinem Tod 1975 in seinem Landhaus bei Bonn. Das Ensemble besteht aus einem ausziehbaren Esstisch und zehn Hochlehnern, von denen zwei als Armlehnstühle für die Kopfplätze gearbeitet sind. Klare Linien, hochwertige Verarbeitung und eine zurückhaltende Eleganz prägen das Erscheinungsbild — charakteristisch für den skandinavischen Stil dieser Epoche. Die Stühle wurden vor Kurzem fachgerecht neu gepolstert und mit schwarzem Bezug versehen; das Holz (vermutlich Kirsch- oder Nussbaum) befindet sich in gepflegtem Zustand mit altersüblichen Gebrauchsspuren. Die Möbel wurden über viele Jahre in unserem Besitz genutzt und stets wertgeschätzt — ein Ensemble für Liebhaber von Design mit Geschichte, wo Zeitgeschichte und klares Design aufeinandertreffen.',
-    specs: {
-      Komposition: 'Ausziehbarer Esstisch und 10 Hochlehner (8 ohne, 2 mit Armlehnen)',
-      Stil: 'Skandinavisch, Mid-Century',
-      Datierung: '1950er Jahre',
-      Holz: 'Vermutlich Kirsch- oder Nussbaum',
-      Polsterung: 'Kürzlich fachgerecht neu gepolstert, schwarzer Bezug',
-      Provenienz: 'Unikatanfertigung für Walter Kaminsky, Gründer der Kundenkreditbank (heute Targobank); bis 1975 im Landhaus bei Bonn',
-      Zustand: 'Gepflegter Gesamtzustand mit altersüblichen Gebrauchsspuren',
-      Hinweis: 'Aktuell eingelagert — Originalfotos stellen wir gerne auf Anfrage zur Verfügung',
-    },
-  },
-  {
-    id: 6,
-    category: 'moebel',
-    categoryLabel: 'Möbel & Einrichtung',
     title: 'Küchenwerkstatt, Bulthaup',
     origin: 'Edelstahl, System 25 — komplette Einbauküche',
     motif: 'cabinet',
@@ -193,6 +112,93 @@ export const pieces: Piece[] = [
     },
   },
   {
+    id: 3,
+    category: 'moebel',
+    categoryLabel: 'Möbel & Einrichtung',
+    title: 'Antiker Seidenteppich, China',
+    origin: 'Seide, China, um 1900',
+    motif: 'carpet',
+    images: [
+      '/images/china-teppich-1.jpeg',
+      '/images/china-teppich-2.jpeg',
+    ],
+    price: 'Preis auf Anfrage',
+    description:
+      'Ein großformatiger chinesischer Seidenteppich, über hundert Jahre alt, in einem ungewöhnlich zurückhaltenden, hellen Beigeton gehalten. Das florale Muster ist bewusst dezent gewebt — nicht üppig und bunt, wie es bei chinesischen Seidenteppichen häufig vorkommt, sondern still und feingliedrig. Gerade diese Ruhe macht ihn zum idealen Begleiter einer modernen Einrichtung, wo ein klassisches Orient-Motiv schnell zu laut wirkt; er bringt in jeden Raum die handgemachte Wärme eines antiken Teppichs, ohne sich in den Vordergrund zu drängen. Wir haben den Teppich Ende der 1990er Jahre bei Rolf Jaspers, Antike Teppiche in Frankfurt am Main erworben — einem der damals führenden deutschen Händler für antike orientalische Teppiche.',
+    specs: {
+      Material: 'Seide',
+      Herkunft: 'China',
+      Datierung: 'Über 100 Jahre alt, um 1900',
+      Maße: 'ca. 3 × 4 m',
+      Muster: 'Dezentes florales Muster, heller Beigeton',
+      Provenienz: 'Rolf Jaspers, Antike Teppiche, Frankfurt am Main (Ende 1990er Jahre)',
+    },
+  },
+  {
+    id: 4,
+    category: 'moebel',
+    categoryLabel: 'Möbel & Einrichtung',
+    title: 'Essgruppe, skandinavischer Stil',
+    origin: 'Mid-Century, 1950er Jahre — Tisch und zehn Stühle',
+    motif: 'chair',
+    price: 'Preis auf Anfrage',
+    description:
+      'Eine außergewöhnliche Essgruppe im zeitlosen skandinavischen Stil, die klares Mid-Century-Design mit einer besonderen Biographie verbindet. Sie wurde in den 1950er Jahren exklusiv für den Bankier Walter Kaminsky — Gründer der Kundenkreditbank, heute Targobank — angefertigt und stand bis zu seinem Tod 1975 in seinem Landhaus bei Bonn. Das Ensemble besteht aus einem ausziehbaren Esstisch und zehn Hochlehnern, von denen zwei als Armlehnstühle für die Kopfplätze gearbeitet sind. Klare Linien, hochwertige Verarbeitung und eine zurückhaltende Eleganz prägen das Erscheinungsbild — charakteristisch für den skandinavischen Stil dieser Epoche. Die Stühle wurden vor Kurzem fachgerecht neu gepolstert und mit schwarzem Bezug versehen; das Holz (vermutlich Kirsch- oder Nussbaum) befindet sich in gepflegtem Zustand mit altersüblichen Gebrauchsspuren. Die Möbel wurden über viele Jahre in unserem Besitz genutzt und stets wertgeschätzt — ein Ensemble für Liebhaber von Design mit Geschichte, wo Zeitgeschichte und klares Design aufeinandertreffen.',
+    specs: {
+      Komposition: 'Ausziehbarer Esstisch und 10 Hochlehner (8 ohne, 2 mit Armlehnen)',
+      Stil: 'Skandinavisch, Mid-Century',
+      Datierung: '1950er Jahre',
+      Holz: 'Vermutlich Kirsch- oder Nussbaum',
+      Polsterung: 'Kürzlich fachgerecht neu gepolstert, schwarzer Bezug',
+      Provenienz: 'Unikatanfertigung für Walter Kaminsky, Gründer der Kundenkreditbank (heute Targobank); bis 1975 im Landhaus bei Bonn',
+      Zustand: 'Gepflegter Gesamtzustand mit altersüblichen Gebrauchsspuren',
+      Hinweis: 'Aktuell eingelagert — Originalfotos stellen wir gerne auf Anfrage zur Verfügung',
+    },
+  },
+  {
+    id: 5,
+    category: 'moebel',
+    categoryLabel: 'Möbel & Einrichtung',
+    title: 'Bang & Olufsen Surround-Anlage',
+    origin: 'Dänisches Design, komplettes System',
+    motif: 'cabinet',
+    images: [
+      '/images/bang-olufsen.jpg',
+    ],
+    price: 'Preis auf Anfrage',
+    description:
+      'Eine komplette Surround-Anlage aus dem Hause Bang & Olufsen — das dänische Understatement in Reinform, mit dem unverwechselbar eleganten Aluminium-Design und dem für B&O charakteristischen warmen, kultivierten Klang. Das Set besteht aus der BeoSound Ouverture als Zentraleinheit mit integriertem CD-Player, Tuner und Verstärker samt passendem Rack, dem massiven Subwoofer BeoLab 2 sowie vier aktiven Säulenlautsprechern (zwei BeoLab 8000 und zwei BeoLab 6000) und zwei Fernbedienungen. Erworben bei HiFi-Profis in Frankfurt am Main, damals einem der renommiertesten HiFi-Fachgeschäfte Deutschlands. Die Originale stehen aktuell bei einer Spedition in Frankfurt am Main fachgerecht verpackt und abholbereit.',
+    specs: {
+      Hersteller: 'Bang & Olufsen',
+      Zentraleinheit: 'BeoSound Ouverture mit passendem Rack',
+      Subwoofer: 'BeoLab 2',
+      Lautsprecher: '2× BeoLab 8000 und 2× BeoLab 6000',
+      Fernbedienungen: '2 Stück',
+      Provenienz: 'HiFi-Profis, Frankfurt am Main',
+      Zustand: 'Verpackt und abholbereit, Spedition in Frankfurt am Main',
+      Hinweis: 'Das abgebildete Foto ist eine KI-generierte Darstellung — Originalfotos stellen wir gerne auf Anfrage zur Verfügung',
+    },
+  },
+  {
+    id: 6,
+    category: 'moebel',
+    categoryLabel: 'Möbel & Einrichtung',
+    title: 'Schlafsofa, de Sede',
+    origin: 'Schweiz, Leder schokobraun',
+    motif: 'chair',
+    images: [
+      '/images/deSede-sofa.jpeg',
+    ],
+    price: 'Preis auf Anfrage',
+    description:
+      'Ein Schlafsofa des Schweizer Traditionshauses de Sede in tiefem, warmem Schokobraun. de Sede steht seit Jahrzehnten für in Handarbeit verarbeitete Lederpolstermöbel — die Adresse, wenn es um dauerhaft gutes Leder und langlebige Konstruktion geht. Als Schlafsofa vereint dieses Stück die wohnliche Eleganz einer hochwertigen Ledercouch mit der praktischen Funktion einer vollwertigen Liegefläche für den Gästebesuch.',
+    specs: {
+      Hersteller: 'de Sede, Schweiz',
+      Material: 'Leder, schokobraun',
+      Funktion: 'Schlafsofa mit ausklappbarer Liegefläche',
+    },
+  },
+  {
     id: 7,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
@@ -201,12 +207,12 @@ export const pieces: Piece[] = [
     origin: 'Italien, Aluminium poliert — Paar, auf Wandmontage umgerüstet',
     motif: 'lamp',
     images: [
-      '/images/tolomeo-rechts.jpeg',
       '/images/tolomeo-links.jpeg',
+      '/images/tolomeo-rechts.jpeg',
     ],
     price: 'Preis auf Anfrage',
     description:
-      'Zwei Exemplare der Tolomeo von Artemide — einer der meistzitierten italienischen Leuchtenentwürfe des späten 20. Jahrhunderts, 1987 von Michele de Lucchi und Giancarlo Fassina entworfen und seither in den Sammlungen namhafter Designmuseen vertreten. Mit ihrer federgelagerten Doppelgelenk-Konstruktion und dem charakteristischen, poliert eloxierten Aluminium-Schirm gehören sie zur Grundausstattung jeder ambitionierten Werkstatt, Küche oder Leseecke. Die beiden Exemplare wurden von einem Spezialisten fachgerecht auf Wandmontage umgerüstet und haben über Jahre die Bulthaup-Küchenwerkstatt erhellt (siehe Foto der Katalog-Nr. VI). Sie können zusammen mit der Küche oder als eigenständiges Paar erworben werden.',
+      'Zwei Exemplare der Tolomeo von Artemide — einer der meistzitierten italienischen Leuchtenentwürfe des späten 20. Jahrhunderts, 1987 von Michele de Lucchi und Giancarlo Fassina entworfen und seither in den Sammlungen namhafter Designmuseen vertreten. Mit ihrer federgelagerten Doppelgelenk-Konstruktion und dem charakteristischen, poliert eloxierten Aluminium-Schirm gehören sie zur Grundausstattung jeder ambitionierten Werkstatt, Küche oder Leseecke. Die beiden Exemplare wurden von einem Spezialisten fachgerecht auf Wandmontage umgerüstet und haben über Jahre die Bulthaup-Küchenwerkstatt erhellt (siehe Foto der Katalog-Nr. II). Sie können zusammen mit der Küche oder als eigenständiges Paar erworben werden.',
     specs: {
       Hersteller: 'Artemide',
       Entwurf: 'Michele de Lucchi und Giancarlo Fassina, 1987',
@@ -214,7 +220,7 @@ export const pieces: Piece[] = [
       Material: 'Poliert eloxiertes Aluminium, federgelagerter Doppelarm',
       Ausführung: 'Fachgerecht auf Wandmontage umgerüstet',
       Stückzahl: '2 Exemplare (Paar)',
-      Hinweis: 'Können zusammen mit der Küchenwerkstatt (Nr. VI) oder separat erworben werden',
+      Hinweis: 'Können zusammen mit der Küchenwerkstatt (Nr. II) oder separat erworben werden',
     },
   },
 ];
