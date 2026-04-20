@@ -139,6 +139,27 @@ export const pieces: Piece[] = [
       Funktion: 'Schlafsofa mit ausklappbarer Liegefläche',
     },
   },
+  {
+    id: 5,
+    category: 'moebel',
+    categoryLabel: 'Möbel & Einrichtung',
+    title: 'Essgruppe, skandinavischer Stil',
+    origin: 'Mid-Century, 1950er Jahre — Tisch und zehn Stühle',
+    motif: 'chair',
+    price: 'Preis auf Anfrage',
+    description:
+      'Eine außergewöhnliche Essgruppe im zeitlosen skandinavischen Stil, die klares Mid-Century-Design mit einer besonderen Biographie verbindet. Sie wurde in den 1950er Jahren exklusiv für den Bankier Walter Kaminsky — Gründer der Kundenkreditbank, heute Targobank — angefertigt und stand bis zu seinem Tod 1975 in seinem Landhaus bei Bonn. Das Ensemble besteht aus einem ausziehbaren Esstisch und zehn Hochlehnern, von denen zwei als Armlehnstühle für die Kopfplätze gearbeitet sind. Klare Linien, hochwertige Verarbeitung und eine zurückhaltende Eleganz prägen das Erscheinungsbild — charakteristisch für den skandinavischen Stil dieser Epoche. Die Stühle wurden vor Kurzem fachgerecht neu gepolstert und mit schwarzem Bezug versehen; das Holz (vermutlich Kirsch- oder Nussbaum) befindet sich in gepflegtem Zustand mit altersüblichen Gebrauchsspuren. Die Möbel wurden über viele Jahre in unserem Besitz genutzt und stets wertgeschätzt — ein Ensemble für Liebhaber von Design mit Geschichte, wo Zeitgeschichte und klares Design aufeinandertreffen.',
+    specs: {
+      Komposition: 'Ausziehbarer Esstisch und 10 Hochlehner (8 ohne, 2 mit Armlehnen)',
+      Stil: 'Skandinavisch, Mid-Century',
+      Datierung: '1950er Jahre',
+      Holz: 'Vermutlich Kirsch- oder Nussbaum',
+      Polsterung: 'Kürzlich fachgerecht neu gepolstert, schwarzer Bezug',
+      Provenienz: 'Unikatanfertigung für Walter Kaminsky, Gründer der Kundenkreditbank (heute Targobank); bis 1975 im Landhaus bei Bonn',
+      Zustand: 'Gepflegter Gesamtzustand mit altersüblichen Gebrauchsspuren',
+      Hinweis: 'Aktuell eingelagert — Originalfotos stellen wir gerne auf Anfrage zur Verfügung',
+    },
+  },
 ];
 
 export const CATEGORIES: { key: 'all' | Category; label: string }[] = [
