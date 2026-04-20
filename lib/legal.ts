@@ -9,19 +9,19 @@
 
 export const IMPRESSUM = `Angaben gemäß § 5 TMG
 
-Manfred Schneider
-[Straße und Hausnummer]
-[Postleitzahl und Ort]
+Manfred G. Schneider
+Saalburgstraße 87
+61350 Bad Homburg v.d.Höhe
 Deutschland
 
 Kontakt
 
-E-Mail: mgs@schneiderundcie.com
-Telefon: [optional — bitte ergänzen oder diese Zeile entfernen]
+E-Mail: info@schneiderundcie.com
+Telefon: +49 6172 68 11 877
 
 Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
 
-Manfred Schneider, Anschrift wie oben.
+Manfred G Schneider, Anschrift wie oben.
 
 Hinweise zum Angebot
 
@@ -33,9 +33,9 @@ export const DATENSCHUTZ = `Stand: [Datum eintragen — idealerweise das Datum d
 
 Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:
 
-Manfred Schneider
+Manfred G. Schneider
 [Anschrift wie im Impressum]
-E-Mail: mgs@schneiderundcie.com
+E-Mail: info@schneiderundcie.com
 
 2. Zugriffsdaten
 
