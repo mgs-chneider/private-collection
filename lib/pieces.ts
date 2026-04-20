@@ -160,6 +160,33 @@ export const pieces: Piece[] = [
       Hinweis: 'Aktuell eingelagert — Originalfotos stellen wir gerne auf Anfrage zur Verfügung',
     },
   },
+  {
+    id: 6,
+    category: 'moebel',
+    categoryLabel: 'Möbel & Einrichtung',
+    title: 'Küchenwerkstatt, Bulthaup',
+    origin: 'Edelstahl, System 25 — komplette Einbauküche',
+    motif: 'cabinet',
+    images: [
+      '/images/bulthaup-werkbank.jpeg',
+    ],
+    price: 'Preis auf Anfrage',
+    description:
+      'Eine vollständige Bulthaup-Küche aus der Serie Küchenwerkstatt — jene Linie, mit der Bulthaup Ende der 1980er Jahre das Konzept der Küche als Werkstatt in den Wohnraum übersetzt hat: klare, industrielle Präzision auf jedem Quadratzentimeter, ohne dabei kühl zu wirken. Das Herzstück ist die etwa 2,60 m lange Edelstahl-Küchenwerkbank; ergänzt um Schränke aus dem Bulthaup-System 25 (einen 1680 mm hohen Umbauhochschrank mit fünf Auszügen und Backofen-Aussparung sowie zwei Unterschränke), einen unterbaufähigen Miele-Geschirrspüler in Edelstahl-Verkleidung und einen Gaggenau-Einbaubackofen EB 211 aus der professionellen 210er-Serie. Die Arbeitsplatte in Geograu ist farblich und materiell auf den Edelstahl der Möbel abgestimmt. Bevorzugt als Ensemble abzugeben.',
+    specs: {
+      Hersteller: 'Bulthaup (Bodnegg)',
+      Serie: 'Küchenwerkstatt, System 25',
+      Küchenwerkbank: 'Edelstahl, ca. 2600 × 800 × 900 mm',
+      Umbauhochschrank: 'System 25, 1680 mm, 5 Auszüge, Aussparung für Backofen',
+      'Unterschrank I': 'System 25, 900 mm, 3 Auszüge',
+      'Unterschrank II': 'System 25, 600 mm, 2 Auszüge, 2 Schübe',
+      Backofen: 'Gaggenau EB 211, Edelstahl (Einbau)',
+      Geschirrspüler: 'Miele, Edelstahl-Verkleidung, unterbaufähig',
+      Arbeitsplatte: 'Geograu, auf Edelstahl der Möbel abgestimmt',
+      'Empfohlener Grundriss': 'Länglicher Raum mit zwei Wandseiten von je ca. 2,60 m — Werkbank an der einen, Schrankzeile mit Backofen an der anderen Seite; Großraum-Kühlschrank separat zu ergänzen',
+      Abgabe: 'Bevorzugt komplett als Ensemble',
+    },
+  },
 ];
 
 export const CATEGORIES: { key: 'all' | Category; label: string }[] = [
