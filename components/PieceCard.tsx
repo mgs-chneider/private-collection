@@ -10,6 +10,8 @@ interface Props {
 }
 
 export default function PieceCard({ piece, onOpen }: Props) {
+  const hasPhoto = piece.images && piece.images.length > 0;
+
   return (
     <button
       type="button"
@@ -17,12 +19,21 @@ export default function PieceCard({ piece, onOpen }: Props) {
       onClick={() => onOpen(piece)}
       aria-label={`${piece.title} — Details öffnen`}
     >
-      <div className="piece-image">
-        <div className="frame-inner">
-          <Motif motif={piece.motif} />
-          <div className="roman">{toRoman(piece.id)}</div>
-          <div className="placeholder-label">Abbildung auf Anfrage</div>
-        </div>
+      <div className={`piece-image${hasPhoto ? ' has-photo' : ''}`}>
+        {hasPhoto ? (
+          <img
+            className="piece-photo"
+            src={piece.images![0]}
+            alt={piece.title}
+            loading="lazy"
+          />
+        ) : (
+          <div className="frame-inner">
+            <Motif motif={piece.motif} />
+            <div className="roman">{toRoman(piece.id)}</div>
+            <div className="placeholder-label">Abbildung auf Anfrage</div>
+          </div>
+        )}
       </div>
       <div className="piece-meta">
         <div className="piece-category">{piece.categoryLabel}</div>
