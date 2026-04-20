@@ -81,8 +81,8 @@ export const pieces: Piece[] = [
     origin: 'Seide, China, um 1900',
     motif: 'carpet',
     images: [
-      '/images/china-teppich-1.jpeg',
-      '/images/china-teppich-2.jpeg',
+      '/images/china-teppich-1.jpg',
+      '/images/china-teppich-2.jpg',
     ],
     price: 'Preis auf Anfrage',
     description:
@@ -94,6 +94,30 @@ export const pieces: Piece[] = [
       Maße: 'ca. 3 × 4 m',
       Muster: 'Dezentes florales Muster, heller Beigeton',
       Provenienz: 'Rolf Jaspers, Antike Teppiche, Frankfurt am Main (Ende 1990er Jahre)',
+    },
+  },
+  {
+    id: 3,
+    category: 'moebel',
+    categoryLabel: 'Möbel & Einrichtung',
+    title: 'Bang & Olufsen Surround-Anlage',
+    origin: 'Dänisches Design, komplettes System',
+    motif: 'cabinet',
+    images: [
+      '/images/bang-olufsen.jpg',
+    ],
+    price: 'Preis auf Anfrage',
+    description:
+      'Eine komplette Surround-Anlage aus dem Hause Bang & Olufsen — das dänische Understatement in Reinform, mit dem unverwechselbar eleganten Aluminium-Design und dem für B&O charakteristischen warmen, kultivierten Klang. Das Set besteht aus der BeoSound Ouverture als Zentraleinheit mit integriertem CD-Player, Tuner und Verstärker samt passendem Rack, dem massiven Subwoofer BeoLab 2 sowie vier aktiven Säulenlautsprechern (zwei BeoLab 8000 und zwei BeoLab 6000) und zwei Fernbedienungen. Erworben bei HiFi-Profis in Frankfurt am Main, damals einem der renommiertesten HiFi-Fachgeschäfte Deutschlands. Die Originale stehen aktuell bei einer Spedition in Frankfurt am Main fachgerecht verpackt und abholbereit.',
+    specs: {
+      Hersteller: 'Bang & Olufsen',
+      Zentraleinheit: 'BeoSound Ouverture mit passendem Rack',
+      Subwoofer: 'BeoLab 2',
+      Lautsprecher: '2× BeoLab 8000 und 2× BeoLab 6000',
+      Fernbedienungen: '2 Stück',
+      Provenienz: 'HiFi-Profis, Frankfurt am Main',
+      Zustand: 'Verpackt und abholbereit, Spedition in Frankfurt am Main',
+      Hinweis: 'Das abgebildete Foto ist eine KI-generierte Darstellung — Originalfotos stellen wir gerne auf Anfrage zur Verfügung',
     },
   },
 ];
