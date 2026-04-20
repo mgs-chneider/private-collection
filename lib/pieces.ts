@@ -200,9 +200,9 @@ export const pieces: Piece[] = [
     artist: 'Michele de Lucchi & Giancarlo Fassina, 1987',
     origin: 'Italien, Aluminium poliert — Paar, auf Wandmontage umgerüstet',
     motif: 'lamp',
-     images: [
-      '/images/tolomeo-rechts.jpg',
-      '/images/tolomeo-links.jpg',
+    images: [
+      '/images/tolomeo-links.jpeg',
+      '/images/tolomeo-rechts.jpeg',
     ],
     price: 'Preis auf Anfrage',
     description:
