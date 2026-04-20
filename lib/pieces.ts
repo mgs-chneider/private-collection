@@ -120,6 +120,25 @@ export const pieces: Piece[] = [
       Hinweis: 'Das abgebildete Foto ist eine KI-generierte Darstellung — Originalfotos stellen wir gerne auf Anfrage zur Verfügung',
     },
   },
+  {
+    id: 4,
+    category: 'moebel',
+    categoryLabel: 'Möbel & Einrichtung',
+    title: 'Schlafsofa, de Sede',
+    origin: 'Schweiz, Leder schokobraun',
+    motif: 'chair',
+    images: [
+      '/images/deSede-sofa.jpeg',
+    ],
+    price: 'Preis auf Anfrage',
+    description:
+      'Ein Schlafsofa des Schweizer Traditionshauses de Sede in tiefem, warmem Schokobraun. de Sede steht seit Jahrzehnten für in Handarbeit verarbeitete Lederpolstermöbel — die Adresse, wenn es um dauerhaft gutes Leder und langlebige Konstruktion geht. Als Schlafsofa vereint dieses Stück die wohnliche Eleganz einer hochwertigen Ledercouch mit der praktischen Funktion einer vollwertigen Liegefläche für den Gästebesuch.',
+    specs: {
+      Hersteller: 'de Sede, Schweiz',
+      Material: 'Leder, schokobraun',
+      Funktion: 'Schlafsofa mit ausklappbarer Liegefläche',
+    },
+  },
 ];
 
 export const CATEGORIES: { key: 'all' | Category; label: string }[] = [
