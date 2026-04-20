@@ -81,8 +81,8 @@ export const pieces: Piece[] = [
     origin: 'Seide, China, um 1900',
     motif: 'carpet',
     images: [
-      '/images/china-teppich-1.jpg',
-      '/images/china-teppich-2.jpg',
+      '/images/china-teppich-1.jpeg',
+      '/images/china-teppich-2.jpeg',
     ],
     price: 'Preis auf Anfrage',
     description:
