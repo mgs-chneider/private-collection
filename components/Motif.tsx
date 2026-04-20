@@ -51,6 +51,16 @@ const paths: Record<MotifKey, React.ReactNode> = {
       <path d="M22 26h20M22 38h20M32 20v24" />
     </>
   ),
+  sculpture: (
+    <>
+      {/* stilisierte stehende Figur auf Sockel */}
+      <circle cx="32" cy="14" r="5" />
+      <path d="M26 22c0 2 -2 4 -2 8s2 6 2 10v8M38 22c0 2 2 4 2 8s-2 6 -2 10v8" />
+      <path d="M26 22h12" />
+      <path d="M22 48h20" />
+      <rect x="20" y="48" width="24" height="8" />
+    </>
+  ),
 };
 
 export default function Motif({ motif }: { motif: MotifKey }) {
