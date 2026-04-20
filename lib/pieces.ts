@@ -231,4 +231,4 @@ export const CATEGORIES: { key: 'all' | Category; label: string }[] = [
   { key: 'kunst', label: 'Kunst & Gemälde' },
 ];
 
-export const CONTACT_EMAIL = 'mgs@schneiderundcie.com';
+export const CONTACT_EMAIL = 'kontakt@privat-besitz.de';
