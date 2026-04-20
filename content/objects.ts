@@ -1,25 +1,7 @@
 import type { ObjectEntry } from "@/lib/types";
 
 export const objects: ObjectEntry[] = [
-  {
-    slug: "bmw-cabrio",
-    category: "Automobil",
-    title: "BMW Cabrio",
-    subtitle: "Bereit für den Sommer",
-    teaser:
-      "Gepflegtes Cabrio mit klassischer Linienführung und offenem Fahrgefühl.",
-    story:
-      "Ein Cabrio für Menschen, die klassische Linien, offenen Fahrgenuss und einen gepflegten Auftritt schätzen.",
-    description:
-      "Weitere Fahrzeugdetails, Ausstattung, Historie und Hinweise zum Zustand werden hier ergänzt.",
-    condition: "Gepflegter Zustand.",
-    price: "Preis auf Anfrage",
-    location: "Frankfurt am Main",
-    pickup: "Besichtigung nach Absprache",
-    status: "verfuegbar",
-    images: ["/images/bmw/hero.jpeg", "/images/bmw/side.jpg"],
-    videoUrl: "https://www.youtube.com/shorts/DEINSHORTLINK",
-  },
+ 
   {
     slug: "bang-olufsen-anlage",
     category: "Audio",
