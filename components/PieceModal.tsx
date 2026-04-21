@@ -5,6 +5,7 @@ import type { Piece } from '@/lib/pieces';
 import { CONTACT_EMAIL } from '@/lib/pieces';
 import { toRoman } from '@/lib/roman';
 import Motif from './Motif';
+import Lightbox from './Lightbox';
 
 interface Props {
   piece: Piece;
@@ -36,6 +37,7 @@ Mit freundlichen Grüßen
 export default function PieceModal({ piece, onClose }: Props) {
   const hasPhotos = !!(piece.images && piece.images.length > 0);
   const [activeIdx, setActiveIdx] = useState(0);
+  const [isZoomed, setIsZoomed] = useState(false);
 
   useEffect(() => {
     const prev = document.body.style.overflow;
@@ -76,9 +78,10 @@ export default function PieceModal({ piece, onClose }: Props) {
           {hasPhotos ? (
             <>
               <img
-                className="modal-photo"
+                className="modal-photo is-zoomable"
                 src={piece.images![activeIdx]}
                 alt={piece.title}
+                onClick={() => setIsZoomed(true)}
               />
               {piece.images!.length > 1 && (
                 <div className="modal-thumbs" role="tablist" aria-label="Weitere Bilder">
@@ -134,6 +137,14 @@ export default function PieceModal({ piece, onClose }: Props) {
           </a>
         </div>
       </div>
+
+      {isZoomed && hasPhotos && (
+        <Lightbox
+          src={piece.images![activeIdx]}
+          alt={piece.title}
+          onClose={() => setIsZoomed(false)}
+        />
+      )}
     </div>
   );
 }
