@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Preamble from '@/components/Preamble';
 import Collection from '@/components/Collection';
+import Impressions from '@/components/Impressions';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Header />
       <Preamble />
       <Collection />
+      <Impressions />
       <Footer />
     </>
   );
