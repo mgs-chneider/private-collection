@@ -41,17 +41,18 @@ export interface Piece {
  * Die `id` bestimmt zugleich die römische Katalognummer auf der Seite.
  * Die hier gewählte Anordnung folgt einer bewussten Dramaturgie:
  *   I.    Winter & Hörbelt — das künstlerische Solitär als Eröffnung
- *   II.   Martin Liebscher, Moskau (Detskij Mir) — zweite Kunstarbeit, schließt den Kunst-Auftakt
- *   III.  Bulthaup Küchenwerkstatt — das große, geschichtenreiche Ensemble
- *   IV.   Antiker Seidenteppich, China — klassisches Sammlerstück mit Provenienz
- *   V.    Essgruppe Kaminsky — Mid-Century mit Zeitgeschichte
- *   VI.   Bang & Olufsen — Designklassiker, dänisches Understatement
- *   VII.  de Sede Schlafsofa — sachliche Qualität
- *   VIII. Tolomeo Paar — kleines Schlussstück, Querverweis zur Küche
+ *   II.   Martin Liebscher, Moskau (Detskij Mir) — großes Panorama (290 × 70 cm)
+ *   III.  Martin Liebscher, New York (TWA Edition) — kleineres Pendant aus gleicher Werkphase
+ *   IV.   Bulthaup Küchenwerkstatt — narrativer Anschluss (hing bei Nr. III gegenüber)
+ *   V.    Antiker Seidenteppich, China — klassisches Sammlerstück mit Provenienz
+ *   VI.   Essgruppe Kaminsky — Mid-Century mit Zeitgeschichte
+ *   VII.  Bang & Olufsen — Designklassiker, dänisches Understatement
+ *   VIII. de Sede Schlafsofa — sachliche Qualität
+ *   IX.   Tolomeo Paar — kleines Schlussstück, Querverweis zur Küche
  *
  * Beim Hinzufügen oder Entfernen von Einträgen bitte sicherstellen, dass
  * - die `id` weiterhin lückenlos durchnummeriert ist (1, 2, 3 …) und
- * - eventuelle Querverweise im Beschreibungstext (etwa „Nr. III") angepasst werden.
+ * - eventuelle Querverweise im Beschreibungstext (etwa „Nr. IV") angepasst werden.
  */
 export const pieces: Piece[] = [
   {
@@ -69,12 +70,14 @@ export const pieces: Piece[] = [
     ],
     price: 'Preis auf Anfrage',
     description:
-      'Eine lebensgroße, in transluzentem Acryl gegossene Figur in warmen Bernstein- und Rosétönen — eine Arbeit des Künstlerduos Winter & Hörbelt. Die Entstehung ist selbst Teil der Faszination: Das flüssige Kunstharz wurde in eine bewusst nicht starre Negativform gegossen, sodass jede Ausformung zu einem vollkommen eigenen Wesen wurde. Manche der so entstandenen Figuren erinnern an Michelin-Männchen; dieses Exemplar gehört zu den deutlich eleganteren Ausformungen und ließ uns an eine gotische Madonna denken — weshalb wir uns seinerzeit gerade für sie entschieden. Der ausgestreckte Arm wurde nach dem Erkalten separat angefügt. Winter & Hörbelt sind im weiteren Kunstbetrieb vor allem durch ihre dreidimensionalen Objekte aus Getränkekisten bekannt; diese frühe Werkgruppe in Acrylguss ist im Œuvre der beiden eine seltene und besonders poetische Arbeit.',
+      'Eine schlanke, in transluzentem Acryl gegossene Figur in warmen Bernstein- und Rosétönen — mit rund 1,30 m Höhe (samt Sockel knapp zwei Meter erreichend) eine eher kammerspielartige, keineswegs lebensgroße Arbeit des Künstlerduos Winter & Hörbelt. Die Entstehung ist selbst Teil der Faszination: Das flüssige Kunstharz wurde in eine bewusst nicht starre Negativform gegossen, sodass jede Ausformung zu einem vollkommen eigenen Wesen wurde. Manche der so entstandenen Figuren erinnern an Michelin-Männchen; dieses Exemplar gehört zu den deutlich eleganteren Ausformungen und ließ uns an eine gotische Madonna denken — weshalb wir uns seinerzeit gerade für sie entschieden. Der ausgestreckte Arm wurde nach dem Erkalten separat angefügt. Winter & Hörbelt sind im weiteren Kunstbetrieb vor allem durch ihre dreidimensionalen Objekte aus Getränkekisten bekannt; diese frühe Werkgruppe in Acrylguss ist im Œuvre der beiden eine seltene und besonders poetische Arbeit.',
     specs: {
       Künstler: 'Winter & Hörbelt',
       Entstehung: '1999',
       Material: 'Acryl / Kunstharz, transluzent',
-      'Maße mit Sockel': 'Höhe ca. 190 cm',
+      'Höhe (Figur)': 'ca. 130 cm',
+      'Höhe (mit Sockel)': 'knapp 200 cm',
+      Breite: 'ca. 40 cm (mit ausgestrecktem Arm)',
       Ausführung: 'Unikat aus flexibler Negativform',
       Provenienz: 'Direkt im Atelier der Künstler erworben',
       Besonderheit: 'Arm separat angefügt',
@@ -89,12 +92,11 @@ export const pieces: Piece[] = [
     origin: 'Panorama-Serie, C-Print auf Aludibond, 2000 — Auflage 1/3',
     motif: 'frame',
     images: [
-      '/images/liebscher-moskau.jpeg',
-      '/images/liebscher-moskau-detail.jpeg',
+      '/images/liebscher-moskau.jpg',
     ],
     price: 'Preis auf Anfrage',
     description:
-      'Eine großformatige Fotoarbeit von Martin Liebscher aus seiner Panorama-Serie: das Innere des legendären Moskauer Kaufhauses Detskij Mir („Kinderwelt") am Lubjanka-Platz, aufgenommen kurz vor der großen Umgestaltung des Gebäudes — in einem einzigen, 290 cm breiten Bildstreifen, der die riesige überkuppelte Halle so dreht und entrollt, dass Böden, Balustraden und Decken in ein ununterbrochenes Band fallen. Wo Liebscher im weiteren Kunstbetrieb vor allem für seine „Wimmelbilder" bekannt ist, in denen er sich selbst dutzendfach in öffentliche und private Räume einblendet, tritt er in der Panorama-Serie bewusst hinter das Bild zurück: der Raum selbst ist hier das Ereignis. Die Arbeit wurde seinerzeit direkt bei Galerie Voges + Deisen, der damaligen Frankfurter Galerie des Künstlers, erworben — als erstes Exemplar (Auflage 1/3), ausgeführt als C-Print auf Aludibond mit schützender UV-Folie. An einer freien Wand entfaltet sie ihre volle Wirkung: ein Panorama, das den Betrachter nicht gegenüber, sondern mitten hinein nimmt.',
+      'Eine großformatige Fotoarbeit von Martin Liebscher aus seiner Panorama-Serie: das geschwungene Treppenhaus im Inneren des legendären Moskauer Kaufhauses Detskij Mir („Kinderwelt") am Lubjanka-Platz, aufgenommen kurz vor der großen Umgestaltung des Gebäudes — in einem einzigen, 290 cm breiten Bildstreifen, der die gewundenen Stufenläufe, Balustraden und Geländer so dreht und entrollt, dass das vertikale Treppenhaus zu einem horizontal ausgebreiteten, ununterbrochenen Band wird. Wo Liebscher im weiteren Kunstbetrieb vor allem für seine „Wimmelbilder" bekannt ist, in denen er sich selbst dutzendfach in öffentliche und private Räume einblendet, tritt er in der Panorama-Serie bewusst hinter das Bild zurück: der Raum selbst ist hier das Ereignis. Die Arbeit wurde seinerzeit direkt bei Galerie Voges + Deisen, der damaligen Frankfurter Galerie des Künstlers, erworben — als erstes Exemplar (Auflage 1/3), ausgeführt als C-Print auf Aludibond mit schützender UV-Folie, im persönlichen Gespräch mit dem bei der Ausstellung anwesenden Künstler. An einer freien Wand entfaltet die Arbeit ihre volle Wirkung: ein Panorama, das den Betrachter nicht gegenüber, sondern mitten hinein nimmt.',
     specs: {
       Künstler: 'Martin Liebscher',
       Titel: 'Moskau (Detskij Mir)',
@@ -103,13 +105,38 @@ export const pieces: Piece[] = [
       Technik: 'C-Print auf Aludibond, UV-Folie',
       Maße: '290 × 70 cm',
       Auflage: 'Nr. 1/3',
-      Provenienz: 'Erworben 15. Januar 2001 bei Galerie Voges + Deisen, Frankfurt am Main (Rechnung liegt vor)',
+      Provenienz: 'Erworben 15. Januar 2001 bei Galerie Voges + Deisen, Frankfurt am Main — direkt aus der laufenden Ausstellung im persönlichen Gespräch mit Martin Liebscher (Rechnung liegt vor)',
       Referenz: 'martinliebscher.de · Panorama-Serie',
       Hängung: 'Wandmontage — Raum-bestimmendes Einzelformat, wirkt ab ca. 3 m freier Wandbreite optimal',
     },
   },
   {
     id: 3,
+    category: 'kunst',
+    categoryLabel: 'Kunst & Gemälde',
+    title: 'New York (TWA Edition)',
+    artist: 'Martin Liebscher',
+    origin: 'Panorama-Serie, C-Print auf Aludibond, 2004 — Auflage 5/12 zzgl. 2 Künstlerexemplaren',
+    motif: 'frame',
+    price: 'Preis auf Anfrage',
+    description:
+      'Eine zweite Arbeit Martin Liebschers aus derselben Werkphase wie das Moskau-Panorama — kleiner im Format (200 × 50 cm), aber in der Bildsprache verwandt: Liebscher entrollt den Innenraum in seinem charakteristischen Panorama-Verfahren zu einem durchlaufenden Bildband, in dem Decken, Böden und Architektur zu einer einzigen Bewegung werden. Der Untertitel „TWA Edition" verweist auf Eero Saarinens legendäres TWA Flight Center am Flughafen JFK — das 1962 eröffnete Meisterwerk der Luftfahrt-Architektur mit seinen fließenden, flügelartigen Betonschalen. Auch diese Arbeit haben wir direkt bei der Frankfurter Galerie des Künstlers erworben (zum Zeitpunkt des Erwerbs firmierend als Voges + Partner); das Zertifikat der Galerie mit Versicherungswert und Auflagenbescheinigung liegt vor. Über viele Jahre hing das Werk in unserer Bulthaup-Küche (siehe Nr. IV) gegenüber der Edelstahl-Werkbank — ein stilles architektonisches Gegenüber zur industriellen Präzision der Küche. Aktuell eingelagert; Originalfoto gerne nach Auspacken auf Anfrage.',
+    specs: {
+      Künstler: 'Martin Liebscher',
+      Titel: 'New York (TWA Edition)',
+      Serie: 'Panorama',
+      Entstehung: '2004',
+      Technik: 'C-Print auf Aludibond, Acryl',
+      Maße: '200 × 50 cm (Breite × Höhe)',
+      Auflage: '5/12 zzgl. 2 Künstlerexemplaren',
+      Inventarnummer: 'ML-2004-011',
+      Provenienz: 'Erworben bei Galerie Voges + Partner, Frankfurt am Main — Zertifikat der Galerie mit Versicherungswert (2.200 €, incl. MwSt) liegt vor',
+      Referenz: 'martinliebscher.de · Panorama-Serie',
+      Hinweis: 'Aktuell eingelagert — Originalfoto stellen wir gerne nach Auspacken zur Verfügung',
+    },
+  },
+  {
+    id: 4,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Küchenwerkstatt, Bulthaup',
@@ -141,7 +168,7 @@ export const pieces: Piece[] = [
     },
   },
   {
-    id: 4,
+    id: 5,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Antiker Seidenteppich, China',
@@ -164,7 +191,7 @@ export const pieces: Piece[] = [
     },
   },
   {
-    id: 5,
+    id: 6,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Essgruppe, skandinavischer Stil',
@@ -185,7 +212,7 @@ export const pieces: Piece[] = [
     },
   },
   {
-    id: 6,
+    id: 7,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Bang & Olufsen Surround-Anlage',
@@ -209,7 +236,7 @@ export const pieces: Piece[] = [
     },
   },
   {
-    id: 7,
+    id: 8,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Schlafsofa, de Sede',
@@ -228,7 +255,7 @@ export const pieces: Piece[] = [
     },
   },
   {
-    id: 8,
+    id: 9,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Tolomeo, Artemide (Paar)',
@@ -241,7 +268,7 @@ export const pieces: Piece[] = [
     ],
     price: 'Preis auf Anfrage',
     description:
-      'Zwei Exemplare der Tolomeo von Artemide — einer der meistzitierten italienischen Leuchtenentwürfe des späten 20. Jahrhunderts, 1987 von Michele de Lucchi und Giancarlo Fassina entworfen und seither in den Sammlungen namhafter Designmuseen vertreten. Mit ihrer federgelagerten Doppelgelenk-Konstruktion und dem charakteristischen, poliert eloxierten Aluminium-Schirm gehören sie zur Grundausstattung jeder ambitionierten Werkstatt, Küche oder Leseecke. Die beiden Exemplare wurden von einem Spezialisten fachgerecht auf Wandmontage umgerüstet und haben über Jahre die Bulthaup-Küchenwerkstatt erhellt (siehe Foto der Katalog-Nr. III). Sie können zusammen mit der Küche oder als eigenständiges Paar erworben werden.',
+      'Zwei Exemplare der Tolomeo von Artemide — einer der meistzitierten italienischen Leuchtenentwürfe des späten 20. Jahrhunderts, 1987 von Michele de Lucchi und Giancarlo Fassina entworfen und seither in den Sammlungen namhafter Designmuseen vertreten. Mit ihrer federgelagerten Doppelgelenk-Konstruktion und dem charakteristischen, poliert eloxierten Aluminium-Schirm gehören sie zur Grundausstattung jeder ambitionierten Werkstatt, Küche oder Leseecke. Die beiden Exemplare wurden von einem Spezialisten fachgerecht auf Wandmontage umgerüstet und haben über Jahre die Bulthaup-Küchenwerkstatt erhellt (siehe Foto der Katalog-Nr. IV). Sie können zusammen mit der Küche oder als eigenständiges Paar erworben werden.',
     specs: {
       Hersteller: 'Artemide',
       Entwurf: 'Michele de Lucchi und Giancarlo Fassina, 1987',
@@ -249,7 +276,7 @@ export const pieces: Piece[] = [
       Material: 'Poliert eloxiertes Aluminium, federgelagerter Doppelarm',
       Ausführung: 'Fachgerecht auf Wandmontage umgerüstet',
       Stückzahl: '2 Exemplare (Paar)',
-      Hinweis: 'Können zusammen mit der Küchenwerkstatt (Nr. III) oder separat erworben werden',
+      Hinweis: 'Können zusammen mit der Küchenwerkstatt (Nr. IV) oder separat erworben werden',
     },
   },
 ];
