@@ -501,35 +501,36 @@ body.modal-open { overflow: hidden; }
 
 /* ---------- Impressionen (Atmosphären-Sektion vor dem Footer) ---------- */
 .impressions {
-  max-width: 1280px;
-  margin: 2rem auto 5rem;
+  max-width: 960px;
+  margin: 1rem auto 5rem;
   padding: 0 2rem;
 }
 .impressions-head {
   text-align: center;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2rem;
 }
 .impressions-head .ornament {
-  margin-bottom: 1.2rem;
+  margin-bottom: 0.9rem;
 }
 .impressions-head h2 {
   font-family: var(--serif);
-  font-weight: 400;
+  font-weight: 300;
   font-style: italic;
-  font-size: 1.8rem;
-  letter-spacing: 0.03em;
-  color: var(--ink);
+  font-size: 1.15rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
   margin: 0;
 }
 .impressions-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.4rem;
+  gap: 1rem;
 }
 @media (min-width: 700px) {
   .impressions-grid {
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.6rem;
+    gap: 1.2rem;
   }
 }
 .impression {
@@ -547,18 +548,20 @@ body.modal-open { overflow: hidden; }
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.8s ease;
+  filter: saturate(0.85) contrast(0.96);
+  transition: transform 0.8s ease, filter 0.4s ease;
 }
 .impression:hover img {
   transform: scale(1.02);
+  filter: saturate(1) contrast(1);
 }
 .impressions-caption {
-  margin: 2rem auto 0;
-  max-width: 640px;
+  margin: 1.6rem auto 0;
+  max-width: 600px;
   text-align: center;
   font-family: var(--serif);
   font-style: italic;
-  font-size: 1.02rem;
+  font-size: 0.95rem;
   color: var(--muted);
   letter-spacing: 0.01em;
 }
