@@ -89,7 +89,7 @@ export const pieces: Piece[] = [
     origin: 'Panorama-Serie, C-Print auf Aludibond, 2000 — Auflage 1/3',
     motif: 'frame',
     images: [
-      '/images/liebscher-moskau.jpg',
+      '/images/liebscher-moskau.jpeg',
     ],
     price: 'Preis auf Anfrage',
     description:
