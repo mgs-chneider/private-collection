@@ -145,6 +145,7 @@ export const pieces: Piece[] = [
     motif: 'cabinet',
     images: [
       '/images/bulthaup-werkbank.jpeg',
+      '/images/kueche-module.jpeg',
     ],
     price: 'Preis auf Anfrage',
     description:
@@ -165,6 +166,7 @@ export const pieces: Piece[] = [
       Geschirrspüler: 'Miele, Edelstahl-Verkleidung, unterbaufähig',
       Arbeitsplatte: 'Geograu, auf Edelstahl der Möbel abgestimmt',
       'Empfohlener Grundriss': 'Länglicher Raum mit zwei Wandseiten von je ca. 2,60 m — Werkbank an der einen, Schrankzeile mit Backofen an der anderen Seite; Großraum-Kühlschrank separat zu ergänzen',
+      'Zweite Abbildung': 'KI-Rekonstruktion der gegenüberliegenden Schrankwand mit Backofen, Kühlschrank und dem Liebscher-Panorama New York (Nr. III) an der Wand — dient dem räumlichen Gesamteindruck; Proportionen nicht maßstabsgetreu',
       Abgabe: 'Bevorzugt komplett als Ensemble',
     },
   },
