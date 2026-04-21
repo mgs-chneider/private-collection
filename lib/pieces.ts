@@ -264,8 +264,8 @@ export const pieces: Piece[] = [
     origin: 'Italien, Aluminium poliert — Paar, auf Wandmontage umgerüstet',
     motif: 'lamp',
     images: [
-      '/images/tolomeo-links.jpeg',
       '/images/tolomeo-rechts.jpeg',
+      '/images/tolomeo-links.jpeg',
     ],
     price: 'Preis auf Anfrage',
     description:
