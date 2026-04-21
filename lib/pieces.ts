@@ -90,6 +90,7 @@ export const pieces: Piece[] = [
     motif: 'frame',
     images: [
       '/images/liebscher-moskau.jpeg',
+      '/images/liebscher-moskau-detail.jpeg',
     ],
     price: 'Preis auf Anfrage',
     description:
