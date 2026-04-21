@@ -166,7 +166,7 @@ export const pieces: Piece[] = [
       Geschirrspüler: 'Miele, Edelstahl-Verkleidung, unterbaufähig',
       Arbeitsplatte: 'Geograu, auf Edelstahl der Möbel abgestimmt',
       'Empfohlener Grundriss': 'Länglicher Raum mit zwei Wandseiten von je ca. 2,60 m — Werkbank an der einen, Schrankzeile mit Backofen an der anderen Seite; Großraum-Kühlschrank separat zu ergänzen',
-      'Zweite Abbildung': 'KI-Rekonstruktion der gegenüberliegenden Schrankwand mit Backofen, Kühlschrank und dem Liebscher-Panorama New York (Nr. III) an der Wand — dient dem räumlichen Gesamteindruck; Proportionen nicht maßstabsgetreu',
+      'Zweite Abbildung': 'KI-unterstütze Darstellung der gegenüberliegenden Schrankwand mit Backofen, Kühlschrank und dem Liebscher-Panorama New York (Nr. III) an der Wand — dient dem räumlichen Gesamteindruck; Proportionen nicht maßstabsgetreu',
       Abgabe: 'Bevorzugt komplett als Ensemble',
     },
   },
@@ -235,7 +235,7 @@ export const pieces: Piece[] = [
       Fernbedienungen: '2 Stück',
       Provenienz: 'HiFi-Profis, Frankfurt am Main',
       Zustand: 'Verpackt und abholbereit, Spedition in Frankfurt am Main',
-      Hinweis: 'Das abgebildete Foto ist eine KI-generierte Darstellung — Originalfotos stellen wir gerne auf Anfrage zur Verfügung',
+      Hinweis: 'Das abgebildete Foto ist eine KI-unterstützte Darstellung — Originalfotos stellen wir gerne auf Anfrage zur Verfügung',
     },
   },
   {
