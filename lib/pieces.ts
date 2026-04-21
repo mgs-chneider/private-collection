@@ -40,17 +40,18 @@ export interface Piece {
  *
  * Die `id` bestimmt zugleich die römische Katalognummer auf der Seite.
  * Die hier gewählte Anordnung folgt einer bewussten Dramaturgie:
- *   I.   Winter & Hörbelt — das künstlerische Solitär als Eröffnung
- *   II.  Bulthaup Küchenwerkstatt — das große, geschichtenreiche Ensemble
- *   III. Antiker Seidenteppich, China — klassisches Sammlerstück mit Provenienz
- *   IV.  Essgruppe Kaminsky — Mid-Century mit Zeitgeschichte
- *   V.   Bang & Olufsen — Designklassiker, dänisches Understatement
- *   VI.  de Sede Schlafsofa — sachliche Qualität
- *   VII. Tolomeo Paar — kleines Schlussstück, Querverweis zur Küche
+ *   I.    Winter & Hörbelt — das künstlerische Solitär als Eröffnung
+ *   II.   Martin Liebscher, Moskau (Detskij Mir) — zweite Kunstarbeit, schließt den Kunst-Auftakt
+ *   III.  Bulthaup Küchenwerkstatt — das große, geschichtenreiche Ensemble
+ *   IV.   Antiker Seidenteppich, China — klassisches Sammlerstück mit Provenienz
+ *   V.    Essgruppe Kaminsky — Mid-Century mit Zeitgeschichte
+ *   VI.   Bang & Olufsen — Designklassiker, dänisches Understatement
+ *   VII.  de Sede Schlafsofa — sachliche Qualität
+ *   VIII. Tolomeo Paar — kleines Schlussstück, Querverweis zur Küche
  *
  * Beim Hinzufügen oder Entfernen von Einträgen bitte sicherstellen, dass
  * - die `id` weiterhin lückenlos durchnummeriert ist (1, 2, 3 …) und
- * - eventuelle Querverweise im Beschreibungstext (etwa „Nr. II") angepasst werden.
+ * - eventuelle Querverweise im Beschreibungstext (etwa „Nr. III") angepasst werden.
  */
 export const pieces: Piece[] = [
   {
@@ -81,6 +82,33 @@ export const pieces: Piece[] = [
   },
   {
     id: 2,
+    category: 'kunst',
+    categoryLabel: 'Kunst & Gemälde',
+    title: 'Moskau (Detskij Mir)',
+    artist: 'Martin Liebscher',
+    origin: 'Panorama-Serie, C-Print auf Aludibond, 2000 — Auflage 1/3',
+    motif: 'frame',
+    images: [
+      '/images/liebscher-moskau.jpg',
+    ],
+    price: 'Preis auf Anfrage',
+    description:
+      'Eine großformatige Fotoarbeit von Martin Liebscher aus seiner Panorama-Serie: das Innere des legendären Moskauer Kaufhauses Detskij Mir („Kinderwelt") am Lubjanka-Platz, aufgenommen kurz vor der großen Umgestaltung des Gebäudes — in einem einzigen, 290 cm breiten Bildstreifen, der die riesige überkuppelte Halle so dreht und entrollt, dass Böden, Balustraden und Decken in ein ununterbrochenes Band fallen. Wo Liebscher im weiteren Kunstbetrieb vor allem für seine „Wimmelbilder" bekannt ist, in denen er sich selbst dutzendfach in öffentliche und private Räume einblendet, tritt er in der Panorama-Serie bewusst hinter das Bild zurück: der Raum selbst ist hier das Ereignis. Die Arbeit wurde seinerzeit direkt bei Galerie Voges + Deisen, der damaligen Frankfurter Galerie des Künstlers, erworben — als erstes Exemplar (Auflage 1/3), ausgeführt als C-Print auf Aludibond mit schützender UV-Folie. An einer freien Wand entfaltet sie ihre volle Wirkung: ein Panorama, das den Betrachter nicht gegenüber, sondern mitten hinein nimmt.',
+    specs: {
+      Künstler: 'Martin Liebscher',
+      Titel: 'Moskau (Detskij Mir)',
+      Serie: 'Panorama',
+      Entstehung: '2000',
+      Technik: 'C-Print auf Aludibond, UV-Folie',
+      Maße: '290 × 70 cm',
+      Auflage: 'Nr. 1/3',
+      Provenienz: 'Erworben 15. Januar 2001 bei Galerie Voges + Deisen, Frankfurt am Main (Rechnung liegt vor)',
+      Referenz: 'martinliebscher.de · Panorama-Serie',
+      Hängung: 'Wandmontage — Raum-bestimmendes Einzelformat, wirkt ab ca. 3 m freier Wandbreite optimal',
+    },
+  },
+  {
+    id: 3,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Küchenwerkstatt, Bulthaup',
@@ -112,7 +140,7 @@ export const pieces: Piece[] = [
     },
   },
   {
-    id: 3,
+    id: 4,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Antiker Seidenteppich, China',
@@ -135,7 +163,7 @@ export const pieces: Piece[] = [
     },
   },
   {
-    id: 4,
+    id: 5,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Essgruppe, skandinavischer Stil',
@@ -156,7 +184,7 @@ export const pieces: Piece[] = [
     },
   },
   {
-    id: 5,
+    id: 6,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Bang & Olufsen Surround-Anlage',
@@ -180,7 +208,7 @@ export const pieces: Piece[] = [
     },
   },
   {
-    id: 6,
+    id: 7,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Schlafsofa, de Sede',
@@ -199,7 +227,7 @@ export const pieces: Piece[] = [
     },
   },
   {
-    id: 7,
+    id: 8,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Tolomeo, Artemide (Paar)',
@@ -207,12 +235,12 @@ export const pieces: Piece[] = [
     origin: 'Italien, Aluminium poliert — Paar, auf Wandmontage umgerüstet',
     motif: 'lamp',
     images: [
-      '/images/tolomeo-rechts.jpeg',
       '/images/tolomeo-links.jpeg',
+      '/images/tolomeo-rechts.jpeg',
     ],
     price: 'Preis auf Anfrage',
     description:
-      'Zwei Exemplare der Tolomeo von Artemide — einer der meistzitierten italienischen Leuchtenentwürfe des späten 20. Jahrhunderts, 1987 von Michele de Lucchi und Giancarlo Fassina entworfen und seither in den Sammlungen namhafter Designmuseen vertreten. Mit ihrer federgelagerten Doppelgelenk-Konstruktion und dem charakteristischen, poliert eloxierten Aluminium-Schirm gehören sie zur Grundausstattung jeder ambitionierten Werkstatt, Küche oder Leseecke. Die beiden Exemplare wurden von einem Spezialisten fachgerecht auf Wandmontage umgerüstet und haben über Jahre die Bulthaup-Küchenwerkstatt erhellt (siehe Foto der Katalog-Nr. II). Sie können zusammen mit der Küche oder als eigenständiges Paar erworben werden.',
+      'Zwei Exemplare der Tolomeo von Artemide — einer der meistzitierten italienischen Leuchtenentwürfe des späten 20. Jahrhunderts, 1987 von Michele de Lucchi und Giancarlo Fassina entworfen und seither in den Sammlungen namhafter Designmuseen vertreten. Mit ihrer federgelagerten Doppelgelenk-Konstruktion und dem charakteristischen, poliert eloxierten Aluminium-Schirm gehören sie zur Grundausstattung jeder ambitionierten Werkstatt, Küche oder Leseecke. Die beiden Exemplare wurden von einem Spezialisten fachgerecht auf Wandmontage umgerüstet und haben über Jahre die Bulthaup-Küchenwerkstatt erhellt (siehe Foto der Katalog-Nr. III). Sie können zusammen mit der Küche oder als eigenständiges Paar erworben werden.',
     specs: {
       Hersteller: 'Artemide',
       Entwurf: 'Michele de Lucchi und Giancarlo Fassina, 1987',
@@ -220,7 +248,7 @@ export const pieces: Piece[] = [
       Material: 'Poliert eloxiertes Aluminium, federgelagerter Doppelarm',
       Ausführung: 'Fachgerecht auf Wandmontage umgerüstet',
       Stückzahl: '2 Exemplare (Paar)',
-      Hinweis: 'Können zusammen mit der Küchenwerkstatt (Nr. II) oder separat erworben werden',
+      Hinweis: 'Können zusammen mit der Küchenwerkstatt (Nr. III) oder separat erworben werden',
     },
   },
 ];
