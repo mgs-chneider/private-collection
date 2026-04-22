@@ -146,6 +146,8 @@ export const pieces: Piece[] = [
     images: [
       '/images/bulthaup-werkbank.jpeg',
       '/images/kueche-module.jpeg',
+      '/images/kueche-kochfel.jpeg',
+      '/images/kueche-armatur.jpeg',
     ],
     price: 'Preis auf Anfrage',
     description:
