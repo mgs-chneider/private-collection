@@ -25,7 +25,7 @@ Mit freundlichen Grüßen
 export default function Further() {
   return (
     <section className="further" aria-labelledby="further-heading">
-      <div className="further-head">
+      <div className="further-heading">
         <Ornament />
         <h2 id="further-heading">Weiteres auf Anfrage</h2>
       </div>
