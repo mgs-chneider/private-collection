@@ -47,9 +47,10 @@ export interface Piece {
  *   V.    Antiker Seidenteppich, China — klassisches Sammlerstück mit Provenienz
  *   VI.   Essgruppe Kaminsky — Mid-Century mit Zeitgeschichte
  *   VII.  Bang & Olufsen — Designklassiker, dänisches Understatement
- *   VIII. de Sede Schlafsofa — sachliche Qualität
- *   IX.   Tolomeo Paar — kleines Schlussstück, Querverweis zur Küche
- *
+ *   VIII. Donghia Lounge Chair (John Hutton) — amerikanische Designer-Ikone in Senfgelb
+ *   IX.   de Sede Schlafsofa — sachliche Qualität
+ *   X.    Tolomeo Paar — kleines Schlussstück, Querverweis zur Küche
+ 
  * Beim Hinzufügen oder Entfernen von Einträgen bitte sicherstellen, dass
  * - die `id` weiterhin lückenlos durchnummeriert ist (1, 2, 3 …) und
  * - eventuelle Querverweise im Beschreibungstext (etwa „Nr. IV") angepasst werden.
@@ -241,6 +242,37 @@ export const pieces: Piece[] = [
     },
   },
   {
+    {
+    id: 8,
+    category: 'moebel',
+    categoryLabel: 'Möbel & Einrichtung',
+    title: 'Donghia Lounge Chair',
+    artist: 'John Hutton',
+    origin: 'USA, Fischgrat-Bezug senfgelb — ohne Ottomane',
+    motif: 'chair',
+    images: [
+      '/images/donghia-detail.jpeg',
+      '/images/donghia-impression.jpeg',
+    ],
+    price: 'Preis auf Anfrage',
+    description:
+      'Ein Sessel aus dem Hause Donghia in leuchtendem Senfgelb — gezeichnet von John Hutton, dem langjährigen Chefgestalter des 1968 in New York gegründeten Traditionshauses, das über drei Jahrzehnte hinweg zu den ersten Adressen amerikanischer Interieur-Kultur zählte. Hutton, unter Kollegen wie Kritikern gleichermaßen geschätzt, verband in seinen Entwürfen eine fast aristokratisch zurückgenommene Silhouette mit bewusst moderner, tailored gearbeiteter Präzision: hier eine kompakte, in weichem Bogen über die Schultern schwingende Rückenlehne, kurze gerundete Beine und ausgesprochen behutsame Proportionen. Der Bezug — in der Detailaufnahme gut erkennbar — ist ein dicht gewebter Fischgrat in warmem Senfgelb, dessen handwerkliche Stoffqualität sich bei Nähe sofort erschließt. Der Sessel wurde seinerzeit ohne zugehörige Ottomane erworben und wird entsprechend einzeln abgegeben. Die zweite Abbildung ist eine KI-unterstützte Darstellung zur räumlichen Einordnung — sie zeigt den Sessel in einer modernen Wohnraumsituation unter dem Liebscher-Panorama „Moskau" (siehe Nr. II).',
+    specs: {
+      Hersteller: 'Donghia, New York',
+      Entwurf: 'John Hutton',
+      Bezug: 'Fischgrat-Gewebe, senfgelb',
+      Ausführung: 'Einzelsessel, ohne Ottomane',
+      Zustand: 'Gepflegter Gesamtzustand, aktuell eingelagert',
+      'Erste Abbildung': 'Detailaufnahme aus dem Lager mit Nahaufnahme des Fischgrat-Bezugs',
+      'Zweite Abbildung': 'KI-unterstützte Darstellung zur räumlichen Einordnung (mit dem Liebscher-Panorama Nr. II an der Wand und einem Couchtisch aus eigenem Bestand, der separat erfasst wird)',
+      Hinweis: 'Originalfotos aus bewohnter Aufstellung stellen wir gerne auf Anfrage zur Verfügung',
+    },
+  },
+  {
+    id: 9,
+    category: 'moebel',
+    categoryLabel: 'Möbel & Einrichtung',
+    title: 'Schlafsofa, de Sede',
     id: 8,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
@@ -260,7 +292,8 @@ export const pieces: Piece[] = [
     },
   },
   {
-    id: 9,
+    
+    id: 10,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Tolomeo, Artemide (Paar)',
