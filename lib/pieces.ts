@@ -205,6 +205,11 @@ export const pieces: Piece[] = [
     title: 'Essgruppe, skandinavischer Stil',
     origin: 'Mid-Century, 1950er Jahre — Tisch und zehn Stühle',
     motif: 'chair',
+    images: [
+      '/images/essgruppe-ensemble.jpeg',
+      '/images/essgruppe-stuhl.jpeg',
+      '/images/stuhl-original.jpeg',
+    ],
     price: 'Preis auf Anfrage',
     description:
       'Eine außergewöhnliche Essgruppe im zeitlosen skandinavischen Stil, die klares Mid-Century-Design mit einer besonderen Biographie verbindet. Sie wurde in den 1950er Jahren exklusiv für den Bankier Walter Kaminsky — Gründer der Kundenkreditbank, heute Targobank — angefertigt und stand bis zu seinem Tod 1975 in seinem Landhaus bei Bonn. Das Ensemble besteht aus einem ausziehbaren Esstisch und zehn Hochlehnern, von denen zwei als Armlehnstühle für die Kopfplätze gearbeitet sind. Klare Linien, hochwertige Verarbeitung und eine zurückhaltende Eleganz prägen das Erscheinungsbild — charakteristisch für den skandinavischen Stil dieser Epoche. Die Stühle wurden vor Kurzem fachgerecht neu gepolstert und mit schwarzem Bezug versehen; das Holz (vermutlich Kirsch- oder Nussbaum) befindet sich in gepflegtem Zustand mit altersüblichen Gebrauchsspuren. Die Möbel wurden über viele Jahre in unserem Besitz genutzt und stets wertgeschätzt — ein Ensemble für Liebhaber von Design mit Geschichte, wo Zeitgeschichte und klares Design aufeinandertreffen.',
@@ -216,7 +221,10 @@ export const pieces: Piece[] = [
       Polsterung: 'Kürzlich fachgerecht neu gepolstert, schwarzer Bezug',
       Provenienz: 'Unikatanfertigung für Walter Kaminsky, Gründer der Kundenkreditbank (heute Targobank); bis 1975 im Landhaus bei Bonn',
       Zustand: 'Gepflegter Gesamtzustand mit altersüblichen Gebrauchsspuren',
-      Hinweis: 'Aktuell eingelagert — Originalfotos stellen wir gerne auf Anfrage zur Verfügung',
+      'Erste Abbildung': 'KI-unterstützte Visualisierung des Ensembles — Tisch mit sechs von insgesamt zehn zugehörigen Stühlen',
+      'Zweite Abbildung': 'KI-unterstützte Visualisierung eines Einzelstuhls zur Ansicht der Proportionen und Polsterung',
+      'Dritte Abbildung': 'Originalaufnahme aus dem Lager (Stuhl in Umzugsfolie, Hintergrund bereinigt)',
+      Hinweis: 'Aktuell eingelagert — weitere Originalfotos und Besichtigungstermine auf Anfrage',
     },
   },
   {
