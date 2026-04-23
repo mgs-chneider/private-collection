@@ -566,6 +566,58 @@ body.modal-open { overflow: hidden; }
   letter-spacing: 0.01em;
 }
 
+/* ——————————————————————————————————————————
+   Further — „Weiteres auf Anfrage"
+   Stille Schlussnote zwischen Impressionen und Footer.
+   —————————————————————————————————————————— */
+.further {
+  max-width: 720px;
+  margin: 0 auto 4rem;
+  padding: 1rem 2rem 2rem;
+  text-align: center;
+}
+.further-head {
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+.further-head .ornament {
+  margin-bottom: 0.9rem;
+}
+.further-head h2 {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.15rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+.further-text {
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: var(--ink-soft);
+  margin: 0 0 1.8rem;
+}
+.further-link {
+  display: inline-block;
+  font-family: var(--serif);
+  font-size: 0.92rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  text-decoration: none;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid var(--gold);
+  transition: color 0.2s, border-color 0.2s;
+}
+.further-link:hover,
+.further-link:focus {
+  color: var(--gold-dark);
+  border-bottom-color: var(--gold-dark);
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background: var(--paper);
