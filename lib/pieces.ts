@@ -309,7 +309,7 @@ export const pieces: Piece[] = [
       Entstehung: '1970er Jahre',
       Material: 'Klarglas und Chromstahl',
       Form: 'Leicht geschwungene Arbeitsfläche auf zwei seitlichen Glasstützen, verbunden über durchlaufendes Chromstahl-Profil mit zentraler Strebe',
-      Provenienz: 'Aus dem Nachlass des Cellisten Peter Girth — 2003 von dessen Witwe erworben (Originalrechnung liegt vor)',
+      Provenienz: 'Aus dem Nachlass von Peter Girth — Cellist und Intendant der Berliner Philharmoniker (1978–1984) in der Ära Karajan, danach weitere Intendanzen an deutschen Orchestern und Opernhäusern; 2003 von seiner Witwe erworben (Originalrechnung liegt vor)',
       Einsatz: 'Über viele Jahre als Home-Office-Schreibtisch in unserem Besitz',
       'Zweite Abbildung': 'Detail-Raster aus neun Nahaufnahmen — Glas, Chromstahl, Verbindungen',
       'Dritte Abbildung': 'Im früheren Home-Office in Benutzung (iMac, Magic Keyboard, Arbeitsleuchte)',
