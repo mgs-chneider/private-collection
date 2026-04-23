@@ -272,10 +272,6 @@ export const pieces: Piece[] = [
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Schlafsofa, de Sede',
-    id: 8,
-    category: 'moebel',
-    categoryLabel: 'Möbel & Einrichtung',
-    title: 'Schlafsofa, de Sede',
     origin: 'Schweiz, Leder schokobraun',
     motif: 'chair',
     images: [
