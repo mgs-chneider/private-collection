@@ -269,7 +269,6 @@ export const pieces: Piece[] = [
     },
   },
   {
-    {
     id: 9,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
