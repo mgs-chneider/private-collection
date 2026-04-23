@@ -47,7 +47,7 @@ export interface Piece {
  *   V.    Antiker Seidenteppich, China — klassisches Sammlerstück mit Provenienz
  *   VI.   Essgruppe Kaminsky — Mid-Century mit Zeitgeschichte
  *   VII.  Bang & Olufsen — Designklassiker, dänisches Understatement
- *   VIII. Donghia Lounge Chair (John Hutton) — amerikanische Designer-Ikone in Senfgelb
+ *   VIII. Donghia Lounge Chair (John Hutton) — amerikanische Designer-Ikone in Maisgelb
  *   IX.   de Sede Schlafsofa — sachliche Qualität
  *   X.    Gallotti & Radice „Presidente Junior" — italienischer Glas-Schreibtisch, Nachlass-Provenienz
  *   XI.   Tolomeo Paar — kleines Schlussstück, Querverweis zur Küche
@@ -288,7 +288,6 @@ export const pieces: Piece[] = [
     },
   },
   {
-    {
     id: 10,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
