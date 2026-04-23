@@ -47,10 +47,11 @@ export interface Piece {
  *   V.    Antiker Seidenteppich, China — klassisches Sammlerstück mit Provenienz
  *   VI.   Essgruppe Kaminsky — Mid-Century mit Zeitgeschichte
  *   VII.  Bang & Olufsen — Designklassiker, dänisches Understatement
- *   VIII. Donghia Lounge Chair (John Hutton) — amerikanische Designer-Ikone in Maisgelb
- *   IX.   de Sede Schlafsofa — sachliche Qualität
- *   X.    Gallotti & Radice „Presidente Junior" — italienischer Glas-Schreibtisch, Nachlass-Provenienz
- *   XI.   Tolomeo Paar — kleines Schlussstück, Querverweis zur Küche
+ *   VIII. Donghia Lounge Chair (John Hutton) — amerikanische Designer-Ikone in Senfgelb
+ *   IX.   Fontana Arte „Tavolo con Ruote" (Gae Aulenti) — italienische Design-Ikone, Pendant zum Donghia-Sessel
+ *   X.    de Sede Schlafsofa — sachliche Qualität
+ *   XI.   Gallotti & Radice „Presidente Junior" — italienischer Glas-Schreibtisch, Nachlass-Provenienz
+ *   XII.  Tolomeo Paar — kleines Schlussstück, Querverweis zur Küche
  
  * Beim Hinzufügen oder Entfernen von Einträgen bitte sicherstellen, dass
  * - die `id` weiterhin lückenlos durchnummeriert ist (1, 2, 3 …) und
@@ -264,12 +265,40 @@ export const pieces: Piece[] = [
       Ausführung: 'Einzelsessel, ohne Ottomane',
       Zustand: 'Gepflegter Gesamtzustand, aktuell eingelagert',
       'Erste Abbildung': 'Detailaufnahme aus dem Lager mit Nahaufnahme des Fischgrat-Bezugs',
-      'Zweite Abbildung': 'KI-unterstützte Darstellung zur räumlichen Einordnung (mit dem Liebscher-Panorama Nr. II an der Wand und einem Couchtisch aus eigenem Bestand, der separat erfasst wird)',
-      Hinweis: 'Originalfotos aus bewohnter Aufstellung stellen wir gerne auf Anfrage zur Verfügung',
+      'Zweite Abbildung': 'KI-unterstützte Darstellung zur räumlichen Einordnung (mit dem Liebscher-Panorama Nr. II an der Wand und dem Fontana-Arte-Couchtisch „Tavolo con Ruote" von Nr. IX)',      Hinweis: 'Originalfotos aus bewohnter Aufstellung stellen wir gerne auf Anfrage zur Verfügung',
     },
   },
   {
+    {
     id: 9,
+    category: 'moebel',
+    categoryLabel: 'Möbel & Einrichtung',
+    title: 'Tavolo con Ruote',
+    artist: 'Gae Aulenti',
+    origin: 'Italien, Kristallglas auf Industrie-Gummirädern, Entwurf 1980',
+    motif: 'cabinet',
+    images: [
+      '/images/fontana-arte-wohnraum.jpeg',
+      '/images/fontana-arte-detail.jpeg',
+      '/images/fontana-arte-freistellung.jpeg',
+    ],
+    price: 'Preis auf Anfrage',
+    description:
+      'Ein Couchtisch „Tavolo con Ruote" aus dem Hause Fontana Arte — der 1932 in Mailand von Gio Ponti und Pietro Chiesa gegründeten Glas-Manufaktur, die seither als eine der maßgeblichen Adressen italienischer Designgeschichte gilt. Der 1980 von Gae Aulenti entworfene Tisch gehört zu den zitierfähigsten italienischen Möbelentwürfen des späten 20. Jahrhunderts und ist bei Fontana Arte bis heute ununterbrochen in Produktion: eine schwere Platte aus klarem Kristallglas ruht auf vier markanten Industrie-Gummirädern — derselben Gattung, wie man sie von Werkstattwagen kennt, hier aber ins Wohnen überführt und zum tragenden Gestaltungselement erhoben. Gae Aulenti, eine der einflussreichsten italienischen Architektinnen und Gestalterinnen des 20. Jahrhunderts — ihr verdanken Paris den Umbau des Musée d\'Orsay und Venedig den des Palazzo Grassi — erzielt hier mit wenigen Mitteln ein Maximum an Präsenz: die Spannung zwischen fein geschliffenem Glas und bewusst utilitärer Rollen-Konstruktion ist die eigentliche Aussage des Entwurfs. Die vorliegende Ausführung misst 120 × 120 × 25 cm, Räder und Befestigungen sind vollständig schwarz. Über viele Jahre stand der Tisch in unserem Wohnzimmer und bildete dort das Pendant zum Donghia-Sessel (siehe Nr. VIII).',
+    specs: {
+      Hersteller: 'Fontana Arte, Mailand',
+      Entwurf: 'Gae Aulenti, 1980',
+      Material: 'Kristallglas-Platte auf vier Industrie-Gummirädern',
+      Maße: '120 × 120 × 25 cm',
+      Ausführung: 'Räder und Befestigungen vollständig schwarz',
+      Produktion: 'Seit 1980 ununterbrochen im Fontana-Arte-Programm',
+      'Erste Abbildung': 'Im bewohnten Zusammenhang unseres Wohnzimmers',
+      'Zweite Abbildung': 'Detailaufnahme der Rad-Befestigung am Glas',
+      'Dritte Abbildung': 'Reale Aufnahme mit KI-unterstützter Bildbereinigung (Dekoration entfernt) zur besseren Sicht auf den Tisch',
+    },
+  },
+  {
+    id: 10,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Schlafsofa, de Sede',
@@ -288,7 +317,7 @@ export const pieces: Piece[] = [
     },
   },
   {
-    id: 10,
+    id: 11,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Schreibtisch „Presidente Junior"',
@@ -316,7 +345,7 @@ export const pieces: Piece[] = [
     },
   },
   {
-    id: 11,
+    id: 12,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Tolomeo, Artemide (Paar)',
