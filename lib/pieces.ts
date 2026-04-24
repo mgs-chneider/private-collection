@@ -262,6 +262,7 @@ export const pieces: Piece[] = [
     images: [
       '/images/donghia-detail.jpeg',
       '/images/donghia-impression.jpeg',
+      '/donghia-original.jpeg',
     ],
     price: 'Preis auf Anfrage',
     description:
