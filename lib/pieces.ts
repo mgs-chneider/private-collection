@@ -260,9 +260,8 @@ export const pieces: Piece[] = [
     origin: 'USA, Fischgrat-Bezug maisgelb — ohne Ottomane',
     motif: 'chair',
     images: [
-      '/images/donghia-detail.jpeg',
+      '/images/donghia-original.jpeg',
       '/images/donghia-impression.jpeg',
-      '/donghia-original.jpeg',
     ],
     price: 'Preis auf Anfrage',
     description:
@@ -274,7 +273,7 @@ export const pieces: Piece[] = [
       Bezug: 'Fischgrat-Gewebe, maisgelb',
       Ausführung: 'Einzelsessel, ohne Ottomane',
       Provenienz: 'Gebraucht erworben bei Rolf Jasper, Spezialhaus für antike Teppiche, Frankfurt am Main — im Zuge mehrerer Teppich-Käufe; derselbe Händler, von dem auch der antike Seidenteppich unter Nr. V stammt',      Zustand: 'Gepflegter Gesamtzustand, aktuell eingelagert',
-      'Erste Abbildung': 'Detailaufnahme aus dem Lager mit Nahaufnahme des Fischgrat-Bezugs',
+      'Erste Abbildung': 'Originalaufnahme aus dem Lager',
       'Zweite Abbildung': 'KI-unterstützte Darstellung zur räumlichen Einordnung (mit dem Liebscher-Panorama Nr. II an der Wand und dem Fontana-Arte-Couchtisch „Tavolo con Ruote" von Nr. IX)',      Hinweis: 'Originalfotos aus bewohnter Aufstellung stellen wir gerne auf Anfrage zur Verfügung',
     },
   },
