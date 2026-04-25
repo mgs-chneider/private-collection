@@ -62,7 +62,7 @@ export default function PiecePage({
         ← Zur Sammlung
       </Link>
 
-      <article className="modal" style={{ position: 'static', maxWidth: '960px', margin: '0 auto' }}>
+      <article className="modal">
 
         {/* Bildbereich */}
         <div className={`modal-image${hasPhotos ? ' has-photo' : ''}`}>
