@@ -885,3 +885,31 @@ body.modal-open { overflow: hidden; }
     margin-bottom: 1.5rem;
   }
 }
+
+/* ---------- PieceCard Wrapper mit Permalink ---------- */
+.piece-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.piece-wrapper .piece {
+  flex: 1;
+}
+
+.piece-permalink {
+  display: block;
+  margin-top: 0.6rem;
+  padding: 0.2rem 0.2rem;
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  text-align: right;
+  transition: color 0.2s ease;
+  border-bottom: none;
+}
+.piece-permalink:hover {
+  color: var(--gold-dark);
+}
