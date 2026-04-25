@@ -837,3 +837,51 @@ body.modal-open { overflow: hidden; }
   color: #fff;
   border-color: rgba(255, 255, 255, 0.65);
 }
+
+/* ---------- Stück-Unterseite (/stueck/[slug]) ---------- */
+.piece-page {
+  min-height: 100vh;
+  background: var(--bg);
+  padding: 2.5rem 2rem 6rem;
+}
+
+.piece-page-back {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  margin-bottom: 2.5rem;
+  transition: color 0.2s ease;
+  border-bottom: 1px solid transparent;
+}
+.piece-page-back:hover {
+  color: var(--gold-dark);
+  border-bottom-color: var(--gold);
+}
+
+.piece-page .modal {
+  position: static;
+  max-width: 980px;
+  margin: 0 auto;
+  box-shadow: 0 20px 60px -30px rgba(0, 0, 0, 0.25);
+}
+
+.piece-page .modal-body h1 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 799px) {
+  .piece-page {
+    padding: 1.5rem 1rem 4rem;
+  }
+  .piece-page-back {
+    margin-bottom: 1.5rem;
+  }
+}
