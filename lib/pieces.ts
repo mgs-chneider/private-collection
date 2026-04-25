@@ -62,7 +62,7 @@ export const pieces: Piece[] = [
     id: 1,
     category: 'kunst',
     categoryLabel: 'Kunst & Gemälde',
-    title: 'Stehende Figur',
+    title: 'Winter & Hörbelt - Stehende Figur',
     artist: 'Winter & Hörbelt',
     origin: 'Acryl / Kunstharz, Unikat, 1999',
     motif: 'sculpture',
