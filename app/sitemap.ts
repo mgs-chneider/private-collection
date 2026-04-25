@@ -6,7 +6,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: 'https://www.privat-besitz.de',
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 1,
+      priority: 1.0,
     },
     {
       url: 'https://www.privat-besitz.de/impressum',
