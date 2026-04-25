@@ -16,7 +16,7 @@ Deutschland
 
 Kontakt
 
-E-Mail: info@schneiderundcie.com
+E-Mail: kontakt@privat-besitz.de
 Telefon: +49 6172 68 11 877
 
 Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
@@ -35,7 +35,7 @@ Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:
 
 Manfred G. Schneider
 [Anschrift wie im Impressum]
-E-Mail: info@schneiderundcie.com
+E-Mail:kontakt@privat-besitz.de
 
 2. Zugriffsdaten
 
