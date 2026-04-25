@@ -330,7 +330,7 @@ export const pieces: Piece[] = [
     id: 11,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
-    title: 'Schreibtisch „Presidente Junior"',
+    title: 'Gallotti & Radice, Presidente Junior - Glasschreibtisch, 1971',
     artist: 'Gallotti & Radice',
     origin: 'Italien, Glas und Chromstahl, 1970er Jahre',
     motif: 'cabinet',
