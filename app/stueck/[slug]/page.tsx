@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation';
+  import { notFound } from 'next/navigation';
 import { allSlugs, pieceBySlug, toSlug } from '@/lib/slugs';
 import { toRoman } from '@/lib/roman';
 import { CONTACT_EMAIL } from '@/lib/pieces';
@@ -8,6 +8,7 @@ import Link from 'next/link';
 import { Fragment } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import PieceGallery from '@/components/PieceGallery';
 
 // Statische Pfade für alle 12 Stücke
 export function generateStaticParams() {
@@ -71,27 +72,9 @@ export default function PiecePage({
 
         <article className="modal">
           {/* Bildbereich */}
-          <div className={`modal-image${hasPhotos ? ' has-photo' : ''}`}>
+          <div className="modal-image has-photo">
             {hasPhotos ? (
-              <>
-                <img
-                  className="modal-photo"
-                  src={piece.images![0]}
-                  alt={piece.title}
-                />
-                {piece.images!.length > 1 && (
-                  <div className="modal-thumbs">
-                    {piece.images!.map((src, i) => (
-                      <div
-                        key={src}
-                        className={`modal-thumb${i === 0 ? ' is-active' : ''}`}
-                      >
-                        <img src={src} alt="" />
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </>
+              <PieceGallery images={piece.images!} title={piece.title} />
             ) : (
               <div className="frame-inner">
                 <div className="roman">{roman}</div>
