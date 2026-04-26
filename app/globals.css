@@ -933,7 +933,7 @@ body.modal-open { overflow: hidden; }
 .piece-gallery-main {
   flex: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   background: var(--bg-alt);
   padding: 1.5rem;
