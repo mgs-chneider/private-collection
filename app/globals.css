@@ -936,14 +936,12 @@ body.modal-open { overflow: hidden; }
   align-items: center;
   justify-content: center;
   background: var(--bg-alt);
-  padding: 2rem;
-  min-height: 380px;
+  padding: 1.5rem;
+  min-height: 0;
 }
 
 .piece-gallery-photo {
   max-width: 100%;
-  max-height: 500px;
-  width: auto;
   height: auto;
   object-fit: contain;
   display: block;
