@@ -33,6 +33,7 @@ export interface Piece {
   price: string;
   description: string;
   specs: Record<string, string>;
+  reserved?: boolean;
 }
 
 /**
@@ -141,6 +142,7 @@ export const pieces: Piece[] = [
   },
   {
     id: 4,
+    reserved: true,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Küchenwerkstatt, Bulthaup',
