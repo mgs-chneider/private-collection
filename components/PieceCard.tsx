@@ -43,6 +43,7 @@ export default function PieceCard({ piece, onOpen }: Props) {
           <h3 className="piece-title">{piece.title}</h3>
           <div className="piece-origin">{piece.origin}</div>
           <div className="piece-price">{piece.price}</div>
+            {piece.reserved ? 'Reserviert' : piece.price}
         </div>
       </button>
 
