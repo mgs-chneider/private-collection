@@ -6,6 +6,8 @@ import type { Piece } from '@/lib/pieces';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Fragment } from 'react';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 // Statische Pfade für alle 12 Stücke
 export function generateStaticParams() {
@@ -25,7 +27,7 @@ export async function generateMetadata({
     title: `${piece.title} — Nr. ${roman} · Private Sammlung`,
     description: piece.description.slice(0, 155),
     alternates: {
-      canonical: `https://www.privat-besitz.de/stueck/${toSlug(piece.title)}`,  // ← neu
+      canonical: `https://www.privat-besitz.de/stueck/${toSlug(piece.title)}`,
     },
     openGraph: {
       title: `${piece.title} · Privatbesitz`,
@@ -59,59 +61,77 @@ export default function PiecePage({
   const hasPhotos = !!(piece.images && piece.images.length > 0);
 
   return (
-    <div className="piece-page">
-      {/* Zurück-Link */}
-      <Link href="/#collection" className="piece-page-back">
-        ← Zur Sammlung
-      </Link>
+    <>
+      <Header />
 
-      <article className="modal">
+      <div className="piece-page">
+        <Link href="/#collection" className="piece-page-back">
+          ← Zur Sammlung
+        </Link>
 
-        {/* Bildbereich */}
-        <div className={`modal-image${hasPhotos ? ' has-photo' : ''}`}>
-          {hasPhotos ? (
-            <img
-              className="modal-photo"
-              src={piece.images![0]}
-              alt={piece.title}
-            />
-          ) : (
-            <div className="frame-inner">
-              <div className="roman">{roman}</div>
-              <div className="placeholder-label">Abbildung auf Anfrage</div>
+        <article className="modal">
+          {/* Bildbereich */}
+          <div className={`modal-image${hasPhotos ? ' has-photo' : ''}`}>
+            {hasPhotos ? (
+              <>
+                <img
+                  className="modal-photo"
+                  src={piece.images![0]}
+                  alt={piece.title}
+                />
+                {piece.images!.length > 1 && (
+                  <div className="modal-thumbs">
+                    {piece.images!.map((src, i) => (
+                      <div
+                        key={src}
+                        className={`modal-thumb${i === 0 ? ' is-active' : ''}`}
+                      >
+                        <img src={src} alt="" />
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </>
+            ) : (
+              <div className="frame-inner">
+                <div className="roman">{roman}</div>
+                <div className="placeholder-label">Abbildung auf Anfrage</div>
+              </div>
+            )}
+          </div>
+
+          {/* Textbereich */}
+          <div className="modal-body">
+            <div className="category">
+              {piece.categoryLabel} · Nr. {roman}
             </div>
-          )}
-        </div>
+            <h1 id="piece-title" style={{ fontSize: 'inherit' }}>{piece.title}</h1>
+            {piece.artist && <div className="artist">{piece.artist}</div>}
+            <div className="origin">{piece.origin}</div>
+            <div className="description">{piece.description}</div>
 
-        {/* Textbereich */}
-        <div className="modal-body">
-          <div className="category">
-            {piece.categoryLabel} · Nr. {roman}
+            <dl className="specs">
+              {Object.entries(piece.specs).map(([key, value]) => (
+                <Fragment key={key}>
+                  <dt>{key}</dt>
+                  <dd>{value}</dd>
+                </Fragment>
+              ))}
+            </dl>
+
+            <div className="price-block">
+              <span className="price-label">Preis</span>
+              <span className="price">{piece.price}</span>
+            </div>
+
+            <a className="inquiry-btn" href={buildMailto(piece)}>
+              Anfrage senden
+            </a>
           </div>
-          <h1 id="piece-title" style={{ fontSize: 'inherit' }}>{piece.title}</h1>
-          {piece.artist && <div className="artist">{piece.artist}</div>}
-          <div className="origin">{piece.origin}</div>
-          <div className="description">{piece.description}</div>
+        </article>
+      </div>
 
-          <dl className="specs">
-            {Object.entries(piece.specs).map(([key, value]) => (
-              <Fragment key={key}>
-                <dt>{key}</dt>
-                <dd>{value}</dd>
-              </Fragment>
-            ))}
-          </dl>
-
-          <div className="price-block">
-            <span className="price-label">Preis</span>
-            <span className="price">{piece.price}</span>
-          </div>
-
-          <a className="inquiry-btn" href={buildMailto(piece)}>
-            Anfrage senden
-          </a>
-        </div>
-      </article>
-    </div>
+      <Footer />
+    </>
   );
 }
