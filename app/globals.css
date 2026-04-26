@@ -913,3 +913,53 @@ body.modal-open { overflow: hidden; }
 .piece-permalink:hover {
   color: var(--gold-dark);
 }
+
+/* ---------- Bildbereich auf Unterseite ---------- */
+.piece-page .modal-image.has-photo {
+  background: var(--ink);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  min-height: 480px;
+}
+
+.piece-page .modal-photo {
+  width: 100%;
+  max-height: 560px;
+  object-fit: contain;
+  display: block;
+}
+
+.piece-page .modal-thumbs {
+  width: 100%;
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.8rem;
+  background: var(--paper);
+  border-top: 1px solid var(--rule);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.piece-page .modal-thumb {
+  width: 64px;
+  height: 64px;
+  border: 1px solid var(--rule);
+  background: var(--ink);
+  overflow: hidden;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.piece-page .modal-thumb:hover {
+  opacity: 1;
+}
+
+.piece-page .modal-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
