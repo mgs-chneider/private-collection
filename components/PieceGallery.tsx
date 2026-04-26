@@ -1,5 +1,4 @@
 'use client';
-
 import { useState } from 'react';
 
 interface Props {
@@ -19,7 +18,6 @@ export default function PieceGallery({ images, title }: Props) {
           className="piece-gallery-photo"
         />
       </div>
-
       {images.length > 1 && (
         <div className="modal-thumbs">
           {images.map((src, i) => (
