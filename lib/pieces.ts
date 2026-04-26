@@ -40,7 +40,7 @@ export interface Piece {
  *
  * Die `id` bestimmt zugleich die römische Katalognummer auf der Seite.
  * Die hier gewählte Anordnung folgt einer bewussten Dramaturgie:
- *   I.    Winter/ Hoerbelt — das künstlerische Solitär als Eröffnung
+ *   I.    Winter/Hoerbelt — das künstlerische Solitär als Eröffnung
  *   II.   Martin Liebscher, Moskau (Detskij Mir) — großes Panorama (290 × 70 cm)
  *   III.  Martin Liebscher, New York (TWA Edition) — kleineres Pendant aus gleicher Werkphase
  *   IV.   Bulthaup Küchenwerkstatt — narrativer Anschluss (hing bei Nr. III gegenüber)
@@ -62,8 +62,8 @@ export const pieces: Piece[] = [
     id: 1,
     category: 'kunst',
     categoryLabel: 'Kunst & Gemälde',
-    title: 'Winter / Hoerbelt - Stehende Figur',
-    artist: 'Winter / Hoerbelt',
+    title: 'Winter/Hoerbelt - Stehende Figur',
+    artist: 'Winter/Hoerbelt',
     origin: 'Acryl / Kunstharz, Unikat, 1999',
     motif: 'sculpture',
     images: [
@@ -75,7 +75,7 @@ export const pieces: Piece[] = [
     description:
       'Eine schlanke, in transluzentem Acryl gegossene Figur in warmen Bernstein- und Rosétönen — mit rund 1,30 m Höhe (samt Sockel knapp zwei Meter erreichend) eine eher kammerspielartige, keineswegs lebensgroße Arbeit des Künstlerduos Winter & Hörbelt. Die Entstehung ist selbst Teil der Faszination: Das flüssige Kunstharz wurde in eine bewusst nicht starre Negativform gegossen, sodass jede Ausformung zu einem vollkommen eigenen Wesen wurde. Manche der so entstandenen Figuren erinnern an Michelin-Männchen; dieses Exemplar gehört zu den deutlich eleganteren Ausformungen und ließ uns an eine gotische Madonna denken — weshalb wir uns seinerzeit gerade für sie entschieden. Der ausgestreckte Arm wurde nach dem Erkalten separat angefügt. Winter & Hörbelt sind im weiteren Kunstbetrieb vor allem durch ihre dreidimensionalen Objekte aus Getränkekisten bekannt; diese frühe Werkgruppe in Acrylguss ist im Œuvre der beiden eine seltene und besonders poetische Arbeit.',
     specs: {
-      Künstler: 'Winter / Hoerbelt',
+      Künstler: 'Winter/Hoerbelt',
       Entstehung: '1999',
       Material: 'Acryl / Kunstharz, transluzent',
       'Höhe (Figur)': 'ca. 130 cm',
