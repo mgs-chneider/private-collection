@@ -40,7 +40,7 @@ export interface Piece {
  *
  * Die `id` bestimmt zugleich die römische Katalognummer auf der Seite.
  * Die hier gewählte Anordnung folgt einer bewussten Dramaturgie:
- *   I.    Winter & Hörbelt — das künstlerische Solitär als Eröffnung
+ *   I.    Winter/ Hoerbelt — das künstlerische Solitär als Eröffnung
  *   II.   Martin Liebscher, Moskau (Detskij Mir) — großes Panorama (290 × 70 cm)
  *   III.  Martin Liebscher, New York (TWA Edition) — kleineres Pendant aus gleicher Werkphase
  *   IV.   Bulthaup Küchenwerkstatt — narrativer Anschluss (hing bei Nr. III gegenüber)
@@ -49,7 +49,7 @@ export interface Piece {
  *   VII.  Bang & Olufsen — Designklassiker, dänisches Understatement
  *   VIII. Donghia Lounge Chair (John Hutton) — amerikanische Designer-Ikone in Maisgelb
  *   IX.   Fontana Arte „Tavolo con Ruote" (Gae Aulenti) — italienische Design-Ikone, Pendant zum Donghia-Sessel
- *   X.    de Sede Schlafsofa — sachliche Qualität
+ *   X.    de Sede DS 76, Schlafsofa — sachliche Qualität
  *   XI.   Gallotti & Radice „Presidente Junior" — italienischer Glas-Schreibtisch, Nachlass-Provenienz
  *   XII.  Tolomeo Paar — kleines Schlussstück, Querverweis zur Küche
  
@@ -62,8 +62,8 @@ export const pieces: Piece[] = [
     id: 1,
     category: 'kunst',
     categoryLabel: 'Kunst & Gemälde',
-    title: 'Winter & Hörbelt - Stehende Figur',
-    artist: 'Winter & Hörbelt',
+    title: 'Winter / Hoerbelt - Stehende Figur',
+    artist: 'Winter / Hoerbelt',
     origin: 'Acryl / Kunstharz, Unikat, 1999',
     motif: 'sculpture',
     images: [
@@ -75,7 +75,7 @@ export const pieces: Piece[] = [
     description:
       'Eine schlanke, in transluzentem Acryl gegossene Figur in warmen Bernstein- und Rosétönen — mit rund 1,30 m Höhe (samt Sockel knapp zwei Meter erreichend) eine eher kammerspielartige, keineswegs lebensgroße Arbeit des Künstlerduos Winter & Hörbelt. Die Entstehung ist selbst Teil der Faszination: Das flüssige Kunstharz wurde in eine bewusst nicht starre Negativform gegossen, sodass jede Ausformung zu einem vollkommen eigenen Wesen wurde. Manche der so entstandenen Figuren erinnern an Michelin-Männchen; dieses Exemplar gehört zu den deutlich eleganteren Ausformungen und ließ uns an eine gotische Madonna denken — weshalb wir uns seinerzeit gerade für sie entschieden. Der ausgestreckte Arm wurde nach dem Erkalten separat angefügt. Winter & Hörbelt sind im weiteren Kunstbetrieb vor allem durch ihre dreidimensionalen Objekte aus Getränkekisten bekannt; diese frühe Werkgruppe in Acrylguss ist im Œuvre der beiden eine seltene und besonders poetische Arbeit.',
     specs: {
-      Künstler: 'Winter & Hörbelt',
+      Künstler: 'Winter / Hoerbelt',
       Entstehung: '1999',
       Material: 'Acryl / Kunstharz, transluzent',
       'Höhe (Figur)': 'ca. 130 cm',
@@ -311,7 +311,7 @@ export const pieces: Piece[] = [
     id: 10,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
-    title: 'Schlafsofa, de Sede',
+    title: 'de Sede DS-76, Schlafsofa Leder schokobraun',
     origin: 'Schweiz, Leder schokobraun',
     motif: 'chair',
     images: [
@@ -330,7 +330,7 @@ export const pieces: Piece[] = [
     id: 11,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
-    title: 'Gallotti & Radice, Presidente Junior - Glasschreibtisch, 1971',
+    title: 'Gallotti & Radice, President Junior - Glasschreibtisch, 1971',
     artist: 'Gallotti & Radice',
     origin: 'Italien, Glas und Chromstahl, 1970er Jahre',
     motif: 'cabinet',
