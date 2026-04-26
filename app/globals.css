@@ -920,7 +920,7 @@ body.modal-open { overflow: hidden; }
   display: flex;
   flex-direction: column;
   padding: 0;
-  align-self: start;        /* ← verhindert dass die Spalte bis unten streckt */
+  align-self: start;
 }
 
 .piece-gallery {
@@ -931,10 +931,10 @@ body.modal-open { overflow: hidden; }
 
 .piece-gallery-main {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   background: var(--ink);
-  padding: 1.5rem;
+  padding: 2rem;
 }
 
 .piece-gallery-photo {
@@ -942,6 +942,9 @@ body.modal-open { overflow: hidden; }
   height: auto;
   object-fit: contain;
   display: block;
+  background: var(--paper);
+  padding: 0.8rem;
+  box-shadow: 0 4px 24px -8px rgba(0,0,0,0.5);
 }
 
 .piece-page .modal-thumbs {
@@ -949,8 +952,8 @@ body.modal-open { overflow: hidden; }
   display: flex;
   gap: 0.6rem;
   padding: 0.8rem;
-  background: var(--paper);
-  border-top: 1px solid var(--rule);
+  background: var(--ink);
+  border-top: 1px solid rgba(255,255,255,0.1);
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -958,7 +961,7 @@ body.modal-open { overflow: hidden; }
 .piece-page .modal-thumb {
   width: 64px;
   height: 64px;
-  border: 1px solid var(--rule);
+  border: 1px solid rgba(255,255,255,0.2);
   background: var(--ink);
   overflow: hidden;
   cursor: pointer;
