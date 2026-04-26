@@ -24,6 +24,9 @@ export async function generateMetadata({
   return {
     title: `${piece.title} — Nr. ${roman} · Private Sammlung`,
     description: piece.description.slice(0, 155),
+    alternates: {
+      canonical: `https://www.privat-besitz.de/stueck/${toSlug(piece.title)}`,  // ← neu
+    },
     openGraph: {
       title: `${piece.title} · Privatbesitz`,
       description: piece.description.slice(0, 155),
