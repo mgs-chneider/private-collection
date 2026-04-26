@@ -934,17 +934,16 @@ body.modal-open { overflow: hidden; }
   align-items: center;
   justify-content: center;
   background: var(--ink);
-  padding: 2rem;
+  padding: 0;
 }
 
 .piece-gallery-photo {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
-  background: var(--paper);
-  padding: 0.8rem;
-  box-shadow: 0 4px 24px -8px rgba(0,0,0,0.5);
+  background: var(--ink);
+  padding: 0;
 }
 
 .piece-page .modal-thumbs {
@@ -952,8 +951,8 @@ body.modal-open { overflow: hidden; }
   display: flex;
   gap: 0.6rem;
   padding: 0.8rem;
-  background: var(--ink);
-  border-top: 1px solid rgba(255,255,255,0.1);
+  background: var(--paper);
+  border-top: 1px solid var(--rule);
   justify-content: center;
   flex-wrap: wrap;
 }
