@@ -46,7 +46,7 @@ export interface Piece {
  *   III.  Martin Liebscher, New York (TWA Edition) — kleineres Pendant aus gleicher Werkphase
  *   IV.   Bulthaup Küchenwerkstatt — narrativer Anschluss (hing bei Nr. III gegenüber)
  *   V.    Antiker Seidenteppich, China — klassisches Sammlerstück mit Provenienz
- *   VI.   Essgruppe Kaminsky — Mid-Century mit Zeitgeschichte
+ *   VI.   Essgruppe skandinavischer Stil — Mid-Century mit Zeitgeschichte
  *   VII.  Bang & Olufsen — Designklassiker, dänisches Understatement
  *   VIII. Donghia Lounge Chair (John Hutton) — amerikanische Designer-Ikone in Maisgelb
  *   IX.   Fontana Arte „Tavolo con Ruote" (Gae Aulenti) — italienische Design-Ikone, Pendant zum Donghia-Sessel
@@ -221,8 +221,7 @@ export const pieces: Piece[] = [
       Datierung: '1950er Jahre',
       Holz: 'Vermutlich Kirsch- oder Nussbaum',
       Polsterung: 'Kürzlich fachgerecht neu gepolstert, schwarzer Bezug',
-      Provenienz: 'Unikatanfertigung für Walter Kaminsky, Gründer der Kundenkreditbank (heute Targobank); bis 1975 im Landhaus bei Bonn',
-      Zustand: 'Gepflegter Gesamtzustand mit altersüblichen Gebrauchsspuren',
+      Provenienz: 'Unikatanfertigung für den Berliner Privathaushalt eines deutschen Bankgründers, 1950er Jahre — seit der Anschaffung ununterbrochen in Familienbesitz, über Jahrzehnte in täglicher Nutzung',      Zustand: 'Gepflegter Gesamtzustand mit altersüblichen Gebrauchsspuren',
       'Erste Abbildung': 'KI-unterstützte Visualisierung des Ensembles — Tisch mit sechs von insgesamt zehn zugehörigen Stühlen',
       'Zweite Abbildung': 'KI-unterstützte Visualisierung eines Einzelstuhls zur Ansicht der Proportionen und Polsterung',
       'Dritte Abbildung': 'Originalaufnahme aus dem Lager (Stuhl in Umzugsfolie, Hintergrund bereinigt)',
