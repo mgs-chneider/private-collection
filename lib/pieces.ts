@@ -236,15 +236,16 @@ export const pieces: Piece[] = [
     origin: 'USA, brasilianisches Palisanderholz, schwarzes Leder, ca. 1960–1970',
     motif: 'chair',
     images: [
-      '/images/eames-gesamt.jpeg',
-      '/images/eames-front.jpeg',
-      '/images/eames-ruecken.jpeg',
-      '/images/eames-nummer.jpeg',
-      '/images/eames-clips.jpeg',
-      '/images/eames-dreiloch.jpeg',
-      '/images/eames-fusskreuz.jpeg',
-      '/images/eames-detail.jpeg',
+     images: [
+      '/images/eames-front.jpeg',      // Hauptfoto — freigestellt
       '/images/eames-seite.jpeg',
+      '/images/eames-ruecken.jpeg',
+      '/images/eames-draufsicht.jpeg',
+      '/images/eames-dreiloch.jpeg',
+      '/images/eames-scharnier.jpeg',
+      '/images/eames-clips.jpeg',
+      '/images/eames-nummer.jpeg',
+],
     ],
     price: 'Preis auf Anfrage',
     description:
