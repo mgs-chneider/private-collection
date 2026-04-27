@@ -240,12 +240,12 @@ export const pieces: Piece[] = [
       '/images/eames-front.jpeg',      // Hauptfoto — freigestellt
       '/images/eames-seite.jpeg',
       '/images/eames-ruecken.jpeg',
-      '/images/eames-draufsicht.jpeg',
-      '/images/eames-dreiloch.jpeg',
-      '/images/eames-scharnier.jpeg',
-      '/images/eames-clips.jpeg',
       '/images/eames-nummer.jpeg',
-],
+      '/images/eames-clips.jpeg',
+      '/images/eames-detail.jpeg',
+      '/images/eames-dreiloch.jpeg',
+      '/images/eames-fusskreuz.jpeg'
+    ],
     ],
     price: 'Preis auf Anfrage',
     description:
