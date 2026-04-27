@@ -359,6 +359,7 @@ export const pieces: Piece[] = [
   {
     id: 12,
     category: 'moebel',
+    reserved: true,
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Artemide Tolomeo - de Lucchi & fassina (Paar)',
     artist: 'Michele de Lucchi & Giancarlo Fassina, 1987',
