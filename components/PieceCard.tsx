@@ -23,6 +23,9 @@ export default function PieceCard({ piece, onOpen }: Props) {
         aria-label={`${piece.title} — Details öffnen`}
       >
         <div className={`piece-image${hasPhoto ? ' has-photo' : ''}`}>
+          {piece.reserved && (
+            <div className="piece-reserved-badge">Reserviert</div>
+          )}
           {hasPhoto ? (
             <img
               className="piece-photo"
@@ -42,8 +45,9 @@ export default function PieceCard({ piece, onOpen }: Props) {
           <div className="piece-category">{piece.categoryLabel}</div>
           <h3 className="piece-title">{piece.title}</h3>
           <div className="piece-origin">{piece.origin}</div>
-          <div className="piece-price">{piece.price}</div>
+          <div className="piece-price">
             {piece.reserved ? 'Reserviert' : piece.price}
+          </div>
         </div>
       </button>
 
