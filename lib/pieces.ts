@@ -245,8 +245,6 @@ export const pieces: Piece[] = [
       '/images/eames-clips.jpeg',
       '/images/eames-nummer.jpeg',
     ],
-   },
-  {
     price: 'Preis auf Anfrage',
     description:
       'Ein Eames Lounge Chair 670 aus der frühen Produktionsära von Herman Miller — jenes Möbelstück, das Charles und Ray Eames 1956 entwarfen und das seither als einer der vollkommensten Sitzentwürfe des 20. Jahrhunderts gilt. Die vorliegende Ausführung stammt nach allen erkennbaren Merkmalen aus dem Zeitraum zwischen ca. 1960 und Anfang der 1970er Jahre und trägt die handgeschriebene Produktionsnummer B 5781 auf der Rückseite der Kopfschale — jene interne Fertigungsnummer, mit der Herman Miller damals sicherstellte, dass alle drei Schalen eines Stuhls aus demselben Holzblock stammen und die Maserung des Furniers perfekt harmoniert. Das Furnier selbst ist brasilianisches Palisanderholz (Dalbergia nigra) — ein heute streng geschütztes Edelholz, dessen Verwendung in Neuproduktionen seit dem CITES-Abkommen von 1992 nicht mehr gestattet ist und das Vintage-Exemplare aus dieser Ära für Sammler besonders begehrenswert macht. Die charakteristische Drei-Loch-Bohrung unter den Armlehnen, die flache Oberseite des Aluminiumfußkreuzes und die runden Polster-Clips mit Belüftungslöchern auf der Kissenrückseite sind weitere typische Erkennungsmerkmale früher Herman-Miller-Originale, die in späteren Versionen und Nachbauten so nicht vorkommen. Das originale schwarze Leder zeigt die ehrliche Patina jahrzehntelanger Nutzung — weich, angeschmiegt, unrestauriert. Der Stuhl befindet sich seit seiner Anschaffung ununterbrochen in Familienbesitz — über drei Generationen genutzt und weitergegeben, nie restauriert, nie den Besitzer gewechselt. Er wird ohne Ottoman abgegeben.',
