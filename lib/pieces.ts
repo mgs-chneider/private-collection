@@ -16,19 +16,9 @@ export interface Piece {
   category: Category;
   categoryLabel: string;
   title: string;
-  /** Künstler oder Manufaktur (optional, erscheint in der Modal-Detailansicht). */
   artist?: string;
   origin: string;
-  /**
-   * Platzhalter-Symbol — wird verwendet, wenn keine Fotos im `images`-Array
-   * angegeben sind. Mögliche Werte siehe `MotifKey`.
-   */
   motif: MotifKey;
-  /**
-   * Reale Fotos des Stücks, jeweils als Pfad relativ zum `public/`-Ordner
-   * (z. B. `/images/winter-hoerbelt-1.jpg`). Wenn leer oder nicht gesetzt,
-   * wird die `motif`-Illustration verwendet.
-   */
   images?: string[];
   price: string;
   description: string;
@@ -39,31 +29,24 @@ export interface Piece {
 /**
  * Die Sammlung — kuratorische Reihenfolge.
  *
- * Die `id` bestimmt zugleich die römische Katalognummer auf der Seite.
- * Die hier gewählte Anordnung folgt einer bewussten Dramaturgie:
  *   I.    Winter/Hoerbelt — das künstlerische Solitär als Eröffnung
  *   II.   Martin Liebscher, Moskau (Detskij Mir) — großes Panorama (290 × 70 cm)
- *   III.  Martin Liebscher, New York (TWA Edition) — kleineres Pendant aus gleicher Werkphase
- *   IV.   Bulthaup Küchenwerkstatt — narrativer Anschluss (hing bei Nr. III gegenüber)
- *   V.    Antiker Seidenteppich, China — klassisches Sammlerstück mit Provenienz
- *   VI.   Essgruppe skandinavischer Stil — Mid-Century mit Zeitgeschichte
- *   VII.  Bang & Olufsen — Designklassiker, dänisches Understatement
- *   VIII. Donghia Lounge Chair (John Hutton) — amerikanische Designer-Ikone in Maisgelb
- *   IX.   Fontana Arte „Tavolo con Ruote" (Gae Aulenti) — italienische Design-Ikone, Pendant zum Donghia-Sessel
- *   X.    de Sede DS 76, Schlafsofa — sachliche Qualität
- *   XI.   Gallotti & Radice „Presidente Junior" — italienischer Glas-Schreibtisch, Nachlass-Provenienz
- *   XII.  Tolomeo Paar — kleines Schlussstück, Querverweis zur Küche
- 
- * Beim Hinzufügen oder Entfernen von Einträgen bitte sicherstellen, dass
- * - die `id` weiterhin lückenlos durchnummeriert ist (1, 2, 3 …) und
- * - eventuelle Querverweise im Beschreibungstext (etwa „Nr. IV") angepasst werden.
+ *   III.  Martin Liebscher, New York (TWA Edition) — kleineres Pendant
+ *   IV.   Antiker Seidenteppich, China — klassisches Sammlerstück
+ *   V.    Essgruppe, skandinavischer Stil — Mid-Century mit Familiengeschichte
+ *   VI.   Bang & Olufsen — Designklassiker, dänisches Understatement
+ *   VII.  Donghia Lounge Chair (John Hutton) — amerikanische Designer-Ikone
+ *   VIII. Eames Lounge Chair 670, Herman Miller — Ikone der Moderne
+ *   IX.   Fontana Arte „Tavolo con Ruote" (Gae Aulenti) — italienische Design-Ikone
+ *   X.    de Sede DS-76, Schlafsofa — Schweizer Qualität
+ *   XI.   Gallotti & Radice „President Junior" — italienischer Glas-Schreibtisch
  */
 export const pieces: Piece[] = [
   {
     id: 1,
     category: 'kunst',
     categoryLabel: 'Kunst & Gemälde',
-    title: 'Winter/Hoerbelt - Stehende Figur',
+    title: 'Winter/Hoerbelt — Stehende Figur',
     artist: 'Winter/Hoerbelt',
     origin: 'Acryl / Kunstharz, Unikat, 1999',
     motif: 'sculpture',
@@ -74,7 +57,7 @@ export const pieces: Piece[] = [
     ],
     price: 'Preis auf Anfrage',
     description:
-      'Eine schlanke, in transluzentem Acryl gegossene Figur in warmen Bernstein- und Rosétönen — mit rund 1,30 m Höhe (samt Sockel knapp zwei Meter erreichend) eine eher kammerspielartige, keineswegs lebensgroße Arbeit des Künstlerduos Winter & Hörbelt. Die Entstehung ist selbst Teil der Faszination: Das flüssige Kunstharz wurde in eine bewusst nicht starre Negativform gegossen, sodass jede Ausformung zu einem vollkommen eigenen Wesen wurde. Manche der so entstandenen Figuren erinnern an Michelin-Männchen; dieses Exemplar gehört zu den deutlich eleganteren Ausformungen und ließ uns an eine gotische Madonna denken — weshalb wir uns seinerzeit gerade für sie entschieden. Der ausgestreckte Arm wurde nach dem Erkalten separat angefügt. Winter & Hörbelt sind im weiteren Kunstbetrieb vor allem durch ihre dreidimensionalen Objekte aus Getränkekisten bekannt; diese frühe Werkgruppe in Acrylguss ist im Œuvre der beiden eine seltene und besonders poetische Arbeit.',
+      'Eine schlanke, in transluzentem Acryl gegossene Figur in warmen Bernstein- und Rosétönen — mit rund 1,30 m Höhe (samt Sockel knapp zwei Meter erreichend) eine eher kammerspielartige, keineswegs lebensgroße Arbeit des Künstlerduos Winter/Hoerbelt. Die Entstehung ist selbst Teil der Faszination: Das flüssige Kunstharz wurde in eine bewusst nicht starre Negativform gegossen, sodass jede Ausformung zu einem vollkommen eigenen Wesen wurde. Manche der so entstandenen Figuren erinnern an Michelin-Männchen; dieses Exemplar gehört zu den deutlich eleganteren Ausformungen und ließ uns an eine gotische Madonna denken — weshalb wir uns seinerzeit gerade für sie entschieden. Der ausgestreckte Arm wurde nach dem Erkalten separat angefügt. Winter/Hoerbelt sind im weiteren Kunstbetrieb vor allem durch ihre dreidimensionalen Objekte aus Getränkekisten bekannt; diese frühe Werkgruppe in Acrylguss ist im Œuvre der beiden eine seltene und besonders poetische Arbeit.',
     specs: {
       Künstler: 'Winter/Hoerbelt',
       Entstehung: '1999',
@@ -91,7 +74,7 @@ export const pieces: Piece[] = [
     id: 2,
     category: 'kunst',
     categoryLabel: 'Kunst & Gemälde',
-    title: 'Martin Liebscher - Moskau (Detskij Mir)',
+    title: 'Martin Liebscher — Moskau (Detskij Mir)',
     artist: 'Martin Liebscher',
     origin: 'Panorama-Serie, C-Print auf Aludibond, 2000 — Auflage 1/3',
     motif: 'frame',
@@ -119,13 +102,13 @@ export const pieces: Piece[] = [
     id: 3,
     category: 'kunst',
     categoryLabel: 'Kunst & Gemälde',
-    title: 'Martin Liebscher - New York (TWA Edition)',
+    title: 'Martin Liebscher — New York (TWA Edition)',
     artist: 'Martin Liebscher',
     origin: 'Panorama-Serie, C-Print auf Aludibond, 2004 — Auflage 5/12 zzgl. 2 Künstlerexemplaren',
     motif: 'frame',
     price: 'Preis auf Anfrage',
     description:
-      'Eine zweite Arbeit Martin Liebschers aus derselben Werkphase wie das Moskau-Panorama — kleiner im Format (200 × 50 cm), aber in der Bildsprache verwandt: Liebscher entrollt den Innenraum in seinem charakteristischen Panorama-Verfahren zu einem durchlaufenden Bildband, in dem Decken, Böden und Architektur zu einer einzigen Bewegung werden. Der Untertitel „TWA Edition" verweist auf Eero Saarinens legendäres TWA Flight Center am Flughafen JFK — das 1962 eröffnete Meisterwerk der Luftfahrt-Architektur mit seinen fließenden, flügelartigen Betonschalen. Auch diese Arbeit haben wir direkt bei der Frankfurter Galerie des Künstlers erworben (zum Zeitpunkt des Erwerbs firmierend als Voges + Partner); das Zertifikat der Galerie mit Versicherungswert und Auflagenbescheinigung liegt vor. Über viele Jahre hing das Werk in unserer Bulthaup-Küche (siehe Nr. IV) gegenüber der Edelstahl-Werkbank — ein stilles architektonisches Gegenüber zur industriellen Präzision der Küche. Aktuell eingelagert; Originalfoto gerne nach Auspacken auf Anfrage.',
+      'Eine zweite Arbeit Martin Liebschers aus derselben Werkphase wie das Moskau-Panorama — kleiner im Format (200 × 50 cm), aber in der Bildsprache verwandt: Liebscher entrollt den Innenraum in seinem charakteristischen Panorama-Verfahren zu einem durchlaufenden Bildband, in dem Decken, Böden und Architektur zu einer einzigen Bewegung werden. Der Untertitel „TWA Edition" verweist auf Eero Saarinens legendäres TWA Flight Center am Flughafen JFK — das 1962 eröffnete Meisterwerk der Luftfahrt-Architektur mit seinen fließenden, flügelartigen Betonschalen. Auch diese Arbeit haben wir direkt bei der Frankfurter Galerie des Künstlers erworben (zum Zeitpunkt des Erwerbs firmierend als Voges + Partner); das Zertifikat der Galerie mit Versicherungswert und Auflagenbescheinigung liegt vor. Über viele Jahre hing das Werk in unserer Bulthaup-Küche gegenüber der Edelstahl-Werkbank — ein stilles architektonisches Gegenüber zur industriellen Präzision der Küche. Aktuell eingelagert; Originalfoto gerne nach Auspacken auf Anfrage.',
     specs: {
       Künstler: 'Martin Liebscher',
       Titel: 'New York (TWA Edition)',
@@ -142,43 +125,6 @@ export const pieces: Piece[] = [
   },
   {
     id: 4,
-    reserved: true,
-    category: 'moebel',
-    categoryLabel: 'Möbel & Einrichtung',
-    title: 'Küchenwerkstatt, Bulthaup',
-    origin: 'Edelstahl, System 25 — komplette Einbauküche',
-    motif: 'cabinet',
-    images: [
-      '/images/bulthaup-werkbank.jpeg',
-      '/images/kueche-module.jpeg',
-      '/images/kueche-kochfeld.jpeg',
-      '/images/kueche-armatur.jpeg',
-    ],
-    price: 'Preis auf Anfrage',
-    description:
-      'Eine vollständige Bulthaup-Küche aus der Serie Küchenwerkstatt — jene Linie, mit der Bulthaup Ende der 1980er Jahre das Konzept der Küche als Werkstatt in den Wohnraum übersetzt hat: klare, industrielle Präzision auf jedem Quadratzentimeter, ohne dabei kühl zu wirken. Das Herzstück ist die etwa 2,60 m lange Edelstahl-Küchenwerkbank — aus älterer, besonders charaktervoller Fertigung — mit integriertem Kochfeld (zwei klassische Elektro-Kochplatten und zwei Gas-Kochstellen, letztere zwischen fester Gasleitung und Camping-Gas umrüstbar und deshalb unabhängig von einem stationären Gasanschluss), einem tiefen Spülbecken mit Kalt- und Warmwasser und einem zusätzlichen Kaltwaschbecken in der Mitte für Fisch, Gemüse und grobe Vorbereitung — beide mit den charakteristischen Kugelkopf-Armaturen, die nur die älteren Bulthaup-Werkbänke auszeichnen; eine verschiebbare Corian-Arbeitsplatte ergänzt die Werkbank als flexibles Zusatzelement. Dazu kommen Schränke aus dem Bulthaup-System 25 (ein 1680 mm hoher Umbauhochschrank mit fünf Auszügen und Backofen-Aussparung sowie zwei Unterschränke), ein unterbaufähiger Miele-Geschirrspüler in Edelstahl-Verkleidung und ein Gaggenau-Einbaubackofen EB 211 aus der professionellen 210er-Serie mit der originalen Drehknebel-Bedienung, die heutige Gaggenau-Geräte nicht mehr führen. Die feste Arbeitsplatte in Geograu ist farblich und materiell auf den Edelstahl der Möbel abgestimmt. Bevorzugt als Ensemble abzugeben.',
-    specs: {
-      Hersteller: 'Bulthaup (Bodnegg)',
-      Serie: 'Küchenwerkstatt, System 25',
-      Küchenwerkbank: 'Edelstahl, ca. 2600 × 800 × 900 mm, älterer Jahrgang',
-      Kochfeld: '2 klassische Elektro-Kochplatten und 2 Gas-Kochstellen (auf feste Gasleitung umrüstbar — aktuell mit Camping-Gas betrieben und somit unabhängig von einem stationären Gasanschluss)',
-      Spüle: 'Tiefes Spülbecken mit Kalt- und Warmwasser-Mischbatterie',
-      Kaltwaschbecken: 'Zusätzliches Becken in der Mitte (Kaltwasser) — zum Schuppen von Fisch, Waschen von Gemüse, groben Vorbereitungen',
-      Armaturen: 'Originale Kugelkopf-Armaturen — charakteristisches Detail der älteren Bulthaup-Werkbänke',
-      'Schiebe-Arbeitsplatte': 'Corian, verschiebbar — als flexibles Zusatzelement',
-      Umbauhochschrank: 'System 25, 1680 mm, 5 Auszüge, Aussparung für Backofen',
-      'Unterschrank I': 'System 25, 900 mm, 3 Auszüge',
-      'Unterschrank II': 'System 25, 600 mm, 2 Auszüge, 2 Schübe',
-      Backofen: 'Gaggenau EB 211, Edelstahl (Einbau), mit originaler Drehknebel-Bedienung — heute nicht mehr erhältlich',
-      Geschirrspüler: 'Miele, Edelstahl-Verkleidung, unterbaufähig',
-      Arbeitsplatte: 'Geograu, auf Edelstahl der Möbel abgestimmt',
-      'Empfohlener Grundriss': 'Länglicher Raum mit zwei Wandseiten von je ca. 2,60 m — Werkbank an der einen, Schrankzeile mit Backofen an der anderen Seite; Großraum-Kühlschrank separat zu ergänzen',
-      'Zweite Abbildung': 'KI-unterstütze Darstellung der gegenüberliegenden Schrankwand mit Backofen, Kühlschrank und dem Liebscher-Panorama New York (Nr. III) an der Wand — dient dem räumlichen Gesamteindruck; Proportionen nicht maßstabsgetreu',
-      Abgabe: 'Bevorzugt komplett als Ensemble',
-    },
-  },
-  {
-    id: 5,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Antiker Seidenteppich, China',
@@ -190,7 +136,7 @@ export const pieces: Piece[] = [
     ],
     price: 'Preis auf Anfrage',
     description:
-      'Ein großformatiger chinesischer Seidenteppich, über hundert Jahre alt, in einem ungewöhnlich zurückhaltenden, hellen Beigeton gehalten. Das florale Muster ist bewusst dezent gewebt — nicht üppig und bunt, wie es bei chinesischen Seidenteppichen häufig vorkommt, sondern still und feingliedrig. Gerade diese Ruhe macht ihn zum idealen Begleiter einer modernen Einrichtung, wo ein klassisches Orient-Motiv schnell zu laut wirkt; er bringt in jeden Raum die handgemachte Wärme eines antiken Teppichs, ohne sich in den Vordergrund zu drängen. Wir haben den Teppich Ende der 1990er Jahre bei Rolf Jaspers, Antike Teppiche in Frankfurt am Main erworben — einem der damals führenden deutschen Händler für antike orientalische Teppiche.',
+      'Ein großformatiger chinesischer Seidenteppich, über hundert Jahre alt, in einem ungewöhnlich zurückhaltenden, hellen Beigeton gehalten. Das florale Muster ist bewusst dezent gewebt — nicht üppig und bunt, wie es bei chinesischen Seidenteppichen häufig vorkommt, sondern still und feingliedrig. Gerade diese Ruhe macht ihn zum idealen Begleiter einer modernen Einrichtung, wo ein klassisches Orient-Motiv schnell zu laut wirkt; er bringt in jeden Raum die handgemachte Wärme eines antiken Teppichs, ohne sich in den Vordergrund zu drängen. Wir haben den Teppich Ende der 1990er Jahre bei Rolf Jasper, Spezialhaus für antike Teppiche in Frankfurt am Main erworben — einem der damals führenden deutschen Händler für antike orientalische Teppiche.',
     specs: {
       Material: 'Seide',
       Herkunft: 'China',
@@ -201,7 +147,7 @@ export const pieces: Piece[] = [
     },
   },
   {
-    id: 6,
+    id: 5,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Essgruppe, skandinavischer Stil',
@@ -214,14 +160,15 @@ export const pieces: Piece[] = [
     ],
     price: 'Preis auf Anfrage',
     description:
-      'Eine außergewöhnliche Essgruppe im zeitlosen skandinavischen Stil, die klares Mid-Century-Design mit einer besonderen Biographie verbindet. Sie wurde in den 1950er Jahren exklusiv für einen deutschen Bankier angefertigt und stand bis zu dessem Tod 1975 in seiner Villa in Berlin. Das Ensemble besteht aus einem ausziehbaren Esstisch und zehn Hochlehnern, von denen zwei als Armlehnstühle für die Kopfplätze gearbeitet sind. Klare Linien, hochwertige Verarbeitung und eine zurückhaltende Eleganz prägen das Erscheinungsbild — charakteristisch für den skandinavischen Stil dieser Epoche. Die Stühle wurden vor Kurzem fachgerecht neu gepolstert und mit schwarzem Bezug versehen; das Holz (vermutlich Kirsch- oder Nussbaum) befindet sich in gepflegtem Zustand mit altersüblichen Gebrauchsspuren. Die Möbel wurden über viele Jahre in unserem Besitz genutzt und stets wertgeschätzt — ein Ensemble für Liebhaber von Design mit Geschichte, wo Zeitgeschichte und klares Design aufeinandertreffen.',
+      'Eine außergewöhnliche Essgruppe im zeitlosen skandinavischen Stil, die klares Mid-Century-Design mit einer besonderen Biographie verbindet. Sie wurde in den 1950er Jahren exklusiv für den Berliner Privathaushalt eines deutschen Bankgründers angefertigt und befindet sich seit ihrer Anschaffung ununterbrochen in Familienbesitz — über Jahrzehnte in täglicher Nutzung, nie weitergegeben. Das Ensemble besteht aus einem ausziehbaren Esstisch und zehn Hochlehnern, von denen zwei als Armlehnstühle für die Kopfplätze gearbeitet sind. Klare Linien, hochwertige Verarbeitung und eine zurückhaltende Eleganz prägen das Erscheinungsbild — charakteristisch für den skandinavischen Stil dieser Epoche. Die Stühle wurden vor Kurzem fachgerecht neu gepolstert und mit schwarzem Bezug versehen; das Holz (vermutlich Kirsch- oder Nussbaum) befindet sich in gepflegtem Zustand mit altersüblichen Gebrauchsspuren.',
     specs: {
       Komposition: 'Ausziehbarer Esstisch und 10 Hochlehner (8 ohne, 2 mit Armlehnen)',
       Stil: 'Skandinavisch, Mid-Century',
       Datierung: '1950er Jahre',
       Holz: 'Vermutlich Kirsch- oder Nussbaum',
       Polsterung: 'Kürzlich fachgerecht neu gepolstert, schwarzer Bezug',
-      Provenienz: 'Unikatanfertigung für den Berliner Privathaushalt eines deutschen Bankgründers, 1950er Jahre — seit der Anschaffung ununterbrochen in Familienbesitz, über Jahrzehnte in täglicher Nutzung',      Zustand: 'Gepflegter Gesamtzustand mit altersüblichen Gebrauchsspuren',
+      Provenienz: 'Unikatanfertigung für den Berliner Privathaushalt eines deutschen Bankgründers, 1950er Jahre — seit der Anschaffung ununterbrochen in Familienbesitz, über Jahrzehnte in täglicher Nutzung',
+      Zustand: 'Gepflegter Gesamtzustand mit altersüblichen Gebrauchsspuren',
       'Erste Abbildung': 'KI-unterstützte Visualisierung des Ensembles — Tisch mit sechs von insgesamt zehn zugehörigen Stühlen',
       'Zweite Abbildung': 'KI-unterstützte Visualisierung eines Einzelstuhls zur Ansicht der Proportionen und Polsterung',
       'Dritte Abbildung': 'Originalaufnahme aus dem Lager (Stuhl in Umzugsfolie, Hintergrund bereinigt)',
@@ -229,7 +176,7 @@ export const pieces: Piece[] = [
     },
   },
   {
-    id: 7,
+    id: 6,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Bang & Olufsen Surround-Anlage',
@@ -253,7 +200,7 @@ export const pieces: Piece[] = [
     },
   },
   {
-    id: 8,
+    id: 7,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Donghia Lounge Chair',
@@ -266,25 +213,64 @@ export const pieces: Piece[] = [
     ],
     price: 'Preis auf Anfrage',
     description:
-      'Ein Sessel aus dem Hause Donghia in leuchtendem Maisgelb — gezeichnet von John Hutton, dem langjährigen Chefgestalter des 1968 in New York gegründeten Traditionshauses, das über drei Jahrzehnte hinweg zu den ersten Adressen amerikanischer Interieur-Kultur zählte. Hutton, unter Kollegen wie Kritikern gleichermaßen geschätzt, verband in seinen Entwürfen eine fast aristokratisch zurückgenommene Silhouette mit bewusst moderner, tailored gearbeiteter Präzision: hier eine kompakte, in weichem Bogen über die Schultern schwingende Rückenlehne, kurze gerundete Beine und ausgesprochen behutsame Proportionen. Nach jüngerer Recherche lässt sich das Modell der Donghia-Serie „Phantom" zuordnen. Der Bezug — in der Detailaufnahme gut erkennbar — ist ein dicht gewebter Fischgrat in warmem Maisgelb, dessen handwerkliche Stoffqualität sich bei Nähe sofort erschließt. Der Sessel wurde seinerzeit ohne zugehörige Ottomane erworben und wird entsprechend einzeln abgegeben. Die zweite Abbildung ist eine KI-unterstützte Darstellung zur räumlichen Einordnung — sie zeigt den Sessel in einer modernen Wohnraumsituation unter dem Liebscher-Panorama „Moskau" (siehe Nr. II). Erworben haben wir ihn gebraucht bei Rolf Jasper — Spezialhaus für antike Teppiche in Frankfurt am Main, im Zuge mehrerer Teppich-Käufe (zwei antike Chinateppiche und ein rund zwölf Quadratmeter großer, zeitgenössischer weißer Designer-Teppich); der Händler hätte ihn ursprünglich lieber behalten und trennte sich erst nach einigem Zögern von dem Stück. Aus derselben Quelle stammt auch der antike Seidenteppich unter Nr. V.',
+      'Ein Sessel aus dem Hause Donghia in leuchtendem Maisgelb — gezeichnet von John Hutton, dem langjährigen Chefgestalter des 1968 in New York gegründeten Traditionshauses, das über drei Jahrzehnte hinweg zu den ersten Adressen amerikanischer Interieur-Kultur zählte. Hutton, unter Kollegen wie Kritikern gleichermaßen geschätzt, verband in seinen Entwürfen eine fast aristokratisch zurückgenommene Silhouette mit bewusst moderner, tailored gearbeiteter Präzision: hier eine kompakte, in weichem Bogen über die Schultern schwingende Rückenlehne, kurze gerundete Beine und ausgesprochen behutsame Proportionen. Nach jüngerer Recherche lässt sich das Modell der Donghia-Serie „Phantom" zuordnen. Der Bezug — in der Detailaufnahme gut erkennbar — ist ein dicht gewebter Fischgrat in warmem Maisgelb, dessen handwerkliche Stoffqualität sich bei Nähe sofort erschließt. Der Sessel wurde seinerzeit ohne zugehörige Ottomane erworben und wird entsprechend einzeln abgegeben. Die zweite Abbildung ist eine KI-unterstützte Darstellung zur räumlichen Einordnung — sie zeigt den Sessel in einer modernen Wohnraumsituation unter dem Liebscher-Panorama „Moskau" (siehe Nr. II). Erworben haben wir ihn gebraucht bei Rolf Jasper — Spezialhaus für antike Teppiche in Frankfurt am Main, im Zuge mehrerer Teppich-Käufe; der Händler hätte ihn ursprünglich lieber behalten und trennte sich erst nach einigem Zögern von dem Stück. Aus derselben Quelle stammt auch der antike Seidenteppich unter Nr. IV.',
     specs: {
       Hersteller: 'Donghia, New York',
       Serie: 'Phantom (nach Eigenrecherche)',
       Entwurf: 'John Hutton',
       Bezug: 'Fischgrat-Gewebe, maisgelb',
       Ausführung: 'Einzelsessel, ohne Ottomane',
-      Provenienz: 'Gebraucht erworben bei Rolf Jasper, Spezialhaus für antike Teppiche, Frankfurt am Main — im Zuge mehrerer Teppich-Käufe; derselbe Händler, von dem auch der antike Seidenteppich unter Nr. V stammt',
+      Provenienz: 'Gebraucht erworben bei Rolf Jasper, Spezialhaus für antike Teppiche, Frankfurt am Main — derselbe Händler, von dem auch der antike Seidenteppich unter Nr. IV stammt',
       Zustand: 'Gepflegter Gesamtzustand, aktuell eingelagert',
       'Erste Abbildung': 'Originalaufnahme aus dem Lager',
-      'Zweite Abbildung': 'KI-unterstützte Darstellung zur räumlichen Einordnung (mit dem Liebscher-Panorama Nr. II an der Wand und dem Fontana-Arte-Couchtisch „Tavolo con Ruote" von Nr. IX)',
+      'Zweite Abbildung': 'KI-unterstützte Darstellung zur räumlichen Einordnung (mit dem Liebscher-Panorama Nr. II an der Wand)',
       Hinweis: 'Originalfotos aus bewohnter Aufstellung stellen wir gerne auf Anfrage zur Verfügung',
+    },
+  },
+  {
+    id: 8,
+    category: 'moebel',
+    categoryLabel: 'Möbel & Einrichtung',
+    title: 'Eames Lounge Chair 670, Herman Miller',
+    artist: 'Charles & Ray Eames',
+    origin: 'USA, brasilianisches Palisanderholz, schwarzes Leder, ca. 1960–1970',
+    motif: 'chair',
+    images: [
+      '/images/eames-gesamt.jpeg',
+      '/images/eames-front.jpeg',
+      '/images/eames-ruecken.jpeg',
+      '/images/eames-nummer.jpeg',
+      '/images/eames-clips.jpeg',
+      '/images/eames-dreiloch.jpeg',
+      '/images/eames-fusskreuz.jpeg',
+      '/images/eames-detail.jpeg',
+      '/images/eames-seite.jpeg',
+    ],
+    price: 'Preis auf Anfrage',
+    description:
+      'Ein Eames Lounge Chair 670 aus der frühen Produktionsära von Herman Miller — jenes Möbelstück, das Charles und Ray Eames 1956 entwarfen und das seither als einer der vollkommensten Sitzentwürfe des 20. Jahrhunderts gilt. Die vorliegende Ausführung stammt nach allen erkennbaren Merkmalen aus dem Zeitraum zwischen ca. 1960 und Anfang der 1970er Jahre und trägt die handgeschriebene Produktionsnummer B 5781 auf der Rückseite der Kopfschale — jene interne Fertigungsnummer, mit der Herman Miller damals sicherstellte, dass alle drei Schalen eines Stuhls aus demselben Holzblock stammen und die Maserung des Furniers perfekt harmoniert. Das Furnier selbst ist brasilianisches Palisanderholz (Dalbergia nigra) — ein heute streng geschütztes Edelholz, dessen Verwendung in Neuproduktionen seit dem CITES-Abkommen von 1992 nicht mehr gestattet ist und das Vintage-Exemplare aus dieser Ära für Sammler besonders begehrenswert macht. Die charakteristische Drei-Loch-Bohrung unter den Armlehnen, die flache Oberseite des Aluminiumfußkreuzes und die runden Polster-Clips mit Belüftungslöchern auf der Kissenrückseite sind weitere typische Erkennungsmerkmale früher Herman-Miller-Originale, die in späteren Versionen und Nachbauten so nicht vorkommen. Das originale schwarze Leder zeigt die ehrliche Patina jahrzehntelanger Nutzung — weich, angeschmiegt, unrestauriert. Der Stuhl befindet sich seit seiner Anschaffung ununterbrochen in Familienbesitz — über drei Generationen genutzt und weitergegeben, nie restauriert, nie den Besitzer gewechselt. Er wird ohne Ottoman abgegeben.',
+    specs: {
+      Hersteller: 'Herman Miller, Zeeland, Michigan (USA)',
+      Entwurf: 'Charles & Ray Eames, 1956',
+      Modell: 'Lounge Chair 670',
+      Produktionszeitraum: 'Ca. 1960–Anfang 1970er Jahre',
+      Produktionsnummer: 'B 5781 — handgeschrieben auf Rückseite der Kopfschale, Merkmal für nummerngleiches Original',
+      Holz: 'Brasilianisches Palisanderholz (Dalbergia nigra) — seit CITES 1992 in Neuproduktionen nicht mehr verwendbar',
+      Polster: 'Originales schwarzes Leder mit natürlicher Alterspatina',
+      Fußkreuz: 'Aluminium, flache Oberseite — typisch für Herman Miller (Vitra-Version deutlich stärker abgerundet)',
+      Befestigung: 'Drei-Loch-Bohrung unter den Armlehnen — Merkmal früher Vintage-Modelle',
+      'Polster-Clips': 'Runde Clips mit Belüftungslöchern — charakteristisch für Bauweise der 1960er Jahre',
+      Ausführung: 'Einzelsessel ohne Ottoman',
+      Provenienz: 'Seit Anschaffung ununterbrochen in Familienbesitz — drei Generationen, nie weitergegeben, nie restauriert',
+      Zustand: 'Unrestauriert — Holzschalen mit altersüblicher Patina, Leder weich und geschmeidig mit Gebrauchsspuren',
+      Besonderheit: 'Palisanderholz dieser Herkunft ist in Neuproduktionen heute nicht mehr erhältlich — erhöht den Sammlerwert erheblich',
     },
   },
   {
     id: 9,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
-    title: 'Gae Aulenti - Tavolo con Ruote',
+    title: 'Tavolo con Ruote',
     artist: 'Gae Aulenti',
     origin: 'Italien, Kristallglas auf Industrie-Gummirädern, Entwurf 1980',
     motif: 'cabinet',
@@ -295,7 +281,7 @@ export const pieces: Piece[] = [
     ],
     price: 'Preis auf Anfrage',
     description:
-      'Ein Couchtisch „Tavolo con Ruote" aus dem Hause Fontana Arte — der 1932 in Mailand von Gio Ponti und Pietro Chiesa gegründeten Glas-Manufaktur, die seither als eine der maßgeblichen Adressen italienischer Designgeschichte gilt. Der 1980 von Gae Aulenti entworfene Tisch gehört zu den zitierfähigsten italienischen Möbelentwürfen des späten 20. Jahrhunderts und ist bei Fontana Arte bis heute ununterbrochen in Produktion: eine schwere Platte aus klarem Kristallglas ruht auf vier markanten Industrie-Gummirädern — derselben Gattung, wie man sie von Werkstattwagen kennt, hier aber ins Wohnen überführt und zum tragenden Gestaltungselement erhoben. Gae Aulenti, eine der einflussreichsten italienischen Architektinnen und Gestalterinnen des 20. Jahrhunderts — ihr verdanken Paris den Umbau des Musée d\'Orsay und Venedig den des Palazzo Grassi — erzielt hier mit wenigen Mitteln ein Maximum an Präsenz: die Spannung zwischen fein geschliffenem Glas und bewusst utilitärer Rollen-Konstruktion ist die eigentliche Aussage des Entwurfs. Die vorliegende Ausführung misst 120 × 120 × 25 cm, Räder und Befestigungen sind vollständig schwarz. Über viele Jahre stand der Tisch in unserem Wohnzimmer und bildete dort das Pendant zum Donghia-Sessel (siehe Nr. VIII).',
+      'Ein Couchtisch „Tavolo con Ruote" aus dem Hause Fontana Arte — der 1932 in Mailand von Gio Ponti und Pietro Chiesa gegründeten Glas-Manufaktur, die seither als eine der maßgeblichen Adressen italienischer Designgeschichte gilt. Der 1980 von Gae Aulenti entworfene Tisch gehört zu den zitierfähigsten italienischen Möbelentwürfen des späten 20. Jahrhunderts und ist bei Fontana Arte bis heute ununterbrochen in Produktion: eine schwere Platte aus klarem Kristallglas ruht auf vier markanten Industrie-Gummirädern — derselben Gattung, wie man sie von Werkstattwagen kennt, hier aber ins Wohnen überführt und zum tragenden Gestaltungselement erhoben. Gae Aulenti, eine der einflussreichsten italienischen Architektinnen und Gestalterinnen des 20. Jahrhunderts — ihr verdanken Paris den Umbau des Musée d\'Orsay und Venedig den des Palazzo Grassi — erzielt hier mit wenigen Mitteln ein Maximum an Präsenz: die Spannung zwischen fein geschliffenem Glas und bewusst utilitärer Rollen-Konstruktion ist die eigentliche Aussage des Entwurfs. Die vorliegende Ausführung misst 120 × 120 × 25 cm, Räder und Befestigungen sind vollständig schwarz. Über viele Jahre stand der Tisch in unserem Wohnzimmer und bildete dort das Pendant zum Donghia-Sessel (siehe Nr. VII).',
     specs: {
       Hersteller: 'Fontana Arte, Mailand',
       Entwurf: 'Gae Aulenti, 1980',
@@ -320,18 +306,20 @@ export const pieces: Piece[] = [
     ],
     price: 'Preis auf Anfrage',
     description:
-      'Ein Schlafsofa des Schweizer Traditionshauses de Sede in tiefem, warmem Schokobraun. de Sede steht seit Jahrzehnten für in Handarbeit verarbeitete Lederpolstermöbel — die Adresse, wenn es um dauerhaft gutes Leder und langlebige Konstruktion geht. Als Schlafsofa vereint dieses Stück die wohnliche Eleganz einer hochwertigen Ledercouch mit der praktischen Funktion einer vollwertigen Liegefläche für den Gästebesuch.',
+      'Ein Schlafsofa des Schweizer Traditionshauses de Sede in tiefem, warmem Schokobraun. de Sede steht seit Jahrzehnten für in Handarbeit verarbeitete Lederpolstermöbel — die Adresse, wenn es um dauerhaft gutes Leder und langlebige Konstruktion geht. Das Modell DS-76, 1972 lanciert, gilt als eines der elegantesten Schlafsofas seiner Epoche: mit nur wenigen Handgriffen verwandelt es sich ohne mechanische Unterstützung in eine vollwertige Liegefläche. Als Schlafsofa vereint dieses Stück die wohnliche Eleganz einer hochwertigen Ledercouch mit der praktischen Funktion einer vollwertigen Liegefläche für den Gästebesuch.',
     specs: {
       Hersteller: 'de Sede, Schweiz',
+      Modell: 'DS-76',
+      Entstehung: 'Entwurf 1972',
       Material: 'Leder, schokobraun',
-      Funktion: 'Schlafsofa mit ausklappbarer Liegefläche',
+      Funktion: 'Schlafsofa mit ausklappbarer Liegefläche, ohne mechanische Unterstützung',
     },
   },
   {
     id: 11,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
-    title: 'Gallotti & Radice, President Junior - Glasschreibtisch, 1971',
+    title: 'Gallotti & Radice, President Junior — Glasschreibtisch, 1971',
     artist: 'Gallotti & Radice',
     origin: 'Italien, Glas und Chromstahl, 1970er Jahre',
     motif: 'cabinet',
@@ -342,10 +330,10 @@ export const pieces: Piece[] = [
     ],
     price: 'Preis auf Anfrage',
     description:
-      'Ein Schreibtisch „Presidente Junior" aus dem Hause Gallotti & Radice — jene 1956 in der Brianza gegründete italienische Manufaktur, die sich über Jahrzehnte dem Glas als tragendem Möbelwerkstoff verschrieben hat und deren Entwürfe heute in Sammlungen italienischen Designs einen festen Platz haben. Der „Presidente Junior" aus den 1970er Jahren ist die kompaktere Ausführung des großen „Presidente"-Schreibtischs und gehört zu den Signature-Stücken des Hauses: eine leicht geschwungene Glas-Arbeitsfläche, die an den Enden auf zwei senkrechten Glasstützen ruht und über ein durchlaufendes Chromstahl-Profil mit einer zentralen Chromstrebe verbunden ist — ein fast körperloses Zusammenspiel aus Transparenz und reflektierender Präzision, das der Arbeitsfläche ihre charakteristische, schwebende Anmutung gibt. Das Stück stammt aus dem Nachlass des bekannten Cellisten Peter Girth und wurde 2003 von dessen Witwe erworben; die Originalrechnung liegt vor. In unserem früheren Home-Office hat es viele Jahre treu Dienst getan — die dritte Abbildung zeigt den Tisch im gelebten Gebrauch mit iMac und Arbeitsleuchte.',
+      'Ein Schreibtisch „President Junior" aus dem Hause Gallotti & Radice — jene 1956 in der Brianza gegründete italienische Manufaktur, die sich über Jahrzehnte dem Glas als tragendem Möbelwerkstoff verschrieben hat und deren Entwürfe heute in Sammlungen italienischen Designs einen festen Platz haben. Der „President Junior" aus den 1970er Jahren ist die kompaktere Ausführung des großen „President"-Schreibtischs und gehört zu den Signature-Stücken des Hauses: eine leicht geschwungene Glas-Arbeitsfläche, die an den Enden auf zwei senkrechten Glasstützen ruht und über ein durchlaufendes Chromstahl-Profil mit einer zentralen Chromstrebe verbunden ist — ein fast körperloses Zusammenspiel aus Transparenz und reflektierender Präzision, das der Arbeitsfläche ihre charakteristische, schwebende Anmutung gibt. Das Stück stammt aus dem Nachlass des bekannten Cellisten Peter Girth und wurde 2003 von dessen Witwe erworben; die Originalrechnung liegt vor. In unserem früheren Home-Office hat es viele Jahre treu Dienst getan — die dritte Abbildung zeigt den Tisch im gelebten Gebrauch mit iMac und Arbeitsleuchte.',
     specs: {
       Hersteller: 'Gallotti & Radice, Brianza (Italien)',
-      Modell: 'Presidente Junior',
+      Modell: 'President Junior',
       Entstehung: '1970er Jahre',
       Material: 'Klarglas und Chromstahl',
       Form: 'Leicht geschwungene Arbeitsfläche auf zwei seitlichen Glasstützen, verbunden über durchlaufendes Chromstahl-Profil mit zentraler Strebe',
@@ -353,32 +341,6 @@ export const pieces: Piece[] = [
       Einsatz: 'Über viele Jahre als Home-Office-Schreibtisch in unserem Besitz',
       'Zweite Abbildung': 'Detail-Raster aus neun Nahaufnahmen — Glas, Chromstahl, Verbindungen',
       'Dritte Abbildung': 'Im früheren Home-Office in Benutzung (iMac, Magic Keyboard, Arbeitsleuchte)',
-    },
-  },
-  {
-    id: 12,
-    category: 'moebel',
-    reserved: true,
-    categoryLabel: 'Möbel & Einrichtung',
-    title: 'Artemide Tolomeo - de Lucchi & fassina (Paar)',
-    artist: 'Michele de Lucchi & Giancarlo Fassina, 1987',
-    origin: 'Italien, Aluminium poliert — Paar, auf Wandmontage umgerüstet',
-    motif: 'lamp',
-    images: [
-      '/images/tolomeo-rechts.jpeg',
-      '/images/tolomeo-links.jpeg',
-    ],
-    price: 'Preis auf Anfrage',
-    description:
-      'Zwei Exemplare der Tolomeo von Artemide — einer der meistzitierten italienischen Leuchtenentwürfe des späten 20. Jahrhunderts, 1987 von Michele de Lucchi und Giancarlo Fassina entworfen und seither in den Sammlungen namhafter Designmuseen vertreten. Mit ihrer federgelagerten Doppelgelenk-Konstruktion und dem charakteristischen, poliert eloxierten Aluminium-Schirm gehören sie zur Grundausstattung jeder ambitionierten Werkstatt, Küche oder Leseecke. Die beiden Exemplare wurden von einem Spezialisten fachgerecht auf Wandmontage umgerüstet und haben über Jahre die Bulthaup-Küchenwerkstatt erhellt (siehe Foto der Katalog-Nr. IV). Sie können zusammen mit der Küche oder als eigenständiges Paar erworben werden.',
-    specs: {
-      Hersteller: 'Artemide',
-      Entwurf: 'Michele de Lucchi und Giancarlo Fassina, 1987',
-      Modell: 'Tolomeo',
-      Material: 'Poliert eloxiertes Aluminium, federgelagerter Doppelarm',
-      Ausführung: 'Fachgerecht auf Wandmontage umgerüstet',
-      Stückzahl: '2 Exemplare (Paar)',
-      Hinweis: 'Können zusammen mit der Küchenwerkstatt (Nr. IV) oder separat erworben werden',
     },
   },
 ];
