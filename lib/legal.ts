@@ -7,11 +7,10 @@
  * etablierten Generator (z. B. eRecht24, activeMind) gegenprüfen lassen.
  */
 
-export const IMPRESSUM = `Angaben gemäß § 5 TMG
+export const IMPRESSUM = `Pflichtangaben
 
-Manfred G. Schneider
-Saalburgstraße 87
-61350 Bad Homburg v.d.Höhe
+Manfred Schneider
+61350 Bad Homburg
 Deutschland
 
 Kontakt
@@ -33,7 +32,7 @@ export const DATENSCHUTZ = `Stand: [Datum eintragen — idealerweise das Datum d
 
 Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:
 
-Manfred G. Schneider
+Manfred Schneider
 [Anschrift wie im Impressum]
 E-Mail:kontakt@privat-besitz.de
 
