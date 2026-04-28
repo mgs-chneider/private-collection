@@ -18,15 +18,14 @@ const impressions: { src: string; alt: string }[] = [
     alt: 'Blick in das frühere Wohnzimmer — mit einigen der in diesem Katalog gezeigten Stücke',
   },
   {
-    src: '/images/impression-kueche.jpeg',
-    alt: 'Blick in die Bulthaup-Küchenwerkstatt — mit der Liebscher-Arbeit New York (TWA Edition) an der Wand',
+    src: '/images/eames-impression.jpeg',
+    alt: 'Der Eames Lounge Chair 670 von Herman Miller — in einer Bibliotheksatmosphäre',
   },
   {
     src: '/images/impression-panorama.jpeg',
     alt: 'Das Liebscher-Panorama Moskau (Detskij Mir) an einer freien Wand',
   },
 ];
-
 export default function Impressions() {
   return (
     <section className="impressions" aria-labelledby="impressions-heading">
