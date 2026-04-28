@@ -40,6 +40,7 @@ export interface Piece {
  *   IX.   Fontana Arte „Tavolo con Ruote" (Gae Aulenti) — italienische Design-Ikone
  *   X.    de Sede DS-76, Schlafsofa — Schweizer Qualität
  *   XI.   Gallotti & Radice „President Junior" — italienischer Glas-Schreibtisch
+ *   XII.  Minotii Léger & Akari Vela Alta - Ensemble
  */
 export const pieces: Piece[] = [
   {
@@ -340,6 +341,41 @@ export const pieces: Piece[] = [
       Einsatz: 'Über viele Jahre als Home-Office-Schreibtisch in unserem Besitz',
       'Zweite Abbildung': 'Detail-Raster aus neun Nahaufnahmen — Glas, Chromstahl, Verbindungen',
       'Dritte Abbildung': 'Im früheren Home-Office in Benutzung (iMac, Magic Keyboard, Arbeitsleuchte)',
+    },
+  },
+  {
+    id: 12,
+    category: 'moebel',
+    categoryLabel: 'Möbel & Einrichtung',
+    title: 'Minotti Léger & Akari Vela Alta — Ensemble',
+    artist: 'Rodolfo Dordoni / Akari-Design Hamburg',
+    origin: 'Italien / Deutschland, Volleisen und Edelstahl — Paar',
+    motif: 'lamp',
+    images: [
+      '/images/vela-alta-impression.jpeg',
+      '/images/minotti-hamilton-ansicht.jpeg',
+      '/images/minotti-hamilton-draufsicht.jpeg',
+      '/images/vela-alta.jpeg',
+      '/images/vera-alta-detail.jpeg',
+    ],
+    price: 'Preis auf Anfrage',
+    description:
+      'Ein aufeinander abgestimmtes Ensemble aus zwei Beistelltischen Léger von Minotti und zwei Tischleuchten Vela Alta von Akari-Design Hamburg — ein spannungsvoller Dialog zwischen industrieller Schwere und eleganter Leichtigkeit. Die Tische aus der Minotti-Kollektion wurden von Rodolfo Dordoni entworfen: eine massive H-Konstruktion aus Volleisen mit geschliffener Eisenblechplatte (ca. 50 × 50 cm), deren sichtbare Schleifspuren kein Makel sind, sondern das authentische Industrial-Finish dieser Arbeit ausmachen. Die Leuchten Vela Alta stammen vom 1990 in Hamburg gegründeten Designunternehmen Akari-Design (Erika Gülich / Arno Strack): eine mattierte Edelstahlsäule auf quadratischem Chromsockel, bekrönt von einem konischen Textilschirm in Warmweiß — ruhig, puristisch, raumwirksam. Das Zusammenspiel lebt vom Kontrast: die unnachgiebige Präsenz des geschliffenen Eisens trifft auf die federleichte Vertikalität der Leuchte. Bevorzugt als Ensemble abzugeben.',
+    specs: {
+      Ensemble: '2 Beistelltische Léger (Minotti) + 2 Tischleuchten Vela Alta (Akari-Design)',
+      'Tisch — Hersteller': 'Minotti, Italien',
+      'Tisch — Modell': 'Léger',
+      'Tisch — Entwurf': 'Rodolfo Dordoni',
+      'Tisch — Material': 'Gestell Volleisen, Platte 2 mm geschliffenes Eisenblech',
+      'Tisch — Maße': 'ca. 50 × 50 cm',
+      'Tisch — Finish': 'Authentisches Industrial-Finish mit sichtbaren Schleifspuren',
+      'Leuchte — Hersteller': 'Akari-Design, Hamburg (gegr. 1990, Erika Gülich / Arno Strack)',
+      'Leuchte — Modell': 'Vela Alta',
+      'Leuchte — Material': 'Mattierter Edelstahl, quadratischer Chromsockel, konischer Textilschirm warmweiß',
+      'Leuchte — Höhe': 'ca. 79 cm',
+      'Leuchte — Seriennummer': '165-14/9F',
+      Stückzahl: '2 Tische + 2 Leuchten',
+      Abgabe: 'Bevorzugt als Ensemble',
     },
   },
 ];
