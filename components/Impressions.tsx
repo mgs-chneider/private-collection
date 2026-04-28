@@ -22,7 +22,7 @@ const impressions: { src: string; alt: string }[] = [
     alt: 'Der Eames Lounge Chair 670 von Herman Miller — in einer Bibliotheksatmosphäre',
   },
   {
-    src: '/images/impression-panorama.jpeg',
+    src: '/images/donghia-impression.jpeg',
     alt: 'Das Liebscher-Panorama Moskau (Detskij Mir) an einer freien Wand',
   },
 ];
