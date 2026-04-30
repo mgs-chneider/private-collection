@@ -34,7 +34,7 @@ export default function BmwPage() {
         <h1
           className={`${styles.heroTitle} ${styles.fadeTwo}`}
           style={{
-            fontFamily: "'Cormorant Garamond', serif",
+            fontFamily: "var(--font-cormorant), serif",
             fontSize: 68,
             fontWeight: 600,
             color: '#f5f0e8',
@@ -48,7 +48,7 @@ export default function BmwPage() {
         <p
           className={styles.fadeThree}
           style={{
-            fontFamily: "'Cormorant Garamond', serif",
+            fontFamily: "var(--font-cormorant), serif",
             fontSize: 22,
             fontStyle: 'italic',
             color: '#b8a272',
