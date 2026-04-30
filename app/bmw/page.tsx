@@ -6,8 +6,8 @@ export default function BmwPage() {
     <main
       style={{
         fontFamily: "var(--font-jost), sans-serif",
-        color: '#e8e4dc',
-        background: '#080808',
+        color: '#1e2428',
+        background: '#f8f8f6',
         minHeight: '100vh',
         overflowX: 'hidden',
       }}
@@ -15,7 +15,7 @@ export default function BmwPage() {
       {/* HERO */}
       <section
         className={styles.heroPad}
-        style={{ padding: '120px 64px 80px', maxWidth: 960, margin: '0 auto' }}
+        style={{ padding: '72px 64px 48px', maxWidth: 960, margin: '0 auto' }}
       >
         <p
           className={styles.fadeOne}
@@ -23,7 +23,7 @@ export default function BmwPage() {
             fontSize: 10,
             letterSpacing: '.25em',
             textTransform: 'uppercase',
-            color: '#b8a272',
+            color: '#5a6a7a',
             fontWeight: 500,
             marginBottom: 28,
           }}
@@ -37,7 +37,7 @@ export default function BmwPage() {
             fontFamily: "var(--font-cormorant), serif",
             fontSize: 68,
             fontWeight: 600,
-            color: '#f5f0e8',
+            color: '#1e2428',
             lineHeight: 1.0,
             letterSpacing: '-.01em',
           }}
@@ -51,7 +51,7 @@ export default function BmwPage() {
             fontFamily: "var(--font-cormorant), serif",
             fontSize: 22,
             fontStyle: 'italic',
-            color: '#b8a272',
+            color: '#5a6a7a',
             marginTop: 10,
             fontWeight: 400,
           }}
@@ -61,7 +61,7 @@ export default function BmwPage() {
 
         <div
           className={styles.fadeFour}
-          style={{ width: 48, height: 1, background: '#b8a272', margin: '36px 0' }}
+          style={{ width: 48, height: 1, background: '#5a6a7a', margin: '36px 0' }}
         />
 
         <p
@@ -69,7 +69,7 @@ export default function BmwPage() {
           style={{
             fontSize: 15,
             fontWeight: 300,
-            color: '#9a9590',
+            color: '#6b7880',
             lineHeight: 1.9,
             maxWidth: 560,
             letterSpacing: '.02em',
@@ -82,20 +82,48 @@ export default function BmwPage() {
       {/* SPECS */}
       <section
         className={styles.sectionPad}
-        style={{ padding: '0 64px 80px', maxWidth: 960, margin: '0 auto' }}
+        style={{ padding: '0 64px 48px', maxWidth: 960, margin: '0 auto' }}
       >
-        <p style={{ fontSize: 10, letterSpacing: '.2em', textTransform: 'uppercase', color: '#b8a272', fontWeight: 500, marginBottom: 20 }}>
+        <p style={{
+          fontSize: 10,
+          letterSpacing: '.2em',
+          textTransform: 'uppercase',
+          color: '#5a6a7a',
+          fontWeight: 500,
+          marginBottom: 20,
+        }}>
           Technische Daten
         </p>
-        <div style={{ border: '0.5px solid rgba(184,162,114,0.2)' }}>
+        <div style={{ border: '0.5px solid rgba(80,90,100,0.15)' }}>
           {bmw.specs.map((s) => (
-            <div key={s.label} className={styles.specRow}
-              style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', padding: '14px 20px', gap: 24 }}
+            <div
+              key={s.label}
+              className={styles.specRow}
+              style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'baseline',
+                padding: '14px 20px',
+                gap: 24,
+              }}
             >
-              <span style={{ fontSize: 11, letterSpacing: '.12em', textTransform: 'uppercase', color: '#5a5650', fontWeight: 500, flexShrink: 0 }}>
+              <span style={{
+                fontSize: 11,
+                letterSpacing: '.12em',
+                textTransform: 'uppercase',
+                color: '#9aa4ac',
+                fontWeight: 500,
+                flexShrink: 0,
+              }}>
                 {s.label}
               </span>
-              <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 18, color: '#d4cfc5', fontWeight: 500, textAlign: 'right' }}>
+              <span style={{
+                fontFamily: "var(--font-cormorant), serif",
+                fontSize: 18,
+                color: '#1e2428',
+                fontWeight: 500,
+                textAlign: 'right',
+              }}>
                 {s.value}
               </span>
             </div>
@@ -104,9 +132,20 @@ export default function BmwPage() {
       </section>
 
       {/* AUSSTATTUNG */}
-      <section style={{ borderTop: '0.5px solid rgba(255,255,255,0.05)', borderBottom: '0.5px solid rgba(255,255,255,0.05)', padding: '60px 64px' }}>
+      <section style={{
+        borderTop: '0.5px solid rgba(80,90,100,0.1)',
+        borderBottom: '0.5px solid rgba(80,90,100,0.1)',
+        padding: '48px 64px',
+      }}>
         <div style={{ maxWidth: 960, margin: '0 auto' }}>
-          <p style={{ fontSize: 10, letterSpacing: '.2em', textTransform: 'uppercase', color: '#b8a272', fontWeight: 500, marginBottom: 24 }}>
+          <p style={{
+            fontSize: 10,
+            letterSpacing: '.2em',
+            textTransform: 'uppercase',
+            color: '#5a6a7a',
+            fontWeight: 500,
+            marginBottom: 24,
+          }}>
             Ausstattung
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
@@ -118,21 +157,52 @@ export default function BmwPage() {
       </section>
 
       {/* BESCHREIBUNG */}
-      <section className={styles.sectionPad} style={{ padding: '80px 64px', maxWidth: 960, margin: '0 auto' }}>
+      <section
+        className={styles.sectionPad}
+        style={{ padding: '64px 64px', maxWidth: 960, margin: '0 auto' }}
+      >
         <div className={styles.descGrid}>
           <div>
-            <p style={{ fontSize: 10, letterSpacing: '.2em', textTransform: 'uppercase', color: '#b8a272', fontWeight: 500, marginBottom: 16 }}>
+            <p style={{
+              fontSize: 10,
+              letterSpacing: '.2em',
+              textTransform: 'uppercase',
+              color: '#5a6a7a',
+              fontWeight: 500,
+              marginBottom: 16,
+            }}>
               Zum Fahrzeug
             </p>
-            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 32, fontWeight: 400, fontStyle: 'italic', color: '#f5f0e8', lineHeight: 1.3 }}>
+            <p style={{
+              fontFamily: "var(--font-cormorant), serif",
+              fontSize: 32,
+              fontWeight: 400,
+              fontStyle: 'italic',
+              color: '#1e2428',
+              lineHeight: 1.3,
+            }}>
               Ehrlich. Unverbastelt. Mit Charakter.
             </p>
           </div>
           <div>
-            <p style={{ fontSize: 15, fontWeight: 300, color: '#9a9590', lineHeight: 1.9, marginBottom: 28 }}>
+            <p style={{
+              fontSize: 15,
+              fontWeight: 300,
+              color: '#5a6570',
+              lineHeight: 1.9,
+              marginBottom: 28,
+            }}>
               {bmw.description}
             </p>
-            <p style={{ fontSize: 14, fontWeight: 400, color: '#c8bfa8', lineHeight: 1.8, borderLeft: '2px solid #b8a272', paddingLeft: 20, fontStyle: 'italic' }}>
+            <p style={{
+              fontSize: 14,
+              fontWeight: 400,
+              color: '#3a4550',
+              lineHeight: 1.8,
+              borderLeft: '2px solid #5a6a7a',
+              paddingLeft: 20,
+              fontStyle: 'italic',
+            }}>
               {bmw.closing}
             </p>
           </div>
@@ -140,31 +210,71 @@ export default function BmwPage() {
       </section>
 
       {/* VIDEO */}
-      <section style={{ background: 'rgba(184,162,114,0.15)', borderTop: '0.5px solid rgba(184,162,114,0.15)', borderBottom: '0.5px solid rgba(184,162,114,0.15)', padding: '40px 64px' }}>
+      <section style={{
+        background: 'rgba(90,106,122,0.06)',
+        borderTop: '0.5px solid rgba(80,90,100,0.1)',
+        borderBottom: '0.5px solid rgba(80,90,100,0.1)',
+        padding: '40px 64px',
+      }}>
         <div style={{ maxWidth: 960, margin: '0 auto' }}>
-          <p style={{ fontSize: 10, letterSpacing: '.2em', textTransform: 'uppercase', color: '#b8a272', fontWeight: 500, marginBottom: 16 }}>
+          <p style={{
+            fontSize: 10,
+            letterSpacing: '.2em',
+            textTransform: 'uppercase',
+            color: '#5a6a7a',
+            fontWeight: 500,
+            marginBottom: 16,
+          }}>
             Fahrzeugvideo
           </p>
-          <a href={bmw.videoUrl} target="_blank" rel="noopener noreferrer" className={styles.videoLink}>
+          
+            href={bmw.videoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.videoLink}
+          >
             <div className={styles.playCircle}>
               <div className={styles.playTriangle} />
             </div>
             <div>
-              <p style={{ fontSize: 14, fontWeight: 400, color: '#e8e4dc', marginBottom: 3 }}>
+              <p style={{ fontSize: 14, fontWeight: 400, color: '#1e2428', marginBottom: 3 }}>
                 Fahrgefühl, Zustand und Details — Video ansehen
               </p>
-              <p style={{ fontSize: 12, color: '#5a5650', fontWeight: 300 }}>youtube.com</p>
+              <p style={{ fontSize: 12, color: '#9aa4ac', fontWeight: 300 }}>
+                youtube.com
+              </p>
             </div>
           </a>
         </div>
       </section>
 
       {/* KONTAKT */}
-      <section className={styles.sectionPad} style={{ padding: '100px 64px', maxWidth: 960, margin: '0 auto', textAlign: 'center' }}>
-        <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 42, fontWeight: 400, fontStyle: 'italic', color: '#f5f0e8', marginBottom: 12 }}>
+      <section
+        className={styles.sectionPad}
+        style={{
+          padding: '80px 64px',
+          maxWidth: 960,
+          margin: '0 auto',
+          textAlign: 'center',
+        }}
+      >
+        <p style={{
+          fontFamily: "var(--font-cormorant), serif",
+          fontSize: 42,
+          fontWeight: 400,
+          fontStyle: 'italic',
+          color: '#1e2428',
+          marginBottom: 12,
+        }}>
           Interesse?
         </p>
-        <p style={{ fontSize: 13, fontWeight: 300, color: '#5a5650', letterSpacing: '.05em', marginBottom: 40 }}>
+        <p style={{
+          fontSize: 13,
+          fontWeight: 300,
+          color: '#9aa4ac',
+          letterSpacing: '.05em',
+          marginBottom: 40,
+        }}>
           Wir freuen uns über ernstgemeinte Anfragen per E-Mail.
         </p>
         <a href="mailto:kontakt@privat-besitz.de" className={styles.ctaBtn}>
@@ -173,11 +283,31 @@ export default function BmwPage() {
       </section>
 
       {/* FOOTER */}
-      <footer style={{ borderTop: '0.5px solid rgba(255,255,255,0.05)', padding: '28px 64px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', maxWidth: 960, margin: '0 auto', flexWrap: 'wrap', gap: 12 }}>
-        <p style={{ fontSize: 11, fontWeight: 300, color: '#2e2c2a', letterSpacing: '.04em' }}>
+      <footer style={{
+        borderTop: '0.5px solid rgba(80,90,100,0.1)',
+        padding: '28px 64px',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        maxWidth: 960,
+        margin: '0 auto',
+        flexWrap: 'wrap',
+        gap: 12,
+      }}>
+        <p style={{
+          fontSize: 11,
+          fontWeight: 300,
+          color: '#9aa4ac',
+          letterSpacing: '.04em',
+        }}>
           {bmw.legal}
         </p>
-        <a href={bmw.collectionUrl} target="_blank" rel="noopener noreferrer" className={styles.collectionLink}>
+        
+          href={bmw.collectionUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.collectionLink}
+        >
           {bmw.collectionHint} ↗
         </a>
       </footer>
