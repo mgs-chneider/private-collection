@@ -5,7 +5,7 @@ export default function BmwPage() {
   return (
     <main
       style={{
-        fontFamily: "'Jost', sans-serif",
+        fontFamily: "var(--font-jost), sans-serif",
         color: '#e8e4dc',
         background: '#080808',
         minHeight: '100vh',
