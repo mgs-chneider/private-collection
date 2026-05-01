@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './bmw.module.css';
 import { bmw } from '@/lib/bmw';
 
@@ -79,6 +80,29 @@ export default function BmwPage() {
         </p>
       </section>
 
+      {/* HERO IMAGE */}
+      <div style={{ width: '100%', maxWidth: 960, margin: '0 auto 48px', padding: '0 64px' }}>
+        <div style={{ position: 'relative', width: '100%', aspectRatio: '16/9', overflow: 'hidden' }}>
+          <Image
+            src="/images/bmw-impression.jpeg"
+            alt="BMW 325Ci Cabrio E46 — KI-unterstützte Impression"
+            fill
+            style={{ objectFit: 'cover' }}
+            priority
+          />
+        </div>
+        <p style={{
+          fontSize: 10,
+          color: '#999999',
+          fontWeight: 300,
+          letterSpacing: '.1em',
+          marginTop: 8,
+          textAlign: 'right',
+        }}>
+          KI-unterstützte Impression — Fahrzeug original
+        </p>
+      </div>
+      
       {/* SPECS */}
       <section
         className={styles.sectionPad}
