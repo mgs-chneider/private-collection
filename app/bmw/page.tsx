@@ -83,7 +83,7 @@ export default function BmwPage() {
       {/* HERO IMAGE */}
       <div style={{ position: 'relative', width: '100%', aspectRatio: '3/2', overflow: 'hidden' }}>
         <Image
-          src="/images/bmw-impression.jpeg"
+          src="/images/BMW-impression.jpeg"
           alt="BMW 325Ci Cabrio E46 — KI-unterstützte Impression"
           fill
           style={{ objectFit: 'contain', objectPosition: 'center 55%' }}
