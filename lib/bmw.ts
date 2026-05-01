@@ -12,6 +12,8 @@ export interface BmwData {
   videoUrl: string;
   specs: BmwSpec[];
   features: string[];
+  price: string;
+  priceNote: string;
   legal: string;
   collectionHint: string;
   collectionUrl: string;
@@ -53,6 +55,8 @@ export const bmw: BmwData = {
     '8-fach bereift',
     'Nichtraucherfahrzeug',
   ],
+  price: '9.900 €',
+  priceNote: 'Verhandlungsbasis',
   legal:
     'Privatverkauf unter Ausschluss jeglicher Gewährleistung und Rücknahme.',
   collectionHint: 'Weitere Designklassiker aus Privatbesitz',
