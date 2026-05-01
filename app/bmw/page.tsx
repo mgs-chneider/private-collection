@@ -88,8 +88,7 @@ export default function BmwPage() {
           fill
           style={{ objectFit: 'cover', objectPosition: 'center 60%' }}
           priority
-        />
-      </div>
+        />     
         <p style={{
           fontSize: 10,
           color: '#999999',
