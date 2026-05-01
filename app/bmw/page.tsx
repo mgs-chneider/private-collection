@@ -86,7 +86,7 @@ export default function BmwPage() {
           src="/images/bmw-impression.jpeg"
           alt="BMW 325Ci Cabrio E46 — KI-unterstützte Impression"
           fill
-          style={{ objectFit: 'cover', objectPosition: 'center 55%' }}
+          style={{ objectFit: 'contain', objectPosition: 'center 55%' }}
           priority
         />     
         <p style={{
