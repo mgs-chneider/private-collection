@@ -104,28 +104,28 @@ export default function BmwPage() {
       {/* PREIS */}
       <section style={{ padding: '0 64px', maxWidth: 960, margin: '0 auto' }}>
         <div style={{
-          display: 'inline-flex',
-          alignItems: 'baseline',
-          gap: 12,
           margin: '32px 0',
           paddingBottom: 32,
           borderBottom: '0.5px solid rgba(0,154,218,0.2)',
         }}>
           <span style={{
             fontFamily: "var(--font-cormorant), serif",
-            fontSize: 48,
+            fontSize: 'clamp(36px, 8vw, 48px)',
             fontWeight: 600,
             color: '#000000',
             lineHeight: 1,
+            display: 'block',
           }}>
             {bmw.price}
           </span>
           <span style={{
-            fontSize: 12,
+            fontSize: 11,
             letterSpacing: '.15em',
             textTransform: 'uppercase',
             color: '#009ADA',
             fontWeight: 500,
+            display: 'block',
+            marginTop: 8,
           }}>
             {bmw.priceNote}
           </span>
