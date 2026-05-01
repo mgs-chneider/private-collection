@@ -6,8 +6,8 @@ export default function BmwPage() {
     <main
       style={{
         fontFamily: "var(--font-jost), sans-serif",
-        color: '#1e2428',
-        background: '#f8f8f6',
+        color: '#000000',
+        background: '#ffffff',
         minHeight: '100vh',
         overflowX: 'hidden',
       }}
@@ -23,7 +23,7 @@ export default function BmwPage() {
             fontSize: 10,
             letterSpacing: '.25em',
             textTransform: 'uppercase',
-            color: '#5a6a7a',
+            color: '#009ADA',
             fontWeight: 500,
             marginBottom: 28,
           }}
@@ -37,7 +37,7 @@ export default function BmwPage() {
             fontFamily: "var(--font-cormorant), serif",
             fontSize: 68,
             fontWeight: 600,
-            color: '#1e2428',
+            color: '#000000',
             lineHeight: 1.0,
             letterSpacing: '-.01em',
           }}
@@ -51,7 +51,7 @@ export default function BmwPage() {
             fontFamily: "var(--font-cormorant), serif",
             fontSize: 22,
             fontStyle: 'italic',
-            color: '#5a6a7a',
+            color: '#009ADA',
             marginTop: 10,
             fontWeight: 400,
           }}
@@ -61,7 +61,7 @@ export default function BmwPage() {
 
         <div
           className={styles.fadeFour}
-          style={{ width: 48, height: 1, background: '#5a6a7a', margin: '36px 0' }}
+          style={{ width: 48, height: 2, background: '#009ADA', margin: '36px 0' }}
         />
 
         <p
@@ -69,7 +69,7 @@ export default function BmwPage() {
           style={{
             fontSize: 15,
             fontWeight: 300,
-            color: '#6b7880',
+            color: '#444444',
             lineHeight: 1.9,
             maxWidth: 560,
             letterSpacing: '.02em',
@@ -88,13 +88,13 @@ export default function BmwPage() {
           fontSize: 10,
           letterSpacing: '.2em',
           textTransform: 'uppercase',
-          color: '#5a6a7a',
+          color: '#009ADA',
           fontWeight: 500,
           marginBottom: 20,
         }}>
           Technische Daten
         </p>
-        <div style={{ border: '0.5px solid rgba(80,90,100,0.15)' }}>
+        <div style={{ border: '0.5px solid rgba(0,154,218,0.2)' }}>
           {bmw.specs.map((s) => (
             <div
               key={s.label}
@@ -111,7 +111,7 @@ export default function BmwPage() {
                 fontSize: 11,
                 letterSpacing: '.12em',
                 textTransform: 'uppercase',
-                color: '#9aa4ac',
+                color: '#999999',
                 fontWeight: 500,
                 flexShrink: 0,
               }}>
@@ -120,7 +120,7 @@ export default function BmwPage() {
               <span style={{
                 fontFamily: "var(--font-cormorant), serif",
                 fontSize: 18,
-                color: '#1e2428',
+                color: '#000000',
                 fontWeight: 500,
                 textAlign: 'right',
               }}>
@@ -133,16 +133,17 @@ export default function BmwPage() {
 
       {/* AUSSTATTUNG */}
       <section style={{
-        borderTop: '0.5px solid rgba(80,90,100,0.1)',
-        borderBottom: '0.5px solid rgba(80,90,100,0.1)',
+        borderTop: '0.5px solid rgba(0,154,218,0.15)',
+        borderBottom: '0.5px solid rgba(0,154,218,0.15)',
         padding: '48px 64px',
+        background: 'rgba(0,154,218,0.03)',
       }}>
         <div style={{ maxWidth: 960, margin: '0 auto' }}>
           <p style={{
             fontSize: 10,
             letterSpacing: '.2em',
             textTransform: 'uppercase',
-            color: '#5a6a7a',
+            color: '#009ADA',
             fontWeight: 500,
             marginBottom: 24,
           }}>
@@ -167,7 +168,7 @@ export default function BmwPage() {
               fontSize: 10,
               letterSpacing: '.2em',
               textTransform: 'uppercase',
-              color: '#5a6a7a',
+              color: '#009ADA',
               fontWeight: 500,
               marginBottom: 16,
             }}>
@@ -178,7 +179,7 @@ export default function BmwPage() {
               fontSize: 32,
               fontWeight: 400,
               fontStyle: 'italic',
-              color: '#1e2428',
+              color: '#000000',
               lineHeight: 1.3,
             }}>
               Ehrlich. Unverbastelt. Mit Charakter.
@@ -188,7 +189,7 @@ export default function BmwPage() {
             <p style={{
               fontSize: 15,
               fontWeight: 300,
-              color: '#5a6570',
+              color: '#444444',
               lineHeight: 1.9,
               marginBottom: 28,
             }}>
@@ -197,9 +198,9 @@ export default function BmwPage() {
             <p style={{
               fontSize: 14,
               fontWeight: 400,
-              color: '#3a4550',
+              color: '#222222',
               lineHeight: 1.8,
-              borderLeft: '2px solid #5a6a7a',
+              borderLeft: '2px solid #009ADA',
               paddingLeft: 20,
               fontStyle: 'italic',
             }}>
@@ -211,9 +212,9 @@ export default function BmwPage() {
 
       {/* VIDEO */}
       <section style={{
-        background: 'rgba(90,106,122,0.06)',
-        borderTop: '0.5px solid rgba(80,90,100,0.1)',
-        borderBottom: '0.5px solid rgba(80,90,100,0.1)',
+        background: 'rgba(0,154,218,0.04)',
+        borderTop: '0.5px solid rgba(0,154,218,0.15)',
+        borderBottom: '0.5px solid rgba(0,154,218,0.15)',
         padding: '40px 64px',
       }}>
         <div style={{ maxWidth: 960, margin: '0 auto' }}>
@@ -221,14 +222,13 @@ export default function BmwPage() {
             fontSize: 10,
             letterSpacing: '.2em',
             textTransform: 'uppercase',
-            color: '#5a6a7a',
+            color: '#009ADA',
             fontWeight: 500,
             marginBottom: 16,
           }}>
             Fahrzeugvideo
           </p>
-
-          <a
+          
             href={bmw.videoUrl}
             target="_blank"
             rel="noopener noreferrer"
@@ -238,10 +238,10 @@ export default function BmwPage() {
               <div className={styles.playTriangle} />
             </div>
             <div>
-              <p style={{ fontSize: 14, fontWeight: 400, color: '#1e2428', marginBottom: 3 }}>
+              <p style={{ fontSize: 14, fontWeight: 400, color: '#000000', marginBottom: 3 }}>
                 Fahrgefühl, Zustand und Details — Video ansehen
               </p>
-              <p style={{ fontSize: 12, color: '#9aa4ac', fontWeight: 300 }}>
+              <p style={{ fontSize: 12, color: '#999999', fontWeight: 300 }}>
                 youtube.com
               </p>
             </div>
@@ -264,7 +264,7 @@ export default function BmwPage() {
           fontSize: 42,
           fontWeight: 400,
           fontStyle: 'italic',
-          color: '#1e2428',
+          color: '#000000',
           marginBottom: 12,
         }}>
           Interesse?
@@ -272,7 +272,7 @@ export default function BmwPage() {
         <p style={{
           fontSize: 13,
           fontWeight: 300,
-          color: '#9aa4ac',
+          color: '#999999',
           letterSpacing: '.05em',
           marginBottom: 40,
         }}>
@@ -285,7 +285,7 @@ export default function BmwPage() {
 
       {/* FOOTER */}
       <footer style={{
-        borderTop: '0.5px solid rgba(80,90,100,0.1)',
+        borderTop: '0.5px solid rgba(0,154,218,0.15)',
         padding: '28px 64px',
         display: 'flex',
         justifyContent: 'space-between',
@@ -298,13 +298,12 @@ export default function BmwPage() {
         <p style={{
           fontSize: 11,
           fontWeight: 300,
-          color: '#9aa4ac',
+          color: '#999999',
           letterSpacing: '.04em',
         }}>
           {bmw.legal}
         </p>
-
-        <a
+        
           href={bmw.collectionUrl}
           target="_blank"
           rel="noopener noreferrer"
