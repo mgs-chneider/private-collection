@@ -36,8 +36,8 @@ export const bmw: BmwData = {
   videoUrl: 'https://www.youtube.com/watch?v=IStopNBZykk',
   specs: [
     { label: 'Modell', value: 'BMW 325Ci Cabrio (E46)' },
-    { label: 'Laufleistung', value: 'ca. 147.000 km' },
-    { label: 'HU', value: '10/2024 (bei 145.546 km)' },
+    { label: 'Laufleistung', value: 'ca. 148.000 km' },
+    { label: 'HU', value: '11/2026' },
     { label: 'Farbe außen', value: 'Schwarz' },
     { label: 'Innenausstattung', value: 'Vollleder, Schwarz' },
     { label: 'Bereifung', value: '8-fach (Sommer + Winter)' },
