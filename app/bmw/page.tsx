@@ -1,6 +1,5 @@
+import styles from './bmw.module.css';
 import { bmw } from '@/lib/bmw';
-
-const styles: Record<string, string> = {};
 
 export default function BmwPage() {
   return (
