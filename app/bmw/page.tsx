@@ -96,7 +96,7 @@ export default function BmwPage() {
         fontWeight: 300,
         letterSpacing: '.1em',
         marginTop: 8,
-        textAlign: 'left',
+        textAlign: 'center',
       }}>
         KI-unterstützte Impression — Fahrzeug original
       </p>
