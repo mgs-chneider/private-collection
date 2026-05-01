@@ -79,6 +79,27 @@ export default function BmwPage() {
           {bmw.tagline}
         </p>
       </section>
+      
+      {/* HERO IMAGE */}
+      <div style={{ position: 'relative', width: '100%', aspectRatio: '3/2', overflow: 'hidden' }}>
+        <Image
+          src="/images/BMW-impression.jpeg"
+          alt="BMW 325Ci Cabrio E46 — KI-unterstützte Impression"
+          fill
+          style={{ objectFit: 'contain', objectPosition: 'center center' }}
+          priority
+        />
+      </div>
+      <p style={{
+        fontSize: 10,
+        color: '#999999',
+        fontWeight: 300,
+        letterSpacing: '.1em',
+        marginTop: 8,
+        textAlign: 'center',
+      }}>
+        KI-unterstützte Impression — Fahrzeug original
+      </p>
 
       {/* PREIS */}
       <div style={{
@@ -108,27 +129,6 @@ export default function BmwPage() {
           {bmw.priceNote}
         </span>
       </div>
-      
-      {/* HERO IMAGE */}
-      <div style={{ position: 'relative', width: '100%', aspectRatio: '3/2', overflow: 'hidden' }}>
-        <Image
-          src="/images/BMW-impression.jpeg"
-          alt="BMW 325Ci Cabrio E46 — KI-unterstützte Impression"
-          fill
-          style={{ objectFit: 'contain', objectPosition: 'center center' }}
-          priority
-        />
-      </div>
-      <p style={{
-        fontSize: 10,
-        color: '#999999',
-        fontWeight: 300,
-        letterSpacing: '.1em',
-        marginTop: 8,
-        textAlign: 'center',
-      }}>
-        KI-unterstützte Impression — Fahrzeug original
-      </p>
       
       {/* SPECS */}
       <section
