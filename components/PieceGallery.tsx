@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Lightbox from './Lightbox';
 
 interface Props {
   images: string[];
@@ -8,6 +9,7 @@ interface Props {
 
 export default function PieceGallery({ images, title }: Props) {
   const [activeIdx, setActiveIdx] = useState(0);
+  const [isZoomed, setIsZoomed] = useState(false);
 
   return (
     <div className="piece-gallery">
@@ -15,7 +17,8 @@ export default function PieceGallery({ images, title }: Props) {
         <img
           src={images[activeIdx]}
           alt={title}
-          className="piece-gallery-photo"
+          className="piece-gallery-photo is-zoomable"
+          onClick={() => setIsZoomed(true)}
         />
       </div>
       {images.length > 1 && (
@@ -33,6 +36,14 @@ export default function PieceGallery({ images, title }: Props) {
             </button>
           ))}
         </div>
+      )}
+
+      {isZoomed && (
+        <Lightbox
+          src={images[activeIdx]}
+          alt={title}
+          onClose={() => setIsZoomed(false)}
+        />
       )}
     </div>
   );
