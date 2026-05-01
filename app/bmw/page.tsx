@@ -102,33 +102,35 @@ export default function BmwPage() {
       </p>
 
       {/* PREIS */}
-      <div style={{
-        display: 'inline-flex',
-        alignItems: 'baseline',
-        gap: 12,
-        margin: '32px 0',
-        paddingBottom: 32,
-        borderBottom: '0.5px solid rgba(0,154,218,0.2)',
-      }}>
-        <span style={{
-          fontFamily: "var(--font-cormorant), serif",
-          fontSize: 48,
-          fontWeight: 600,
-          color: '#000000',
-          lineHeight: 1,
+      <section style={{ padding: '0 64px', maxWidth: 960, margin: '0 auto' }}>
+        <div style={{
+          display: 'inline-flex',
+          alignItems: 'baseline',
+          gap: 12,
+          margin: '32px 0',
+          paddingBottom: 32,
+          borderBottom: '0.5px solid rgba(0,154,218,0.2)',
         }}>
-          {bmw.price}
-        </span>
-        <span style={{
-          fontSize: 12,
-          letterSpacing: '.15em',
-          textTransform: 'uppercase',
-          color: '#009ADA',
-          fontWeight: 500,
-        }}>
-          {bmw.priceNote}
-        </span>
-      </div>
+          <span style={{
+            fontFamily: "var(--font-cormorant), serif",
+            fontSize: 48,
+            fontWeight: 600,
+            color: '#000000',
+            lineHeight: 1,
+          }}>
+            {bmw.price}
+          </span>
+          <span style={{
+            fontSize: 12,
+            letterSpacing: '.15em',
+            textTransform: 'uppercase',
+            color: '#009ADA',
+            fontWeight: 500,
+          }}>
+            {bmw.priceNote}
+          </span>
+        </div>
+      </section>
       
       {/* SPECS */}
       <section
