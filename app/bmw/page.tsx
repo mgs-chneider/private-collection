@@ -227,7 +227,8 @@ export default function BmwPage() {
           }}>
             Fahrzeugvideo
           </p>
-          
+
+          <a
             href={bmw.videoUrl}
             target="_blank"
             rel="noopener noreferrer"
@@ -302,7 +303,8 @@ export default function BmwPage() {
         }}>
           {bmw.legal}
         </p>
-        
+
+        <a
           href={bmw.collectionUrl}
           target="_blank"
           rel="noopener noreferrer"
