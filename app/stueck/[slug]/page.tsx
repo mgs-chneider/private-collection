@@ -1,4 +1,4 @@
-  import { notFound } from 'next/navigation';
+import { notFound } from 'next/navigation';
 import { allSlugs, pieceBySlug, toSlug } from '@/lib/slugs';
 import { toRoman } from '@/lib/roman';
 import { CONTACT_EMAIL } from '@/lib/pieces';
@@ -10,12 +10,10 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import PieceGallery from '@/components/PieceGallery';
 
-// Statische Pfade für alle 12 Stücke
 export function generateStaticParams() {
   return allSlugs();
 }
 
-// Dynamische Metadaten pro Stück
 export async function generateMetadata({
   params,
 }: {
@@ -71,7 +69,6 @@ export default function PiecePage({
         </Link>
 
         <article className="modal">
-          {/* Bildbereich */}
           <div className="modal-image has-photo">
             {hasPhotos ? (
               <PieceGallery images={piece.images!} title={piece.title} />
@@ -83,7 +80,6 @@ export default function PiecePage({
             )}
           </div>
 
-          {/* Textbereich */}
           <div className="modal-body">
             <div className="category">
               {piece.categoryLabel} · Nr. {roman}
@@ -106,6 +102,17 @@ export default function PiecePage({
               <span className="price-label">Preis</span>
               <span className="price">{piece.price}</span>
             </div>
+
+            {piece.auctionUrl && (
+              
+                href={piece.auctionUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="auction-link"
+              >
+                Dieses Stück ist aktuell bei Catawiki in der Auktion →
+              </a>
+            )}
 
             <a className="inquiry-btn" href={buildMailto(piece)}>
               Anfrage senden
