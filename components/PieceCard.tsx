@@ -63,4 +63,13 @@ export default function PieceCard({ piece, onOpen }: Props) {
       </button>
 
       <Link
-        href={`/stueck/${slug}
+        href={`/stueck/${slug}`}
+        className="piece-permalink"
+        aria-label={`${piece.title} — eigene Seite öffnen`}
+        tabIndex={-1}
+      >
+        Eigene Seite →
+      </Link>
+    </div>
+  );
+}
