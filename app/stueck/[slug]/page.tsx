@@ -108,12 +108,12 @@ export default function PiecePage({
             </div>
 
             {piece.auctionUrl && (
-              
+              <a>
                 href={piece.auctionUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="auction-link"
-              >
+               >
                 Dieses Stück ist aktuell bei Catawiki in der Auktion →
               </a>
             )}
