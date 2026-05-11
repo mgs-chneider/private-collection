@@ -341,6 +341,7 @@ export const pieces: Piece[] = [
       Einsatz: 'Über viele Jahre als Home-Office-Schreibtisch in unserem Besitz',
       'Zweite Abbildung': 'Detail-Raster aus neun Nahaufnahmen — Glas, Chromstahl, Verbindungen',
       'Dritte Abbildung': 'Im früheren Home-Office in Benutzung (iMac, Magic Keyboard, Arbeitsleuchte)',
+      auctionUrl: 'https://www.catawiki.com/en/l/103696235-gallotti-radice-writing-table-glass-chrome-president-junior',
     },
   },
   {
