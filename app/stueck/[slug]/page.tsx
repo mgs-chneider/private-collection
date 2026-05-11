@@ -104,7 +104,7 @@ export default function PiecePage({
             </div>
 
             {piece.auctionUrl && (
-              
+              <a
                 href={piece.auctionUrl}
                 target="_blank"
                 rel="noopener noreferrer"
