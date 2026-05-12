@@ -1005,35 +1005,18 @@ body.modal-open { overflow: hidden; }
   top: 1rem;
   right: 1rem;
   z-index: 2;
-  background: var(--gold);
-  color: var(--paper);
+  background: var(--ink);
+  color: var(--gold);
+  border: 1px solid var(--gold);
   font-family: var(--sans);
   font-size: 0.62rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   padding: 0.35rem 0.75rem;
   text-decoration: none;
-  transition: background 0.2s ease;
+  transition: all 0.2s ease;
 }
 .piece-auction-badge:hover {
-  background: var(--gold-dark);
-}
-
-/* ---------- Auktions-Link auf Unterseite ---------- */
-.auction-link {
-  display: block;
-  margin-top: 1.2rem;
-  font-family: var(--sans);
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--gold);
-  text-decoration: none;
-  border-bottom: 1px solid var(--gold);
-  padding-bottom: 0.2rem;
-  transition: color 0.2s ease, border-color 0.2s ease;
-}
-.auction-link:hover {
-  color: var(--gold-dark);
-  border-color: var(--gold-dark);
+  background: var(--gold);
+  color: var(--ink);
 }
