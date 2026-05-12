@@ -24,6 +24,7 @@ export interface Piece {
   description: string;
   specs: Record<string, string>;
   reserved?: boolean;
+  auctionUrl?: string;   
 }
 
 /**
