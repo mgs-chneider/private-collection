@@ -1005,18 +1005,16 @@ body.modal-open { overflow: hidden; }
   top: 1rem;
   right: 1rem;
   z-index: 2;
-  background: var(--ink);
-  color: var(--gold);
-  border: 1px solid var(--gold);
+  background: var(--accent);
+  color: var(--paper);
   font-family: var(--sans);
   font-size: 0.62rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   padding: 0.35rem 0.75rem;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: background 0.2s ease;
 }
 .piece-auction-badge:hover {
-  background: var(--gold);
-  color: var(--ink);
+  background: #4a1f1f;
 }
