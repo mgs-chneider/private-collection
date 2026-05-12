@@ -330,6 +330,7 @@ export const pieces: Piece[] = [
       '/images/gallotti-presidente-office.jpeg',
     ],
     price: 'Preis auf Anfrage',
+    auctionUrl: 'https://www.catawiki.com/en/l/103696235-gallotti-radice-writing-table-glass-chrome-president-junior',
     description:
       'Ein Schreibtisch „President Junior" aus dem Hause Gallotti & Radice — jene 1956 in der Brianza gegründete italienische Manufaktur, die sich über Jahrzehnte dem Glas als tragendem Möbelwerkstoff verschrieben hat und deren Entwürfe heute in Sammlungen italienischen Designs einen festen Platz haben. Der „President Junior" aus den 1970er Jahren ist die kompaktere Ausführung des großen „President"-Schreibtischs und gehört zu den Signature-Stücken des Hauses: eine leicht geschwungene Glas-Arbeitsfläche, die an den Enden auf zwei senkrechten Glasstützen ruht und über ein durchlaufendes Chromstahl-Profil mit einer zentralen Chromstrebe verbunden ist — ein fast körperloses Zusammenspiel aus Transparenz und reflektierender Präzision, das der Arbeitsfläche ihre charakteristische, schwebende Anmutung gibt. Das Stück stammt aus dem Nachlass des bekannten Cellisten Peter Girth und wurde 2003 von dessen Witwe erworben; die Originalrechnung liegt vor. In unserem früheren Home-Office hat es viele Jahre treu Dienst getan — die dritte Abbildung zeigt den Tisch im gelebten Gebrauch mit iMac und Arbeitsleuchte.',
     specs: {
@@ -342,10 +343,9 @@ export const pieces: Piece[] = [
       Einsatz: 'Über viele Jahre als Home-Office-Schreibtisch in unserem Besitz',
       'Zweite Abbildung': 'Detail-Raster aus neun Nahaufnahmen — Glas, Chromstahl, Verbindungen',
       'Dritte Abbildung': 'Im früheren Home-Office in Benutzung (iMac, Magic Keyboard, Arbeitsleuchte)',
-      auctionUrl: 'https://www.catawiki.com/en/l/103696235-gallotti-radice-writing-table-glass-chrome-president-junior',
+     },
     },
-  },
-  {
+   { 
     id: 12,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
