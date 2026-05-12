@@ -27,14 +27,14 @@ export default function PieceCard({ piece, onOpen }: Props) {
             <div className="piece-reserved-badge">Reserviert</div>
           )}
           {piece.auctionUrl && (
-            
+            <a
               href={piece.auctionUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="piece-auction-badge"
               onClick={(e) => e.stopPropagation()}
             >
-              Bei Catawiki →
+              Bei Catawiki &#8594;
             </a>
           )}
           {hasPhoto ? (
@@ -68,7 +68,7 @@ export default function PieceCard({ piece, onOpen }: Props) {
         aria-label={`${piece.title} — eigene Seite öffnen`}
         tabIndex={-1}
       >
-        Eigene Seite →
+        Eigene Seite &#8594;
       </Link>
     </div>
   );
