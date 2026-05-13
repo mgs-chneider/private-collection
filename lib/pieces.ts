@@ -48,9 +48,9 @@ export const pieces: Piece[] = [
     id: 1,
     category: 'kunst',
     categoryLabel: 'Kunst & Gemälde',
-    title: 'Winter/Hoerbelt — Stehende Figur',
+    title: 'Winter/Hoerbelt — Madonna',
     artist: 'Winter/Hoerbelt',
-    origin: 'Acryl / Kunstharz, Unikat, 1999',
+    origin: 'Acryl / Kunstharz, Unikat, 1999 — direkt im Atelier der Künstler erworben',
     motif: 'sculpture',
     images: [
       '/images/winter-hoerbelt-1.jpg',
@@ -59,7 +59,7 @@ export const pieces: Piece[] = [
     ],
     price: 'Preis auf Anfrage',
     description:
-      'Eine schlanke, in transluzentem Acryl gegossene Figur in warmen Bernstein- und Rosétönen — mit rund 1,30 m Höhe (samt Sockel knapp zwei Meter erreichend) eine eher kammerspielartige, keineswegs lebensgroße Arbeit des Künstlerduos Winter/Hoerbelt. Die Entstehung ist selbst Teil der Faszination: Das flüssige Kunstharz wurde in eine bewusst nicht starre Negativform gegossen, sodass jede Ausformung zu einem vollkommen eigenen Wesen wurde. Manche der so entstandenen Figuren erinnern an Michelin-Männchen; dieses Exemplar gehört zu den deutlich eleganteren Ausformungen und ließ uns an eine gotische Madonna denken — weshalb wir uns seinerzeit gerade für sie entschieden. Der ausgestreckte Arm wurde nach dem Erkalten separat angefügt. Winter/Hoerbelt sind im weiteren Kunstbetrieb vor allem durch ihre dreidimensionalen Objekte aus Getränkekisten bekannt; diese frühe Werkgruppe in Acrylguss ist im Œuvre der beiden eine seltene und besonders poetische Arbeit.',
+      'Eine schlanke, in transluzentem Acryl gegossene Figur in warmen Bernstein- und Rosétönen — mit rund 1,30 m Höhe (samt Sockel knapp zwei Meter erreichend) eine eher kammerspielartige, keineswegs lebensgroße Arbeit des Künstlerduos Winter/Hoerbelt. Die Entstehung ist selbst Teil der Faszination: Das flüssige Kunstharz wurde in eine bewusst nicht starre Negativform gegossen, sodass jede Ausformung zu einem vollkommen eigenen Wesen wurde. Manche der so entstandenen Figuren erinnern an Michelin-Männchen; dieses Exemplar gehört zu den deutlich eleganteren Ausformungen und ließ uns an eine gotische Madonna denken — weshalb wir uns seinerzeit gerade für sie entschieden. Der ausgestreckte Arm war von Anfang an Teil derflexiblen Negativform - kein nachträglicher Eingriff, sondern originärer Bestanmdteil des Gusses. Winter/Hoerbelt sind im weiteren Kunstbetrieb vor allem durch ihre dreidimensionalen Objekte aus Getränkekisten bekannt; diese frühe Werkgruppe in Acrylguss ist im Œuvre der beiden eine seltene und besonders poetische Arbeit.',
     specs: {
       Künstler: 'Winter/Hoerbelt',
       Entstehung: '1999',
@@ -69,7 +69,8 @@ export const pieces: Piece[] = [
       Breite: 'ca. 40 cm (mit ausgestrecktem Arm)',
       Ausführung: 'Unikat aus flexibler Negativform',
       Provenienz: 'Direkt im Atelier der Künstler erworben',
-      Besonderheit: 'Arm separat angefügt',
+      Besonderheit: 'Arm als integraler Bestandteil der flexiblen Negativform — nicht separat angefügt',
+      Werktitel: 'Madonna (bestätigt durch die Künstler)',
     },
   },
   {
