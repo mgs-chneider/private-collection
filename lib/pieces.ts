@@ -55,10 +55,10 @@ export const pieces: Piece[] = [
     images: [
       '/images/winter-hoerbelt-3.jpg',
       '/images/winter-hoerbelt-1.jpg',
-      '/images/winter-hoerbelt-6.jpg',
-      '/images/winter-hoerbelt-5.jpg',
+      '/images/winter-hoerbelt-6.jpeg',
+      '/images/winter-hoerbelt-5.jpeg',
       '/images/winter-hoerbelt-2.jpg',
-      '/images/winter-hoerbelt-4.jpg',
+      '/images/winter-hoerbelt-4.jpeg',
     ],
     price: 'Preis auf Anfrage',
     description:
