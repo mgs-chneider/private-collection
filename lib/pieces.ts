@@ -86,6 +86,7 @@ export const pieces: Piece[] = [
       '/images/liebscher-moskau-detail.jpeg',
     ],
     price: 'Preis auf Anfrage',
+    auctionUrl: 'https://www.catawiki.com/en/l/103819954-martin-liebscher-moskau-detski-mir',
     description:
       'Eine großformatige Fotoarbeit von Martin Liebscher aus seiner Panorama-Serie: das geschwungene Treppenhaus im Inneren des legendären Moskauer Kaufhauses Detskij Mir („Kinderwelt") am Lubjanka-Platz, aufgenommen kurz vor der großen Umgestaltung des Gebäudes — in einem einzigen, 290 cm breiten Bildstreifen, der die gewundenen Stufenläufe, Balustraden und Geländer so dreht und entrollt, dass das vertikale Treppenhaus zu einem horizontal ausgebreiteten, ununterbrochenen Band wird. Wo Liebscher im weiteren Kunstbetrieb vor allem für seine „Wimmelbilder" bekannt ist, in denen er sich selbst dutzendfach in öffentliche und private Räume einblendet, tritt er in der Panorama-Serie bewusst hinter das Bild zurück: der Raum selbst ist hier das Ereignis. Die Arbeit wurde seinerzeit direkt bei Galerie Voges + Deisen, der damaligen Frankfurter Galerie des Künstlers, erworben — als erstes Exemplar (Auflage 1/3), ausgeführt als C-Print auf Aludibond mit schützender UV-Folie, im persönlichen Gespräch mit dem bei der Ausstellung anwesenden Künstler. An einer freien Wand entfaltet die Arbeit ihre volle Wirkung: ein Panorama, das den Betrachter nicht gegenüber, sondern mitten hinein nimmt.',
     specs: {
