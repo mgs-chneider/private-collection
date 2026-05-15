@@ -1002,19 +1002,23 @@ body.modal-open { overflow: hidden; }
 /* ---------- Auktions-Badge ---------- */
 .piece-auction-badge {
   position: absolute;
-  top: 0.8rem;
-  right: 0.8rem;
+  top: 0.9rem;
+  right: 0.9rem;
   z-index: 2;
-  background: var(--ink);
+  background: transparent;
   color: var(--paper);
   font-family: var(--sans);
   font-size: 0.58rem;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  padding: 0.3rem 0.65rem;
+  padding: 0.35rem 0.6rem;
   text-decoration: none;
-  transition: background 0.2s ease;
+  border-top: 1px solid var(--paper);
+  border-bottom: 1px solid var(--paper);
+  transition: all 0.2s ease;
 }
 .piece-auction-badge:hover {
-  background: var(--ink-soft);
+  color: var(--gold);
+  border-top-color: var(--gold);
+  border-bottom-color: var(--gold);
 }
