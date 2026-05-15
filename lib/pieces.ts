@@ -53,9 +53,12 @@ export const pieces: Piece[] = [
     origin: 'Acryl / Kunstharz, Unikat, 1999 — direkt im Atelier der Künstler erworben',
     motif: 'sculpture',
     images: [
-      '/images/winter-hoerbelt-1.jpg',
-      '/images/winter-hoerbelt-2.jpg',
       '/images/winter-hoerbelt-3.jpg',
+      '/images/winter-hoerbelt-1.jpg',
+      '/images/winter-hoerbelt-6.jpg',
+      '/images/winter-hoerbelt-5.jpg',
+      '/images/winter-hoerbelt-2.jpg',
+      '/images/winter-hoerbelt-4.jpg',
     ],
     price: 'Preis auf Anfrage',
     description:
