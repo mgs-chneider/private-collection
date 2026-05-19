@@ -1022,3 +1022,17 @@ body.modal-open { overflow: hidden; }
   border-top-color: #b50015;
   border-bottom-color: #b50015;
 }
+
+.piece-sold-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+  background: var(--muted);
+  color: var(--paper);
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.75rem;
+}
