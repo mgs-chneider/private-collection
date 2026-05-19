@@ -37,6 +37,9 @@ export default function PieceCard({ piece, onOpen }: Props) {
               Bei Catawiki &#8594;
             </a>
           )}
+          {piece.sold && (
+            <div className="piece-sold-badge">Verkauft</div>
+          )}
           {hasPhoto ? (
             <img
               className="piece-photo"
@@ -58,6 +61,9 @@ export default function PieceCard({ piece, onOpen }: Props) {
           <div className="piece-origin">{piece.origin}</div>
           <div className="piece-price">
             {piece.reserved ? 'Reserviert' : piece.price}
+          </div>
+          <div className="piece-price">
+            {piece.sold ? 'Verkauft' : piece.reserved ? 'Reserviert' : piece.price}
           </div>
         </div>
       </button>
