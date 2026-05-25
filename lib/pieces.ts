@@ -39,7 +39,7 @@ export interface Piece {
  *   VI.   Bang & Olufsen — Designklassiker, dänisches Understatement
  *   VII.  Donghia Lounge Chair (John Hutton) — amerikanische Designer-Ikone
  *   VIII. Eames Lounge Chair 670, Herman Miller — Ikone der Moderne
- *   IX.   Fontana Arte „Tavolo con Ruote" (Gae Aulenti) — italienische Design-Ikone
+ *   IX.   Draenert Klassik 1022 — Couchtisch, Klarglas und Chromstahl
  *   X.    de Sede DS-76, Schlafsofa — Schweizer Qualität
  *   XI.   Gallotti & Radice „President Junior" — italienischer Glas-Schreibtisch
  *   XII.  Minotii Duchamp & Akari Vela Alta - Ensemble
@@ -273,31 +273,30 @@ export const pieces: Piece[] = [
     },
   },
   {
-    id: 9,
+    id: 9,  // ersetzt Tavolo con Ruote
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
-    title: 'Tavolo con Ruote',
-    artist: 'Gae Aulenti',
-    origin: 'Italien, Kristallglas auf Industrie-Gummirädern, Entwurf 1980',
+    title: 'Draenert Klassik 1022 — Couchtisch, Klarglas und Chromstahl',
+    artist: 'Draenert',
+    origin: 'Deutschland, Klarglas auf Chromstahl, 100 × 100 cm',
     motif: 'cabinet',
     images: [
-      '/images/fontana-arte-wohnraum.jpeg',
-      '/images/fontana-arte-detail.jpeg',
-      '/images/fontana-arte-freistellung.jpeg',
+      '/images/draenert-wohnraum.jpeg',
+      '/images/draenert-draufsicht.jpeg',
+      '/images/draenert-kante.jpeg',
     ],
     price: 'Preis auf Anfrage',
     description:
-      'Ein Couchtisch „Tavolo con Ruote" aus dem Hause Fontana Arte — der 1932 in Mailand von Gio Ponti und Pietro Chiesa gegründeten Glas-Manufaktur, die seither als eine der maßgeblichen Adressen italienischer Designgeschichte gilt. Der 1980 von Gae Aulenti entworfene Tisch gehört zu den zitierfähigsten italienischen Möbelentwürfen des späten 20. Jahrhunderts und ist bei Fontana Arte bis heute ununterbrochen in Produktion: eine schwere Platte aus klarem Kristallglas ruht auf vier markanten Industrie-Gummirädern — derselben Gattung, wie man sie von Werkstattwagen kennt, hier aber ins Wohnen überführt und zum tragenden Gestaltungselement erhoben. Gae Aulenti, eine der einflussreichsten italienischen Architektinnen und Gestalterinnen des 20. Jahrhunderts — ihr verdanken Paris den Umbau des Musée d\'Orsay und Venedig den des Palazzo Grassi — erzielt hier mit wenigen Mitteln ein Maximum an Präsenz: die Spannung zwischen fein geschliffenem Glas und bewusst utilitärer Rollen-Konstruktion ist die eigentliche Aussage des Entwurfs. Die vorliegende Ausführung misst 120 × 120 × 25 cm, Räder und Befestigungen sind vollständig schwarz. Über viele Jahre stand der Tisch in unserem Wohnzimmer und bildete dort das Pendant zum Donghia-Sessel (siehe Nr. VII).',
+      'Ein Couchtisch Klassik 1022 aus dem Hause Draenert — dem 1969 in Immenstaad am Bodensee gegründeten deutschen Möbelhaus, das seit Jahrzehnten für die Verbindung von hochwertigem Glas und präzisem Metallhandwerk steht. Der quadratische Tisch mit seiner 2 cm starken Klarglas-Platte auf einem durchlaufenden Chromstahlgestell verkörpert das gestalterische Credo des Hauses: klare Geometrie, maximale Transparenz, kompromisslose Materialqualität. Das polierte Chromgestell reflektiert den Raum und lässt den Tisch trotz seiner Präsenz leicht wirken — ein Klassiker des deutschen Möbeldesigns der in jedem Wohnraum funktioniert. Über viele Jahre stand der Tisch in unserem Wohnzimmer und bildete dort das Zentrum des Sitzbereichs. Die Glasplatte ist in sehr gutem Zustand; an einer Unterkante befindet sich eine minimale Absplitterung die im normalen Gebrauch nicht sichtbar ist.',
     specs: {
-      Hersteller: 'Fontana Arte, Mailand',
-      Entwurf: 'Gae Aulenti, 1980',
-      Material: 'Kristallglas-Platte auf vier Industrie-Gummirädern',
-      Maße: '120 × 120 × 25 cm',
-      Ausführung: 'Räder und Befestigungen vollständig schwarz',
-      Produktion: 'Seit 1980 ununterbrochen im Fontana-Arte-Programm',
-      'Erste Abbildung': 'Im bewohnten Zusammenhang unseres Wohnzimmers',
-      'Zweite Abbildung': 'Detailaufnahme der Rad-Befestigung am Glas',
-      'Dritte Abbildung': 'Reale Aufnahme mit KI-unterstützter Bildbereinigung (Dekoration entfernt) zur besseren Sicht auf den Tisch',
+      Hersteller: 'Draenert, Immenstaad am Bodensee',
+      Modell: 'Klassik 1022',
+      Material: 'Klarglas, 2 cm stark, auf poliertem Chromstahlgestell',
+      Maße: '100 × 100 cm, Höhe 40 cm',
+      Zustand: 'Sehr gut — minimale Absplitterung an einer Unterkante, im normalen Gebrauch nicht sichtbar',
+      'Erste Abbildung': 'Im bewohnten Wohnzimmer',
+      'Zweite Abbildung': 'Draufsicht',
+      'Dritte Abbildung': 'Detailaufnahme Kantenbeschädigung zur transparenten Dokumentation',
     },
   },
   {
