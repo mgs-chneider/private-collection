@@ -261,7 +261,7 @@ export const pieces: Piece[] = [
       Modell: 'Lounge Chair 670',
       Produktionszeitraum: 'Ca. 1960–Anfang 1970er Jahre',
       Produktionsnummer: 'B 5781 — handgeschrieben auf Rückseite der Kopfschale, Merkmal für nummerngleiches Original',
-      Holz: 'Helles Edelholzfurnier — charakteristisch für frühe Herman-Miller-Produktion',
+      Holz: 'Edelholzfurnier, warm mittelbraun mit charakteristischer Mserung  — typisch für frühe Herman-Miller-Produktion',
       Polster: 'Originales schwarzes Leder mit natürlicher Alterspatina',
       Fußkreuz: 'Aluminium, flache Oberseite — typisch für Herman Miller (Vitra-Version deutlich stärker abgerundet)',
       Befestigung: 'Drei-Loch-Bohrung unter den Armlehnen — Merkmal früher Vintage-Modelle',
