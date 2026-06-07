@@ -55,7 +55,7 @@ export const bmw: BmwData = {
     '8-fach bereift',
     'Nichtraucherfahrzeug',
   ],
-  price: '9.900 €',
+  price: '8.950 €',
   priceNote: 'Verhandlungsbasis',
   legal:
     'Privatverkauf unter Ausschluss jeglicher Gewährleistung und Rücknahme.',
