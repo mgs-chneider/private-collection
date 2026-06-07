@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'BMW 325Ci Cabrio (E46) — Privatverkauf',
   description:
-    'BMW 325Ci Cabrio E46, Schwarz/Schwarz, ca. 147.000 km, ' +
+    'BMW 325Ci Cabrio E46, Schwarz/Schwarz, ca. 148.000 km, ' +
     'HU 10/2024, 8-fach bereift, Vollleder — gepflegter Privatbesitz seit 23 Jahren.',
   openGraph: {
     title: 'BMW 325Ci Cabrio (E46)',
