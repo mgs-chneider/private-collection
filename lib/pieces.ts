@@ -38,7 +38,7 @@ export interface Piece {
  *   V.    Essgruppe, skandinavischer Stil — Mid-Century mit Familiengeschichte
  *   VI.   Bang & Olufsen — Designklassiker, dänisches Understatement
  *   VII.  Donghia Lounge Chair (John Hutton) — amerikanische Designer-Ikone
- *   VIII. Eames Lounge Chair 670, Herman Miller — Ikone der Moderne
+ *   VIII. Eames Lounge Chair 670, Vitra — Ikone der Moderne
  *   IX.   Draenert Klassik 1022 — Couchtisch, Klarglas und Chromstahl
  *   X.    de Sede DS-76, Schlafsofa — Schweizer Qualität
  *   XI.   Gallotti & Radice „President Junior" — italienischer Glas-Schreibtisch
@@ -238,9 +238,9 @@ export const pieces: Piece[] = [
     id: 8,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
-    title: 'Eames Lounge Chair 670, Herman Miller',
+    title: 'Eames Lounge Chair 670, Vitra-Lizenzproduktion',
     artist: 'Charles & Ray Eames',
-    origin: 'USA, ca. 1960–1970',
+    origin: 'Europa (Vitra-Lizenzfertigung), ca. 1960er Jahre',
     motif: 'chair',
     images: [
       '/images/eames-front.jpeg',
@@ -252,19 +252,19 @@ export const pieces: Piece[] = [
       '/images/eames-clips.jpeg',
       '/images/eames-nummer.jpeg',
     ],
-    price: 'Preis auf Anfrage',
+    price: '€ 3.300',
     description:
-      'Ein Eames Lounge Chair 670 aus der frühen Produktionsära von Herman Miller — jenes Möbelstück, das Charles und Ray Eames 1956 entwarfen und das seither als einer der vollkommensten Sitzentwürfe des 20. Jahrhunderts gilt. Die vorliegende Ausführung stammt nach allen erkennbaren Merkmalen aus dem Zeitraum zwischen ca. 1960 und Anfang der 1970er Jahre und trägt die handgeschriebene Produktionsnummer B 5781 auf der Rückseite der Kopfschale — jene interne Fertigungsnummer, mit der Herman Miller damals sicherstellte, dass alle drei Schalen eines Stuhls aus demselben Holzblock stammen und die Maserung des Furniers perfekt harmoniert. Die charakteristische Drei-Loch-Bohrung unter den Armlehnen, die flache Oberseite des Aluminiumfußkreuzes und die runden Polster-Clips mit Belüftungslöchern auf der Kissenrückseite sind weitere typische Erkennungsmerkmale früher Herman-Miller-Originale, die in späteren Versionen und Nachbauten so nicht vorkommen. Das originale schwarze Leder zeigt die ehrliche Patina jahrzehntelanger Nutzung — weich, angeschmiegt, unrestauriert. Der Stuhl befindet sich seit seiner Anschaffung ununterbrochen in Familienbesitz — über drei Generationen genutzt und weitergegeben, nie restauriert, nie den Besitzer gewechselt. Er wird ohne Ottoman abgegeben.',
+      'Ein Eames Lounge Chair 670 — jenes Möbelstück, das Charles und Ray Eames 1956 für Herman Miller entwarfen und das seither als einer der vollkommensten Sitzentwürfe des 20. Jahrhunderts gilt. Die vorliegende Ausführung wurde anhand der Konstruktion des Aluminiumfußkreuzes als europäische Lizenzproduktion von Vitra identifiziert — Vitra fertigte das Modell ab den späten 1950er Jahren unter Lizenz für den europäischen Markt, mit eigenen Werkzeugen und charakteristischen konstruktiven Unterschieden zum US-amerikanischen Original. Der Stuhl trägt die handgeschriebene Produktionsnummer B 5781 auf der Rückseite der Kopfschale. Die Drei-Loch-Bohrung unter den Armlehnen, die runden Polster-Clips mit Belüftungslöchern und die Formgebung des Aluminiumfußkreuzes — mit angeformten Gleitern und spitz zulaufenden Fußenden — sind die für diese Vitra-Produktion typischen Merkmale. Das originale schwarze Leder zeigt die ehrliche Patina jahrzehntelanger Nutzung — weich, angeschmiegt, unrestauriert. Der Stuhl befindet sich seit seiner Anschaffung ununterbrochen in Familienbesitz — über drei Generationen genutzt und weitergegeben, nie restauriert, nie den Besitzer gewechselt. Er wird ohne Ottoman abgegeben.',
     specs: {
-      Hersteller: 'Herman Miller, Zeeland, Michigan (USA)',
-      Entwurf: 'Charles & Ray Eames, 1956',
+      Hersteller: 'Vitra (Lizenzfertigung für Europa)',
+      Entwurf: 'Charles & Ray Eames für Herman Miller, 1956',
       Modell: 'Lounge Chair 670',
-      Produktionszeitraum: 'Ca. 1960–Anfang 1970er Jahre',
+      Produktionszeitraum: 'Ca. 1960er Jahre',
       Produktionsnummer: 'B 5781 — handgeschrieben auf Rückseite der Kopfschale, Merkmal für nummerngleiches Original',
-      Holz: 'Edelholzfurnier, warm mittelbraun mit charakteristischer Mserung  — typisch für frühe Herman-Miller-Produktion',
+      Holz: 'Edelholzfurnier, warm mittelbraun mit charakteristischer Maserung',
       Polster: 'Originales schwarzes Leder mit natürlicher Alterspatina',
-      Fußkreuz: 'Aluminium, flache Oberseite — typisch für Herman Miller (Vitra-Version deutlich stärker abgerundet)',
-      Befestigung: 'Drei-Loch-Bohrung unter den Armlehnen — Merkmal früher Vintage-Modelle',
+      Fußkreuz: 'Aluminium mit charakteristischer Vitra-Formgebung — angeformte Gleiter, spitz zulaufende Fußenden (Zuordnung durch Fachexperte bestätigt)',
+      Befestigung: 'Drei-Loch-Bohrung unter den Armlehnen',
       'Polster-Clips': 'Runde Clips mit Belüftungslöchern — charakteristisch für Bauweise der 1960er Jahre',
       Ausführung: 'Einzelsessel ohne Ottoman',
       Provenienz: 'Seit Anschaffung ununterbrochen in Familienbesitz — drei Generationen, nie weitergegeben, nie restauriert',
