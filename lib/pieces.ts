@@ -244,11 +244,12 @@ export const pieces: Piece[] = [
     motif: 'chair',
     images: [
       '/images/eames-front.jpeg',
+      '/images/eames-closeup.jpeg',
       '/images/eames-seite.jpeg',
       '/images/eames-ruecken.jpeg',
+      '/images/eames-detail.jpeg',
       '/images/eames-fusskreuz.jpeg',
       '/images/eames-dreiloch.jpeg',
-      '/images/eames-detail.jpeg',
       '/images/eames-clips.jpeg',
       '/images/eames-nummer.jpeg',
     ],
