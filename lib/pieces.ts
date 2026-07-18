@@ -186,13 +186,14 @@ export const pieces: Piece[] = [
     id: 6,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
+    sold: true,
+    price: 'Verkauft',
     title: 'Bang & Olufsen Surround-Anlage',
     origin: 'Dänisches Design, komplettes System',
     motif: 'cabinet',
     images: [
       '/images/bang-olufsen.jpg',
     ],
-    price: 'Verkauft',
     description:
       'Eine komplette Surround-Anlage aus dem Hause Bang & Olufsen — das dänische Understatement in Reinform, mit dem unverwechselbar eleganten Aluminium-Design und dem für B&O charakteristischen warmen, kultivierten Klang. Das Set besteht aus der BeoSound Ouverture als Zentraleinheit mit integriertem CD-Player, Tuner und Verstärker samt passendem Rack, dem massiven Subwoofer BeoLab 2 sowie vier aktiven Säulenlautsprechern (zwei BeoLab 8000 und zwei BeoLab 6000) und zwei Fernbedienungen. Erworben bei HiFi-Profis in Frankfurt am Main, damals einem der renommiertesten HiFi-Fachgeschäfte Deutschlands. Die Originale stehen aktuell bei einer Spedition in Frankfurt am Main fachgerecht verpackt und abholbereit.',
     specs: {
@@ -238,6 +239,8 @@ export const pieces: Piece[] = [
     id: 8,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
+    sold: true,
+    price: 'Verkauft',
     title: 'Eames Lounge Chair 670, Vitra-Lizenzproduktion',
     artist: 'Charles & Ray Eames',
     origin: 'Europa (Vitra-Lizenzfertigung), ca. 1960er Jahre',
@@ -253,7 +256,6 @@ export const pieces: Piece[] = [
       '/images/eames-clips.jpeg',
       '/images/eames-nummer.jpeg',
     ],
-    price: '€ 3.300',
     description:
       'Ein Eames Lounge Chair 670 — jenes Möbelstück, das Charles und Ray Eames 1956 für Herman Miller entwarfen und das seither als einer der vollkommensten Sitzentwürfe des 20. Jahrhunderts gilt. Die vorliegende Ausführung wurde anhand der Konstruktion des Aluminiumfußkreuzes als europäische Lizenzproduktion von Vitra identifiziert — Vitra fertigte das Modell ab den späten 1950er Jahren unter Lizenz für den europäischen Markt, mit eigenen Werkzeugen und charakteristischen konstruktiven Unterschieden zum US-amerikanischen Original. Der Stuhl trägt die handgeschriebene Produktionsnummer B 5781 auf der Rückseite der Kopfschale. Die Drei-Loch-Bohrung unter den Armlehnen, die runden Polster-Clips mit Belüftungslöchern und die Formgebung des Aluminiumfußkreuzes — mit angeformten Gleitern und spitz zulaufenden Fußenden — sind die für diese Vitra-Produktion typischen Merkmale. Das originale schwarze Leder zeigt die ehrliche Patina jahrzehntelanger Nutzung — weich, angeschmiegt, unrestauriert. Der Stuhl befindet sich seit seiner Anschaffung ununterbrochen in Familienbesitz — über drei Generationen genutzt und weitergegeben, nie restauriert, nie den Besitzer gewechselt. Er wird ohne Ottoman abgegeben.',
     specs: {
