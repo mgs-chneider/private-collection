@@ -49,6 +49,7 @@ export const pieces: Piece[] = [
     id: 1,
     category: 'kunst',
     categoryLabel: 'Kunst & Gemälde',
+    auctionUrl: 'https://www.catawiki.com/de/l/105200285',
     title: 'Winter/Hoerbelt — Madonna',
     artist: 'Winter/Hoerbelt',
     origin: 'Acryl / Kunstharz, Unikat, 1999 — direkt im Atelier der Künstler erworben',
