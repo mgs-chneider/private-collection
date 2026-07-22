@@ -212,6 +212,8 @@ export const pieces: Piece[] = [
     id: 7,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
+    sold: true,
+    price: 'Verkauft',
     title: 'Donghia Lounge Chair',
     artist: 'John Hutton',
     origin: 'USA, Fischgrat-Bezug maisgelb — ohne Ottomane',
@@ -220,7 +222,6 @@ export const pieces: Piece[] = [
       '/images/donghia-original.jpeg',
       '/images/donghia-impression.jpeg',
     ],
-    price: 'Preis auf Anfrage',
     description:
       'Ein Sessel aus dem Hause Donghia in leuchtendem Maisgelb — gezeichnet von John Hutton, dem langjährigen Chefgestalter des 1968 in New York gegründeten Traditionshauses, das über drei Jahrzehnte hinweg zu den ersten Adressen amerikanischer Interieur-Kultur zählte. Hutton, unter Kollegen wie Kritikern gleichermaßen geschätzt, verband in seinen Entwürfen eine fast aristokratisch zurückgenommene Silhouette mit bewusst moderner, tailored gearbeiteter Präzision: hier eine kompakte, in weichem Bogen über die Schultern schwingende Rückenlehne, kurze gerundete Beine und ausgesprochen behutsame Proportionen. Nach jüngerer Recherche lässt sich das Modell der Donghia-Serie „Phantom" zuordnen. Der Bezug — in der Detailaufnahme gut erkennbar — ist ein dicht gewebter Fischgrat in warmem Maisgelb, dessen handwerkliche Stoffqualität sich bei Nähe sofort erschließt. Der Sessel wurde seinerzeit ohne zugehörige Ottomane erworben und wird entsprechend einzeln abgegeben. Die zweite Abbildung ist eine KI-unterstützte Darstellung zur räumlichen Einordnung — sie zeigt den Sessel in einer modernen Wohnraumsituation unter dem Liebscher-Panorama „Moskau" (siehe Nr. II). Erworben haben wir ihn gebraucht bei Rolf Jasper — Spezialhaus für antike Teppiche in Frankfurt am Main, im Zuge mehrerer Teppich-Käufe; der Händler hätte ihn ursprünglich lieber behalten und trennte sich erst nach einigem Zögern von dem Stück. Aus derselben Quelle stammt auch der antike Seidenteppich unter Nr. IV.',
     specs: {
