@@ -8,9 +8,9 @@ export default function Preamble() {
         Ein Abschied <em>mit Freude</em>
       </h2>
       <p className="lead">
-        Wir ziehen um — und nicht alles kann mitkommen. So trennen wir uns
-        schweren, aber auch fröhlichen Herzens von einigen ausgewählten
-        Stücken, die uns lange begleitet haben.
+        Wir sind umgezogen — und nicht alles konnte mit. Einige Stücke, die
+        uns über viele Jahre begleitet haben, warten seitdem sorgfältig
+        verpackt auf ein neues Zuhause.
       </p>
       <p>
         Jeder Gegenstand in dieser Sammlung hat eine eigene Geschichte. Wir
