@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import Preamble from '@/components/Preamble';
 import Collection from '@/components/Collection';
-import Impressions from '@/components/Impressions';
+import Process from '@/components/Process';
 import Further from '@/components/Further';
 import Footer from '@/components/Footer';
 
@@ -11,7 +11,7 @@ export default function Home() {
       <Header hero />
       <Preamble />
       <Collection />
-      <Impressions />
+      <Process />
       <Further />
       <Footer />
     </>

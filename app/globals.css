@@ -1274,3 +1274,64 @@ body.modal-open { overflow: hidden; }
   .further { padding: 4rem 1.5rem; }
 }
 .impressions-head h2 { text-transform: none; }
+
+/* ---------- So kommt ein Stück zu Ihnen (ersetzt Impressionen) ---------- */
+.process {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 6rem max(2rem, calc((100vw - 1216px) / 2));
+}
+.process-head { text-align: center; margin-bottom: 3.6rem; }
+.process-head .ornament { margin: 0 auto 1.4rem; }
+.process-head .section-eyebrow { color: var(--gold); }
+.process-head h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(2rem, 3.4vw, 2.8rem);
+  line-height: 1.15;
+  margin: 0;
+  color: var(--paper);
+}
+.process-head h2 em { font-style: italic; color: var(--gold); }
+.process-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.4rem;
+}
+.process-step {
+  border-top: 1px solid rgba(160, 134, 86, 0.55);
+  padding-top: 1.6rem;
+}
+.process-number {
+  display: block;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+.process-step h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin: 0 0 0.7rem;
+  color: var(--paper);
+}
+.process-step p {
+  font-family: var(--serif);
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: #cfc6b6;
+  margin: 0;
+}
+@media (max-width: 960px) {
+  .process-steps { grid-template-columns: repeat(2, 1fr); gap: 2.4rem 2rem; }
+}
+@media (max-width: 600px) {
+  .process { padding: 4rem 1.5rem; }
+  .process-steps { grid-template-columns: 1fr; gap: 2rem; }
+}

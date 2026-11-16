@@ -43,7 +43,7 @@ function buildMailto(piece: Piece): string {
   const romanId = toRoman(piece.id);
   const subject = encodeURIComponent(`Anfrage: ${piece.title} (Nr. ${romanId})`);
   const body = encodeURIComponent(
-    `Sehr geehrte Damen und Herren,\n\nich interessiere mich für folgendes Stück aus Ihrer Sammlung:\n\n  ${piece.title}\n  ${piece.origin}\n  Katalog-Nr. ${romanId}\n\nIch würde mich freuen, wenn Sie mir weitere Bilder zukommen lassen könnten und mir einen Vorschlag für eine Besichtigung machen würden.\n\nMit freundlichen Grüßen\n`
+    `Sehr geehrte Damen und Herren,\n\nich interessiere mich für folgendes Stück aus Ihrer Sammlung:\n\n  ${piece.title}\n  ${piece.origin}\n  Katalog-Nr. ${romanId}\n\nIch würde mich freuen, wenn Sie mir weitere Bilder zukommen lassen könnten und wir einen möglichen Abholtermin abstimmen könnten.\n\nMit freundlichen Grüßen\n`
   );
   return `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
 }

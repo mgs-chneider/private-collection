@@ -1,5 +1,8 @@
 import Ornament from './Ornament';
-import { CONTACT_EMAIL } from '@/lib/pieces';
+import { CONTACT_EMAIL, pieces } from '@/lib/pieces';
+
+const ZAHLWORTE = ['null','ein','zwei','drei','vier','fünf','sechs','sieben','acht','neun','zehn','elf','zwölf'];
+const anzahl = ZAHLWORTE[pieces.length] ?? String(pieces.length);
 
 /**
  * Weiteres auf Anfrage — dezenter Hinweis zwischen Impressionen und Footer.
@@ -16,7 +19,7 @@ const MAILTO =
   `&body=${encodeURIComponent(
     `Sehr geehrte Damen und Herren,
 
-über die zwölf im Katalog gezeigten Stücke hinaus interessiere ich mich für weitere Designobjekte aus Ihrem Bestand. Bitte senden Sie mir bei Gelegenheit eine kuratierte Auswahl.
+über die ${anzahl} im Katalog gezeigten Stücke hinaus interessiere ich mich für weitere Designobjekte aus Ihrem Bestand. Bitte senden Sie mir bei Gelegenheit eine kuratierte Auswahl.
 
 Mit freundlichen Grüßen
 `
@@ -30,7 +33,7 @@ export default function Further() {
         <h2 id="further-heading">Weiteres auf Anfrage</h2>
       </div>
       <p className="further-text">
-        Über die zwölf hier gezeigten Stücke hinaus trennen wir uns von
+        Über die {anzahl} hier gezeigten Stücke hinaus trennen wir uns von
         weiteren Designobjekten aus unserem Bestand. Dazu zählen einzelne
         Leuchten, Spiegel, Beistelltische, moderne Teppiche und Bilder —
         Stücke, die wir hier nicht eigens katalogisiert haben, zu denen wir

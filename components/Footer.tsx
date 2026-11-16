@@ -22,7 +22,7 @@ export default function Footer() {
       <Ornament />
       <h3>Ihre Anfrage ist willkommen</h3>
       <p>
-        Für Rückfragen, weitere Bilder oder einen Besichtigungstermin schreiben
+        Für Rückfragen, weitere Bilder oder einen Abholtermin schreiben
         Sie uns gerne eine Nachricht — wir antworten persönlich.
       </p>
       <a className="email" href={`mailto:${CONTACT_EMAIL}`}>

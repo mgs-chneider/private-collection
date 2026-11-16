@@ -26,7 +26,7 @@ ich interessiere mich für folgendes Stück aus Ihrer Sammlung:
   ${piece.origin}
   Katalog-Nr. ${romanId}
 
-Ich würde mich freuen, wenn Sie mir weitere Bilder zukommen lassen könnten und mir einen Vorschlag für eine Besichtigung machen würden.
+Ich würde mich freuen, wenn Sie mir weitere Bilder zukommen lassen könnten und wir einen möglichen Abholtermin abstimmen könnten.
 
 Mit freundlichen Grüßen
 `

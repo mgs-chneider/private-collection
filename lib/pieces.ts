@@ -36,13 +36,10 @@ export interface Piece {
  *   III.  Martin Liebscher, New York (TWA Edition) — kleineres Pendant
  *   IV.   Antiker Seidenteppich, China — klassisches Sammlerstück
  *   V.    Essgruppe, skandinavischer Stil — Mid-Century mit Familiengeschichte
- *   VI.   Bang & Olufsen — Designklassiker, dänisches Understatement
- *   VII.  Donghia Lounge Chair (John Hutton) — amerikanische Designer-Ikone
- *   VIII. Eames Lounge Chair 670, Vitra — Ikone der Moderne
- *   IX.   Draenert Klassik 1022 — Couchtisch, Klarglas und Chromstahl
- *   X.    de Sede DS-76, Schlafsofa — Schweizer Qualität
- *   XI.   Gallotti & Radice „President Junior" — italienischer Glas-Schreibtisch
- *   XII.  Minotii Duchamp & Akari Vela Alta - Ensemble
+ *   VI.   Draenert Klassik 1022 — Couchtisch, Klarglas und Chromstahl
+ *   VII.  de Sede DS-76, Schlafsofa — Schweizer Qualität
+ *   VIII. Minotti Léger & Akari Vela Alta — Ensemble
+ *   (Verkaufte Stücke werden entfernt; alte Links leiten per next.config.mjs auf / um.)
  */
 export const pieces: Piece[] = [
   {
@@ -125,7 +122,7 @@ export const pieces: Piece[] = [
       Maße: '200 × 50 cm (Breite × Höhe)',
       Auflage: '5/12 zzgl. 2 Künstlerexemplaren',
       Inventarnummer: 'ML-2004-011',
-      Provenienz: 'Erworben bei Galerie Voges + Partner, Frankfurt am Main — Zertifikat der Galerie mit Versicherungswert (2.200 €, incl. MwSt) liegt vor',
+      Provenienz: 'Erworben bei Galerie Voges + Partner, Frankfurt am Main — Originalrechnung sowie Zertifikat der Galerie mit Versicherungswert (2.200 €, incl. MwSt) liegen vor',
       Referenz: 'martinliebscher.de · Panorama-Serie',
       Hinweis: 'Aktuell eingelagert — Originalfoto stellen wir gerne nach Auspacken zur Verfügung',
     },
@@ -179,104 +176,11 @@ export const pieces: Piece[] = [
       'Erste Abbildung': 'KI-unterstützte Visualisierung des Ensembles — Tisch mit sechs von insgesamt zehn zugehörigen Stühlen',
       'Zweite Abbildung': 'KI-unterstützte Visualisierung eines Einzelstuhls zur Ansicht der Proportionen und Polsterung',
       'Dritte Abbildung': 'Originalaufnahme aus dem Lager (Stuhl in Umzugsfolie, Hintergrund bereinigt)',
-      Hinweis: 'Aktuell eingelagert — weitere Originalfotos und Besichtigungstermine auf Anfrage',
+      Hinweis: 'Aktuell eingelagert — weitere Originalfotos und Abholtermine auf Anfrage',
     },
   },
   {
     id: 6,
-    category: 'moebel',
-    categoryLabel: 'Möbel & Einrichtung',
-    sold: true,
-    price: 'Verkauft',
-    title: 'Bang & Olufsen Surround-Anlage',
-    origin: 'Dänisches Design, komplettes System',
-    motif: 'cabinet',
-    images: [
-      '/images/bang-olufsen.jpg',
-    ],
-    description:
-      'Eine komplette Surround-Anlage aus dem Hause Bang & Olufsen — das dänische Understatement in Reinform, mit dem unverwechselbar eleganten Aluminium-Design und dem für B&O charakteristischen warmen, kultivierten Klang. Das Set besteht aus der BeoSound Ouverture als Zentraleinheit mit integriertem CD-Player, Tuner und Verstärker samt passendem Rack, dem massiven Subwoofer BeoLab 2 sowie vier aktiven Säulenlautsprechern (zwei BeoLab 8000 und zwei BeoLab 6000) und zwei Fernbedienungen. Erworben bei HiFi-Profis in Frankfurt am Main, damals einem der renommiertesten HiFi-Fachgeschäfte Deutschlands. Die Originale stehen aktuell bei einer Spedition in Frankfurt am Main fachgerecht verpackt und abholbereit.',
-    specs: {
-      Hersteller: 'Bang & Olufsen',
-      Zentraleinheit: 'BeoSound Ouverture mit passendem Rack',
-      Subwoofer: 'BeoLab 2',
-      Lautsprecher: '2× BeoLab 8000 und 2× BeoLab 6000',
-      Fernbedienungen: '2 Stück',
-      Provenienz: 'HiFi-Profis, Frankfurt am Main',
-      Zustand: 'Verpackt und abholbereit, Spedition in Frankfurt am Main',
-      Hinweis: 'Das abgebildete Foto ist eine KI-unterstützte Darstellung — Originalfotos stellen wir gerne auf Anfrage zur Verfügung',
-    },
-  },
-  {
-    id: 7,
-    category: 'moebel',
-    categoryLabel: 'Möbel & Einrichtung',
-    sold: true,
-    price: 'Verkauft',
-    title: 'Donghia Lounge Chair',
-    artist: 'John Hutton',
-    origin: 'USA, Fischgrat-Bezug maisgelb — ohne Ottomane',
-    motif: 'chair',
-    images: [
-      '/images/donghia-original.jpeg',
-      '/images/donghia-impression.jpeg',
-    ],
-    description:
-      'Ein Sessel aus dem Hause Donghia in leuchtendem Maisgelb — gezeichnet von John Hutton, dem langjährigen Chefgestalter des 1968 in New York gegründeten Traditionshauses, das über drei Jahrzehnte hinweg zu den ersten Adressen amerikanischer Interieur-Kultur zählte. Hutton, unter Kollegen wie Kritikern gleichermaßen geschätzt, verband in seinen Entwürfen eine fast aristokratisch zurückgenommene Silhouette mit bewusst moderner, tailored gearbeiteter Präzision: hier eine kompakte, in weichem Bogen über die Schultern schwingende Rückenlehne, kurze gerundete Beine und ausgesprochen behutsame Proportionen. Nach jüngerer Recherche lässt sich das Modell der Donghia-Serie „Phantom" zuordnen. Der Bezug — in der Detailaufnahme gut erkennbar — ist ein dicht gewebter Fischgrat in warmem Maisgelb, dessen handwerkliche Stoffqualität sich bei Nähe sofort erschließt. Der Sessel wurde seinerzeit ohne zugehörige Ottomane erworben und wird entsprechend einzeln abgegeben. Die zweite Abbildung ist eine KI-unterstützte Darstellung zur räumlichen Einordnung — sie zeigt den Sessel in einer modernen Wohnraumsituation unter dem Liebscher-Panorama „Moskau" (siehe Nr. II). Erworben haben wir ihn gebraucht bei Rolf Jasper — Spezialhaus für antike Teppiche in Frankfurt am Main, im Zuge mehrerer Teppich-Käufe; der Händler hätte ihn ursprünglich lieber behalten und trennte sich erst nach einigem Zögern von dem Stück. Aus derselben Quelle stammt auch der antike Seidenteppich unter Nr. IV.',
-    specs: {
-      Hersteller: 'Donghia, New York',
-      Serie: 'Phantom (nach Eigenrecherche)',
-      Entwurf: 'John Hutton',
-      Bezug: 'Fischgrat-Gewebe, maisgelb',
-      Ausführung: 'Einzelsessel, ohne Ottomane',
-      Provenienz: 'Gebraucht erworben bei Rolf Jasper, Spezialhaus für antike Teppiche, Frankfurt am Main — derselbe Händler, von dem auch der antike Seidenteppich unter Nr. IV stammt',
-      Zustand: 'Gepflegter Gesamtzustand, aktuell eingelagert',
-      'Erste Abbildung': 'Originalaufnahme aus dem Lager',
-      'Zweite Abbildung': 'KI-unterstützte Darstellung zur räumlichen Einordnung (mit dem Liebscher-Panorama Nr. II an der Wand)',
-      Hinweis: 'Originalfotos aus bewohnter Aufstellung stellen wir gerne auf Anfrage zur Verfügung',
-    },
-  },
-  {
-    id: 8,
-    category: 'moebel',
-    categoryLabel: 'Möbel & Einrichtung',
-    sold: true,
-    price: 'Verkauft',
-    title: 'Eames Lounge Chair 670, Vitra-Lizenzproduktion',
-    artist: 'Charles & Ray Eames',
-    origin: 'Europa (Vitra-Lizenzfertigung), ca. 1960er Jahre',
-    motif: 'chair',
-    images: [
-      '/images/eames-front.jpeg',
-      '/images/eames-closeup.jpeg',
-      '/images/eames-seite.jpeg',
-      '/images/eames-ruecken.jpeg',
-      '/images/eames-detail.jpeg',
-      '/images/eames-fusskreuz.jpeg',
-      '/images/eames-dreiloch.jpeg',
-      '/images/eames-clips.jpeg',
-      '/images/eames-nummer.jpeg',
-    ],
-    description:
-      'Ein Eames Lounge Chair 670 — jenes Möbelstück, das Charles und Ray Eames 1956 für Herman Miller entwarfen und das seither als einer der vollkommensten Sitzentwürfe des 20. Jahrhunderts gilt. Die vorliegende Ausführung wurde anhand der Konstruktion des Aluminiumfußkreuzes als europäische Lizenzproduktion von Vitra identifiziert — Vitra fertigte das Modell ab den späten 1950er Jahren unter Lizenz für den europäischen Markt, mit eigenen Werkzeugen und charakteristischen konstruktiven Unterschieden zum US-amerikanischen Original. Der Stuhl trägt die handgeschriebene Produktionsnummer B 5781 auf der Rückseite der Kopfschale. Die Drei-Loch-Bohrung unter den Armlehnen, die runden Polster-Clips mit Belüftungslöchern und die Formgebung des Aluminiumfußkreuzes — mit angeformten Gleitern und spitz zulaufenden Fußenden — sind die für diese Vitra-Produktion typischen Merkmale. Das originale schwarze Leder zeigt die ehrliche Patina jahrzehntelanger Nutzung — weich, angeschmiegt, unrestauriert. Der Stuhl befindet sich seit seiner Anschaffung ununterbrochen in Familienbesitz — über drei Generationen genutzt und weitergegeben, nie restauriert, nie den Besitzer gewechselt. Er wird ohne Ottoman abgegeben.',
-    specs: {
-      Hersteller: 'Vitra (Lizenzfertigung für Europa)',
-      Entwurf: 'Charles & Ray Eames für Herman Miller, 1956',
-      Modell: 'Lounge Chair 670',
-      Produktionszeitraum: 'Ca. 1960er Jahre',
-      Produktionsnummer: 'B 5781 — handgeschrieben auf Rückseite der Kopfschale, Merkmal für nummerngleiches Original',
-      Holz: 'Edelholzfurnier, warm mittelbraun mit charakteristischer Maserung',
-      Polster: 'Originales schwarzes Leder mit natürlicher Alterspatina',
-      Fußkreuz: 'Aluminium mit charakteristischer Vitra-Formgebung — angeformte Gleiter, spitz zulaufende Fußenden (Zuordnung durch Fachexperte bestätigt)',
-      Befestigung: 'Drei-Loch-Bohrung unter den Armlehnen',
-      'Polster-Clips': 'Runde Clips mit Belüftungslöchern — charakteristisch für Bauweise der 1960er Jahre',
-      Ausführung: 'Einzelsessel ohne Ottoman',
-      Provenienz: 'Seit Anschaffung ununterbrochen in Familienbesitz — drei Generationen, nie weitergegeben, nie restauriert',
-      Zustand: 'Unrestauriert, voll funktionsfähig — Leder mit schöner Alterspatina, zwei Knöpfe am Sitzkissen fehlen',
-    },
-  },
-  {
-    id: 9,  // ersetzt Tavolo con Ruote
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Draenert Klassik 1022 — Couchtisch, Klarglas und Chromstahl',
@@ -303,7 +207,7 @@ export const pieces: Piece[] = [
     },
   },
   {
-    id: 10,
+    id: 7,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'de Sede DS-76, Schlafsofa Leder schokobraun',
@@ -323,37 +227,8 @@ export const pieces: Piece[] = [
       Funktion: 'Schlafsofa mit ausklappbarer Liegefläche, ohne mechanische Unterstützung',
     },
   },
-  {
-    id: 11,
-    category: 'moebel',
-    categoryLabel: 'Möbel & Einrichtung',
-    sold: true,
-    price: 'Verkauft',
-    title: 'Gallotti & Radice, President Junior — Glasschreibtisch, 1971',
-    artist: 'Gallotti & Radice',
-    origin: 'Italien, Glas und Chromstahl, 1970er Jahre',
-    motif: 'cabinet',
-    images: [
-      '/images/gallotti-presidente.jpeg',
-      '/images/gallotti-presidente-details.jpeg',
-      '/images/gallotti-presidente-office.jpeg',
-    ], 
-    description:
-      'Ein Schreibtisch „President Junior" aus dem Hause Gallotti & Radice — jene 1956 in der Brianza gegründete italienische Manufaktur, die sich über Jahrzehnte dem Glas als tragendem Möbelwerkstoff verschrieben hat und deren Entwürfe heute in Sammlungen italienischen Designs einen festen Platz haben. Der „President Junior" aus den 1970er Jahren ist die kompaktere Ausführung des großen „President"-Schreibtischs und gehört zu den Signature-Stücken des Hauses: eine leicht geschwungene Glas-Arbeitsfläche, die an den Enden auf zwei senkrechten Glasstützen ruht und über ein durchlaufendes Chromstahl-Profil mit einer zentralen Chromstrebe verbunden ist — ein fast körperloses Zusammenspiel aus Transparenz und reflektierender Präzision, das der Arbeitsfläche ihre charakteristische, schwebende Anmutung gibt. Das Stück stammt aus dem Nachlass des bekannten Cellisten Peter Girth und wurde 2003 von dessen Witwe erworben; die Originalrechnung liegt vor. In unserem früheren Home-Office hat es viele Jahre treu Dienst getan — die dritte Abbildung zeigt den Tisch im gelebten Gebrauch mit iMac und Arbeitsleuchte.',
-    specs: {
-      Hersteller: 'Gallotti & Radice, Brianza (Italien)',
-      Modell: 'President Junior',
-      Entstehung: '1970er Jahre',
-      Material: 'Klarglas und Chromstahl',
-      Form: 'Leicht geschwungene Arbeitsfläche auf zwei seitlichen Glasstützen, verbunden über durchlaufendes Chromstahl-Profil mit zentraler Strebe',
-      Provenienz: 'Aus dem Nachlass von Peter Girth — Cellist und Intendant der Berliner Philharmoniker (1978–1984) in der Ära Karajan, danach weitere Intendanzen an deutschen Orchestern und Opernhäusern; 2003 von seiner Witwe erworben (Originalrechnung liegt vor)',
-      Einsatz: 'Über viele Jahre als Home-Office-Schreibtisch in unserem Besitz',
-      'Zweite Abbildung': 'Detail-Raster aus neun Nahaufnahmen — Glas, Chromstahl, Verbindungen',
-      'Dritte Abbildung': 'Im früheren Home-Office in Benutzung (iMac, Magic Keyboard, Arbeitsleuchte)',
-     },
-    },
-   { 
-    id: 12,
+  { 
+    id: 8,
     category: 'moebel',
     categoryLabel: 'Möbel & Einrichtung',
     title: 'Minotti Léger & Akari Vela Alta — Ensemble',
@@ -387,6 +262,7 @@ export const pieces: Piece[] = [
       Abgabe: 'Bevorzugt als Ensemble',
     },
   },
+
 ];
 
 export const CATEGORIES: { key: 'all' | Category; label: string }[] = [
