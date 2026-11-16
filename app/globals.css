@@ -1095,3 +1095,182 @@ body.modal-open { overflow: hidden; }
   text-transform: uppercase;
   padding: 0.35rem 0.75rem;
 }
+
+/* ==========================================================
+   Überarbeitung 11/2026 — Seite an das Hero-Bild angleichen
+   Wärmere Flächen, klarere Abschnitte, Passepartout-Karten,
+   dunkles Impressionen-Band. Überschreibt ältere Regeln oben.
+   ========================================================== */
+
+.section-eyebrow {
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  margin-bottom: 1rem;
+}
+
+/* Vorwort: Übergang vom Hero, größere Typografie */
+.preamble {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 6rem 2rem 5rem;
+}
+.preamble h2 {
+  font-size: clamp(2.1rem, 3.6vw, 3rem);
+  font-weight: 500;
+  line-height: 1.15;
+  margin: 0 0 1.8rem;
+  color: var(--ink);
+}
+.preamble h2 em { font-style: italic; color: var(--gold-dark); font-weight: 500; }
+.preamble p {
+  font-size: 1.22rem;
+  line-height: 1.8;
+  color: var(--ink-soft);
+}
+.preamble p.lead {
+  font-size: clamp(1.35rem, 2vw, 1.6rem);
+  line-height: 1.6;
+  font-style: italic;
+  color: var(--ink);
+  margin-bottom: 1.4rem;
+}
+.preamble .ornament { margin-top: 2.6rem; }
+
+/* Sammlung als eigenes, wärmeres Band */
+.collection-section {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 5.5rem 0 4rem;
+}
+.collection-head { text-align: center; padding: 0 2rem; }
+.collection-head h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  line-height: 1.1;
+  margin: 0;
+  color: var(--ink);
+}
+.collection-head h2 em { font-style: italic; color: var(--gold-dark); }
+.collection-section .filter-bar { margin: 2.2rem auto 3.2rem; }
+.collection-section .filter-btn { background: var(--paper); }
+.collection-section .filter-btn.active { background: var(--ink); }
+.collection { margin-bottom: 0; gap: 2.6rem 2.2rem; }
+
+/* Karten mit Passepartout: vereinheitlicht die unterschiedlichen Fotos */
+.piece-wrapper {
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  padding: 14px 14px 1rem;
+  transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+.piece-wrapper:hover {
+  box-shadow: 0 24px 48px -28px rgba(31, 28, 23, 0.45);
+  transform: translateY(-4px);
+}
+.piece:hover { transform: none; }
+.piece:hover .piece-image { box-shadow: none; }
+.piece-image,
+.piece-image.has-photo {
+  background: var(--bg-alt);
+  border: none;
+}
+.piece-meta { padding: 1.3rem 0.4rem 0; }
+.piece-category { color: var(--gold-dark); }
+.piece-title { font-size: 1.55rem; }
+.piece-origin { font-size: 1.02rem; }
+.piece-price {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+  color: var(--accent);
+}
+.piece-permalink {
+  margin: 0.8rem 0.4rem 0;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--rule);
+  color: var(--ink-soft);
+}
+
+/* Auktions-Hinweis als ruhiges Etikett statt roter Linien */
+.piece-auction-badge {
+  top: 1rem;
+  right: 1rem;
+  background: var(--paper);
+  color: var(--accent);
+  font-size: 0.62rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--accent);
+}
+.piece-auction-badge:hover {
+  background: var(--accent);
+  color: var(--paper);
+  border-color: var(--accent);
+}
+
+/* Impressionen als dunkles Band — Gegengewicht zum hellen Hero */
+.impressions {
+  max-width: none;
+  margin: 0;
+  padding: 6rem max(2rem, calc((100vw - 1216px) / 2));
+  background: var(--ink);
+}
+.impressions-head h2 {
+  font-size: clamp(2rem, 3.4vw, 2.8rem);
+  font-weight: 400;
+  color: var(--paper);
+  letter-spacing: 0.01em;
+}
+.impressions-grid { gap: 1.6rem; }
+.impression {
+  border: none;
+  background: #2b2720;
+  aspect-ratio: 4 / 5;
+}
+.impressions-caption { color: #b9ad97; font-size: 1.1rem; }
+
+/* Weiteres auf Anfrage: klarer Handlungsaufruf */
+.further {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 5.5rem 2rem 5rem;
+}
+.further-head h2 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  color: var(--ink);
+}
+.further-text { font-size: 1.18rem; }
+.further-link {
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.24em;
+  color: var(--paper);
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 1rem 2.2rem;
+}
+.further-link:hover,
+.further-link:focus {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--paper);
+}
+
+@media (max-width: 720px) {
+  .preamble { padding: 4rem 1.5rem 3.5rem; }
+  .collection-section { padding: 4rem 0 3rem; }
+  .collection { padding: 0 1.25rem; }
+  .impressions { padding: 4rem 1.25rem; }
+  .impression { aspect-ratio: 4 / 3; }
+  .further { padding: 4rem 1.5rem; }
+}
+.impressions-head h2 { text-transform: none; }

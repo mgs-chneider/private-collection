@@ -15,8 +15,19 @@ export default function Collection() {
     [filter]
   );
 
+  const available = pieces.filter((p) => !p.sold).length;
+
   return (
-    <>
+    <section className="collection-section" aria-labelledby="collection-heading">
+      <div className="collection-head">
+        <div className="section-eyebrow">
+          Kuratierte Einzelstücke · {available} verfügbar
+        </div>
+        <h2 id="collection-heading">
+          Die <em>Sammlung</em>
+        </h2>
+      </div>
+
       <FilterBar active={filter} onChange={setFilter} />
 
       <main className="collection" id="collection">
@@ -28,6 +39,6 @@ export default function Collection() {
       {selected && (
         <PieceModal piece={selected} onClose={() => setSelected(null)} />
       )}
-    </>
+    </section>
   );
 }
