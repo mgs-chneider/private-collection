@@ -1335,3 +1335,10 @@ body.modal-open { overflow: hidden; }
   .process { padding: 4rem 1.5rem; }
   .process-steps { grid-template-columns: 1fr; gap: 2rem; }
 }
+
+/* ---------- Querformat-Karten (11/2026): ruhiger, passend zum Hero ---------- */
+@media (min-width: 900px) {
+  .collection { grid-template-columns: repeat(2, 1fr); max-width: 1200px; gap: 3rem 2.6rem; }
+}
+.piece-image { aspect-ratio: 3 / 2; }
+.piece-image .piece-photo.fit-contain { object-fit: contain; }

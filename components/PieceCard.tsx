@@ -42,7 +42,7 @@ export default function PieceCard({ piece, onOpen }: Props) {
           )}
           {hasPhoto ? (
             <img
-              className="piece-photo"
+              className={`piece-photo${piece.cardFit === 'contain' ? ' fit-contain' : ''}`}
               src={piece.images![0]}
               alt={piece.title}
               loading="lazy"

@@ -26,6 +26,8 @@ export interface Piece {
   reserved?: boolean;
   auctionUrl?: string; 
   sold?: boolean;
+  /** Hochformatige Motive auf der Karte vollständig zeigen statt zuschneiden */
+  cardFit?: 'contain';
 }
 
 /**
@@ -47,6 +49,7 @@ export const pieces: Piece[] = [
     category: 'kunst',
     categoryLabel: 'Kunst & Gemälde',
     title: 'Winter/Hoerbelt — Madonna',
+    cardFit: 'contain',
     artist: 'Winter/Hoerbelt',
     origin: 'Acryl / Kunstharz, Unikat, 1999 — direkt im Atelier der Künstler erworben',
     motif: 'sculpture',
