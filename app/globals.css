@@ -65,6 +65,65 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* ---------- Hero ---------- */
+.site-header--hero {
+  min-height: clamp(460px, 72vh, 760px);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: var(--bg-alt);
+  text-align: left;
+}
+.site-header--hero .hero-image {
+  object-fit: cover;
+  object-position: 65% center;
+  z-index: 0;
+}
+.site-header--hero .hero-veil {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(247, 243, 236, 0.78) 0%,
+    rgba(247, 243, 236, 0.55) 38%,
+    rgba(247, 243, 236, 0) 62%
+  );
+}
+.site-header--hero .hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem clamp(1.5rem, 6vw, 5rem);
+}
+.site-header--hero .hero-content > * { max-width: 34rem; }
+.site-header--hero .eyebrow { color: var(--ink-soft); }
+.site-header--hero h1 { font-size: clamp(2.4rem, 5vw, 4.2rem); }
+.site-header--hero .ornament { justify-content: flex-start; margin-left: 0; }
+
+@media (max-width: 720px) {
+  .site-header--hero {
+    min-height: 600px;
+    align-items: flex-end;
+    text-align: center;
+  }
+  .site-header--hero .hero-image { object-position: 82% center; }
+  .site-header--hero .hero-veil {
+    background: linear-gradient(
+      0deg,
+      rgba(247, 243, 236, 0.94) 0%,
+      rgba(247, 243, 236, 0.8) 30%,
+      rgba(247, 243, 236, 0) 58%
+    );
+  }
+  .site-header--hero .hero-content { padding: 2rem 1.5rem 2.2rem; }
+  .site-header--hero .hero-content > * { max-width: none; }
+  .site-header--hero .ornament { justify-content: center; margin: 1.2rem auto 0; }
+}
+
 /* ---------- Ornament ---------- */
 .ornament {
   display: flex;
