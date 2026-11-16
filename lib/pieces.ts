@@ -137,6 +137,7 @@ export const pieces: Piece[] = [
     images: [
       '/images/china-teppich-1.jpeg',
       '/images/china-teppich-2.jpeg',
+      '/images/essgruppe-teppich-moskau-visualisierung.jpeg',
     ],
     price: 'Preis auf Anfrage',
     description:
@@ -148,6 +149,7 @@ export const pieces: Piece[] = [
       Maße: 'ca. 3 × 4 m',
       Muster: 'Dezentes florales Muster, heller Beigeton',
       Provenienz: 'Rolf Jasper, Spezialhaus für antike Teppiche, Frankfurt am Main (Ende 1990er Jahre)',
+      'Dritte Abbildung': 'KI-Visualisierung aus Originalfotos: der Teppich unter der ebenfalls angebotenen Essgruppe, Muster nachempfunden — die ersten beiden Abbildungen sind Originalaufnahmen',
     },
   },
   {
@@ -159,6 +161,7 @@ export const pieces: Piece[] = [
     motif: 'chair',
     images: [
       '/images/essgruppe-ensemble.jpeg',
+      '/images/essgruppe-teppich-moskau-visualisierung.jpeg',
       '/images/essgruppe-stuhl.jpeg',
       '/images/stuhl-original.jpeg',
     ],
@@ -174,8 +177,9 @@ export const pieces: Piece[] = [
       Provenienz: 'Unikatanfertigung für den Berliner Privathaushalt eines deutschen Bankgründers, 1950er Jahre — seit der Anschaffung ununterbrochen in Familienbesitz, über Jahrzehnte in täglicher Nutzung',
       Zustand: 'Gepflegter Gesamtzustand mit altersüblichen Gebrauchsspuren',
       'Erste Abbildung': 'KI-unterstützte Visualisierung des Ensembles — Tisch mit sechs von insgesamt zehn zugehörigen Stühlen',
-      'Zweite Abbildung': 'KI-unterstützte Visualisierung eines Einzelstuhls zur Ansicht der Proportionen und Polsterung',
-      'Dritte Abbildung': 'Originalaufnahme aus dem Lager (Stuhl in Umzugsfolie, Hintergrund bereinigt)',
+      'Zweite Abbildung': 'KI-Visualisierung aus Originalfotos: die Essgruppe mit allen zehn Stühlen auf dem antiken Seidenteppich (ca. 3 × 4 m), an der Wand Martin Liebschers Moskau-Panorama — alle drei Stücke sind in dieser Sammlung erhältlich',
+      'Dritte Abbildung': 'KI-unterstützte Visualisierung eines Einzelstuhls zur Ansicht der Proportionen und Polsterung',
+      'Vierte Abbildung': 'Originalaufnahme aus dem Lager (Stuhl in Umzugsfolie, Hintergrund bereinigt)',
       Hinweis: 'Aktuell eingelagert — weitere Originalfotos und Abholtermine auf Anfrage',
     },
   },
